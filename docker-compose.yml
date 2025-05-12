@@ -1,0 +1,16 @@
+# This file is for running the application locally
+
+services:
+
+  web:
+    image: biodiversitydata-se/website-dev
+    build: 
+      context: .
+      dockerfile: dev.Dockerfile
+    environment:
+      - CODESPACES
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - .:/site

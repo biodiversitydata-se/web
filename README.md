@@ -1,3 +1,5 @@
+![build workflow](https://github.com/biodiversitydata-se/web/actions/workflows/build.yml/badge.svg)
+
 # biodiversitydata.se website
 The new [biodiversitydata.se](https://new.biodiversitydata.se) website built with [Jekyll](https://jekyllrb.com/) and [tailwindcss](https://tailwindcss.com/).
 

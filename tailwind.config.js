@@ -15,9 +15,6 @@ module.exports = {
         'lg': '1040px',
         'xl': '1280px',
       },
-      container: {
-        center: true,
-      },
       extend: {
         colors: {
         },

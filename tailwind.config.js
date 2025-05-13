@@ -16,8 +16,6 @@ module.exports = {
         'xl': '1280px',
       },
       extend: {
-        colors: {
-        },
         fontFamily: {
           sans: [
             'Roboto',

@@ -41,18 +41,18 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#  - .jekyll-cache/
-#  - node_modules/
-#  - script
-#  - Gemfile
-#  - Gemfile.lock
-#  - README.md
-#  - Makefile
-#  - docker-compose.yml
-#  - Dockerfile
-#  - dev.Dockerfile
-#  - package.json
-#  - package-lock.json
-#  - postcss.config.js
-#  - tailwind.config.js
+exclude:
+  - .jekyll-cache/
+  - node_modules/
+  - script
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - Makefile
+  - docker-compose.yml
+  - Dockerfile
+  - dev.Dockerfile
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - tailwind.config.js

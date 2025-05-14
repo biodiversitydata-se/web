@@ -1,18 +1,15 @@
-<header class="container flex" aria-label="Site header">
+<header class="container flex mt-2" aria-label="Site header">
   <a href="/" title="To start page">
     <img src="/assets/images/SBDI-rgb.svg" width="120" height="120" alt="SBDI logotype">
   </a>
-  <span class="ml-10 self-end text-xl">Swedish Biodiversitydata Infrastructure</span>
+  <span class="ml-10 self-end text-xl text-slate-600">Swedish Biodiversitydata Infrastructure</span>
 </header>
 
 <nav class="bg-sbdi-mediumblue py-2 my-2" aria-label="Main menu">
   <ul class="container list-none block">
-    <li class="float-left"><a class="p-4 text-white" href="/">Home</a></li>
-    <li class="float-left"><a class="p-4 text-white" href="/en/about/">About</a></li>
-    <li class="float-left"><a class="p-4 text-white" href="/en/search-analyse/">Search & analyse</a></li>
-    <li class="float-left"><a class="p-4 text-white" href="/en/apis/">API:s</a></li>
-    <li class="float-left"><a class="p-4 text-white" href="/en/support/">Support</a></li>
-    <li class="float-left"><a class="p-4 text-white" href="/en/submit-data/">Submit data</a></li>
+    {% for menu_item in site.data.navigation %}
+      <li class="float-left"><a class="p-4 text-white font-medium uppercase" href="{{ menu_item.path }}">{{ menu_item.title }}</a></li>
+    {% endfor %}
   </ul>
   <div class="clear-both"></div>
 </nav>

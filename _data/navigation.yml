@@ -1,0 +1,12 @@
+- title: Home
+  path: /
+- title: About
+  path: /en/about/
+- title: Search & analyse
+  path: /en/search-analyse/
+- title: API:s
+  path: /en/apis/
+- title: Support
+  path: /en/support/
+- title: Submit data
+  path: /en/submit-data/

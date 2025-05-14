@@ -1,3 +1,10 @@
+{%- if page.url == "/" -%}
+  {%- assign path_start = "/" -%}
+{%- else -%}
+  {%- assign path_start_0 = page.url | split: "/" -%}
+  {%- assign path_start = path_start_0[2] | prepend: "/en/" | append: "/"  -%}
+{%- endif -%}
+
 <header class="container flex mt-2" aria-label="Site header">
   <a href="/" title="To start page">
     <img src="/assets/images/SBDI-rgb.svg" width="120" height="120" alt="SBDI logotype">
@@ -8,7 +15,9 @@
 <nav class="bg-sbdi-mediumblue py-2 my-2" aria-label="Main menu">
   <ul class="container list-none block">
     {% for menu_item in site.data.navigation %}
-      <li class="float-left"><a class="p-4 text-white font-medium uppercase" href="{{ menu_item.path }}">{{ menu_item.title }}</a></li>
+      <li class="float-left">
+        <a class="p-2 text-white font-medium uppercase {% if menu_item.path == path_start %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
+      </li>
     {% endfor %}
   </ul>
   <div class="clear-both"></div>

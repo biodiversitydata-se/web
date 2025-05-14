@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Consortium
+title: Internal portals
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

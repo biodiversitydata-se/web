@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Consortium
+title: Training
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

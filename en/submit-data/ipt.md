@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Consortium
+title: IPT
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

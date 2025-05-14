@@ -2,11 +2,34 @@
   path: /
 - title: About
   path: /en/about/
+  items:
+    - title: Consortium
+      path: /en/about/consortium/
+    - title: News
+      path: /en/about/news/
+    - title: Events
+      path: /en/about/events/
 - title: Search & analyse
   path: /en/search-analyse/
+  items:
+    - title: Internal portals
+      path: /en/search-analyse/internal-portals/
+    - title: External portals
+      path: /en/search-analyse/external-portals/
 - title: API:s
   path: /en/apis/
+  items:
+    - title: Catalogue
+      path: /en/apis/
 - title: Support
   path: /en/support/
+  items:
+    - title: Training
+      path: /en/support/training/
+    - title: Webinars
+      path: /en/support/webinars/
 - title: Submit data
   path: /en/submit-data/
+  items:
+    - title: IPT
+      path: /en/submit-data/ipt/

@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Consortium
+title: Webinars
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

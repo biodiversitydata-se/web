@@ -1,3 +1,5 @@
+{%- include functions/submenu-data.html -%}
+
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: "en" }}">
 
@@ -6,7 +8,22 @@
   <body>
     {%- include header.html -%}
     <div class="container">
-      {{ content }}
+      <div class="flex">
+        {% if submenu_items.size > 0 %}
+          <nav class="mr-8" aria-label="Context menu">
+            <ul class="list-none m-0 p-2 bg-slate-200">
+            {% for item in submenu_items %}
+              <li>
+                <a class="" href="{{ item.path }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          </nav>
+        {% endif %}
+        <main aria-label="Content">
+          {{ content }}
+        </main>
+      </div>
     </div>
     {%- include footer.html -%}
   </body>

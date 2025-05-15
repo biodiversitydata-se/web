@@ -8,6 +8,8 @@
 }
 
 @theme {
+  --breakpoint-2xl: initial;
+  --font-sans: Roboto, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-sbdi-darkblue: #004767;
   --color-sbdi-blue: #284966;
   --color-sbdi-mediumblue: #6691a4;

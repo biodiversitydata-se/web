@@ -26,4 +26,4 @@ EXPOSE 35729
 
 VOLUME /site
 
-ENTRYPOINT [ "sh", "/site/script/entrypoint.sh" ]
+ENTRYPOINT [ "sh", "/site/_script/entrypoint.sh" ]

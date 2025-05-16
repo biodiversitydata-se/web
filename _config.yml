@@ -26,7 +26,7 @@ description: >-
   and conservation.
 logo: /assets/images/SBDI-rgb.svg
 email: support@biodiversitydata.se
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: ""
 url: "https://biodiversitydata.se"
 safe: false
 

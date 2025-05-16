@@ -1,35 +1,35 @@
 - title: Home
   path: /
 - title: About
-  path: /en/about/
+  path: /about/
   items:
     - title: Consortium
-      path: /en/about/consortium/
+      path: /about/consortium/
     - title: News
-      path: /en/about/news/
+      path: /about/news/
     - title: Events
-      path: /en/about/events/
+      path: /about/events/
 - title: Search & analyse
-  path: /en/search-analyse/
+  path: /search-analyse/
   items:
     - title: Internal portals
-      path: /en/search-analyse/internal-portals/
+      path: /search-analyse/internal-portals/
     - title: External portals
-      path: /en/search-analyse/external-portals/
+      path: /search-analyse/external-portals/
 - title: API:s
-  path: /en/apis/
+  path: /apis/
   items:
     - title: Catalogue
-      path: /en/apis/
+      path: /apis/
 - title: Support
-  path: /en/support/
+  path: /support/
   items:
     - title: Training
-      path: /en/support/training/
+      path: /support/training/
     - title: Webinars
-      path: /en/support/webinars/
+      path: /support/webinars/
 - title: Submit data
-  path: /en/submit-data/
+  path: /submit-data/
   items:
     - title: IPT
-      path: /en/submit-data/ipt/
+      path: /submit-data/ipt/

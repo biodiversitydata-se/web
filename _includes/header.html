@@ -2,7 +2,7 @@
   {%- assign path_start = "/" -%}
 {%- else -%}
   {%- assign path_start_0 = page.url | split: "/" -%}
-  {%- assign path_start = path_start_0[2] | prepend: "/en/" | append: "/"  -%}
+  {%- assign path_start = path_start_0[2] | prepend: "/" | append: "/"  -%}
 {%- endif -%}
 
 <header class="container flex mt-2" aria-label="Site header">

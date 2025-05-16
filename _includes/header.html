@@ -13,10 +13,28 @@
 </header>
 
 <nav class="overflow-hidden bg-sbdi-mediumblue py-2 my-2" aria-label="Main menu">
-  <ul class="container list-none block">
+  <button class="container sm:hidden block px-4 py-3 text-white" onclick="toggleMobileMenu()">
+    <svg id="topMenuOpen" class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <svg id="topMenuClose" class="w-8 h-8 hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <ul id="topMenu" class="container list-none hidden sm:block">
     {% for menu_item in site.data.navigation %}
-      <li class="float-left">
+      <li class="sm:float-left">
         <a class="p-2 text-white font-medium uppercase {% if menu_item.path == path_start %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
+        {%- include functions/submenu-data.html path=menu_item.path -%}
+        {% if submenu_items.size > 0 %}
+            <ul class="sm:hidden mb-0 ml-0 list-none">
+            {% for submenu_item in submenu_items %}
+              <li>
+                <a class="pl-4 block text-white {% if submenu_item.path == page.url %}font-bold{% endif %}" href="{{ submenu_item.path }}">{{ submenu_item.title }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

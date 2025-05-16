@@ -6,4 +6,11 @@
   <link rel="icon" href="/assets/images/favicon-32x32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="/assets/images/favicon-180x180.png" />
   <link rel="stylesheet" href="/assets/css/main.css?{{ "now" | date: "%Y%m%d%H%M" }}">
+  <script>
+    const toggleMobileMenu = () => {
+      document.getElementById("topMenu").classList.toggle("hidden");
+      document.getElementById("topMenuOpen").classList.toggle("hidden");
+      document.getElementById("topMenuClose").classList.toggle("hidden");
+    }
+  </script>
 </head>

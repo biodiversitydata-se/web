@@ -1,10 +1,10 @@
 {%- for item in site.data.navigation -%}
-  {%- if page.url == item.path -%}
+  {%- if include.path == item.path -%}
     {%- assign submenu_items = item.items -%}
     {%- break -%}
   {%- else -%}
     {%- for item2 in item.items -%}
-      {%- if page.url == item2.path -%}
+      {%- if include.path == item2.path -%}
         {%- assign submenu_items = item.items -%}
         {%- break -%}
       {%- endif -%}  

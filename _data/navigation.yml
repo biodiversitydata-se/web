@@ -1,5 +1,26 @@
 - title: Home
   path: /
+- title: Search & analyse
+  path: /search-analyse/
+  items:
+    - title: Portals
+      path: /search-analyse/portals/
+    - title: Programming and API:s
+      path: /search-analyse/apis/
+- title: Submit data
+  path: /submit-data/
+  items:
+    - title: IPT
+      path: /submit-data/ipt/
+- title: Support
+  path: /support/
+  items:
+    - title: Contact
+      path: /support/
+    - title: Training
+      path: /support/training/
+    - title: Webinars
+      path: /support/webinars/
 - title: About
   path: /about/
   items:
@@ -9,27 +30,3 @@
       path: /about/news/
     - title: Events
       path: /about/events/
-- title: Search & analyse
-  path: /search-analyse/
-  items:
-    - title: Internal portals
-      path: /search-analyse/internal-portals/
-    - title: External portals
-      path: /search-analyse/external-portals/
-- title: API:s
-  path: /apis/
-  items:
-    - title: Catalogue
-      path: /apis/
-- title: Support
-  path: /support/
-  items:
-    - title: Training
-      path: /support/training/
-    - title: Webinars
-      path: /support/webinars/
-- title: Submit data
-  path: /submit-data/
-  items:
-    - title: IPT
-      path: /submit-data/ipt/

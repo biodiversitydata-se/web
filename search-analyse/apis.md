@@ -1,6 +1,7 @@
 ---
 layout: base
 title: API:s
+permalink: /:path/:basename/
 ---
 # {{ page.title }}
 

@@ -1,6 +1,6 @@
 ---
 layout: base
-title: Internal portals
+title: Portals
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

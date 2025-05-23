@@ -16,14 +16,14 @@
                   {{ active_menuitem.title }}
                 </span>
               {% else %}
-                <a class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg hover:bg-slate-200 hover:no-underline {% if path_start == page.url %}font-bold{% endif %}" href="{{ path_start }}">
+                <a class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg no-underline hover:bg-slate-200 hover:no-underline {% if path_start == page.url %}font-bold{% endif %}" href="{{ path_start }}">
                   {{ active_menuitem.title }}
                 </a>
               {% endif %}
               <ul class="list-none m-0 bg-slate-100">
               {% for item in active_menuitem.items %}
                 <li class="px-3 py-2 hover:bg-slate-200">
-                  <a class="block text-sbdi-blue hover:no-underline {% if item.path == page.url %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
+                  <a class="block text-sbdi-blue no-underline hover:no-underline {% if item.path == page.url %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
                 </li>
               {% endfor %}
               </ul>

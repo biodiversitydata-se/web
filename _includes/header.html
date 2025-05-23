@@ -25,14 +25,14 @@
   <ul id="topMenu" class="container sm:px-4 list-none hidden sm:block">
     {% for menu_item in site.data.navigation %}
       <li class="sm:float-left">
-        <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-bold uppercase hover:bg-sbdi-blue hover:no-underline 
+        <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-bold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
           {% if menu_item.path == path_start %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
         {%- include functions/submenu-data.html path=menu_item.path -%}
         {% if active_menuitem.items.size > 0 %}
             <ul class="sm:hidden mb-0 ml-0 list-none">
             {% for submenu_item in active_menuitem.items %}
               <li>
-                <a class="block p-2 pl-8 text-sm text-white font-bold uppercase 
+                <a class="block p-2 pl-8 text-sm text-white font-bold uppercase no-underline 
                 {% if submenu_item.path == page.url %}bg-sbdi-darkblue{% endif %}" href="{{ submenu_item.path }}">{{ submenu_item.title }}</a>
               </li>
             {% endfor %}

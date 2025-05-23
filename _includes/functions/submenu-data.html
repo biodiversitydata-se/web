@@ -1,3 +1,4 @@
+{%- assign active_menuitem = nil -%}
 {%- for item in site.data.navigation -%}
   {%- if include.path == item.path -%}
     {%- assign active_menuitem = item -%}

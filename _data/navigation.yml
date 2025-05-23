@@ -14,6 +14,7 @@
       path: /submit-data/ipt/
 - title: Support
   path: /support/
+  link: false
   items:
     - title: Contact
       path: /support/

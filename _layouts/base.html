@@ -5,22 +5,35 @@
 
   <body>
     {%- include header.html -%}
-    <div class="container">
+    <div class="container mt-12">
       <div class="flex">
         {%- include functions/submenu-data.html path=page.url -%}
-        {% if submenu_items.size > 0 %}
-          <nav class="mr-8 hidden sm:block" aria-label="Context menu">
-            <ul class="list-none m-0 p-2 bg-slate-200">
-            {% for item in submenu_items %}
-              <li>
-                <a class="{% if item.path == page.url %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
-              </li>
-            {% endfor %}
-            </ul>
-          </nav>
+        {% if active_menuitem.items.size > 0 %}
+          <div class="mr-8 w-64 hidden sm:block">
+            <nav aria-label="Context menu">
+              {% if active_menuitem.link == false %}
+                <span class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg">
+                  {{ active_menuitem.title }}
+                </span>
+              {% else %}
+                <a class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg hover:bg-slate-200 hover:no-underline {% if path_start == page.url %}font-bold{% endif %}" href="{{ path_start }}">
+                  {{ active_menuitem.title }}
+                </a>
+              {% endif %}
+              <ul class="list-none m-0 bg-slate-100">
+              {% for item in active_menuitem.items %}
+                <li class="px-3 py-2 hover:bg-slate-200">
+                  <a class="block text-sbdi-blue hover:no-underline {% if item.path == page.url %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
+                </li>
+              {% endfor %}
+              </ul>
+            </nav>
+          </div>
         {% endif %}
-        <main aria-label="Content">
-          {{ content }}
+        <main aria-label="Content" class="w-full">
+          <article class="grow">
+            {{ content }}
+          </article>
         </main>
       </div>
     </div>

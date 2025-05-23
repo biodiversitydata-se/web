@@ -5,12 +5,12 @@
   {%- assign path_start = path_start_0[1] | prepend: "/" | append: "/"  -%}
 {%- endif -%}
 
-<header class="container flex mt-2 mb-3" aria-label="Site header">
+<header class="container flex mt-2 mb-3 px-4" aria-label="Site header">
   <a href="/" title="To home page">
-    <img src="/assets/images/SBDI-rgb.svg" width="120" alt="SBDI logotype">
+    <img class="w-30" src="/assets/images/SBDI-rgb.svg" alt="SBDI logotype">
   </a>
   <span class="grow ml-6 self-end text-lg text-gray-600 leading-none">Swedish Biodiversitydata Infrastructure</span>
-  <input type="text" class="self-end w-56 px-2 py-1 border border-sbdi-lightblue rounded-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="&#128269; Search..." aria-label="Search">
+  <input type="text" class="hidden sm:inline self-end w-56 px-2 py-1 border border-sbdi-lightblue rounded-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="&#128269; Search..." aria-label="Search">
 </header>
 
 <nav class="overflow-hidden bg-sbdi-mediumblue" aria-label="Main menu">
@@ -22,17 +22,18 @@
       <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
   </button>
-  <ul id="topMenu" class="container list-none hidden sm:block">
+  <ul id="topMenu" class="container sm:px-4 list-none hidden sm:block">
     {% for menu_item in site.data.navigation %}
       <li class="sm:float-left">
-        <a class="p-4 text-sm/9 text-white font-bold uppercase hover:bg-sbdi-blue hover:no-underline 
+        <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-bold uppercase hover:bg-sbdi-blue hover:no-underline 
           {% if menu_item.path == path_start %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
         {%- include functions/submenu-data.html path=menu_item.path -%}
         {% if active_menuitem.items.size > 0 %}
             <ul class="sm:hidden mb-0 ml-0 list-none">
             {% for submenu_item in active_menuitem.items %}
               <li>
-                <a class="pl-4 block text-white {% if submenu_item.path == page.url %}font-bold{% endif %}" href="{{ submenu_item.path }}">{{ submenu_item.title }}</a>
+                <a class="block p-2 pl-8 text-sm text-white font-bold uppercase 
+                {% if submenu_item.path == page.url %}bg-sbdi-darkblue{% endif %}" href="{{ submenu_item.path }}">{{ submenu_item.title }}</a>
               </li>
             {% endfor %}
             </ul>

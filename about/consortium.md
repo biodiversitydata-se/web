@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: Consortium
 permalink: /:path/:basename/
 ---

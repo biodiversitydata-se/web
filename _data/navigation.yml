@@ -9,9 +9,6 @@
       path: /search-analyse/apis/
 - title: Submit data
   path: /submit-data/
-  items:
-    - title: IPT
-      path: /submit-data/ipt/
 - title: Support
   path: /support/
   link: false

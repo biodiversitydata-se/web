@@ -4,5 +4,8 @@ title: Submit data
 ---
 # {{ page.title }}
 
-- [https://biodiversitydata.se/share/](https://biodiversitydata.se/share/)
-- [https://docs.biodiversitydata.se/publish-and-share-data/](https://docs.biodiversitydata.se/publish-and-share-data/)
+We love biodiversity data! Please [contact us](https://docs.biodiversitydata.se/support/) if you have data and we'll help you share it.
+
+> Sources:
+> - [https://biodiversitydata.se/share/](https://biodiversitydata.se/share/)
+> - [https://docs.biodiversitydata.se/publish-and-share-data/](https://docs.biodiversitydata.se/publish-and-share-data/)

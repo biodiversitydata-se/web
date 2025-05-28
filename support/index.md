@@ -4,4 +4,4 @@ title: Support
 ---
 # {{ page.title }}
 
-You can get in touch with our support at [support@biodiversitydata.se](support@biodiversitydata.se)
+You can get in touch with us by using the [support form](https://docs.biodiversitydata.se/support/).

@@ -68,4 +68,12 @@
   a:hover {
     @apply underline;
   }
+  blockquote {
+    @apply border-l-4;
+    @apply border-slate-500;
+    @apply bg-slate-100;
+    @apply pl-4;
+    @apply italic;
+    @apply mb-3;
+  }
 }

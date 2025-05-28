@@ -8,7 +8,7 @@
     <div class="container mt-12 px-4">
       <div class="flex">
         {%- include functions/submenu-data.html path=page.url -%}
-        {% if active_menuitem.items.size > 0 %}
+        {% if active_menuitem and active_menuitem.title != 'Home' %}
           <div class="mr-8 w-64 hidden sm:block">
             <nav aria-label="Context menu">
               {% if active_menuitem.link == false %}

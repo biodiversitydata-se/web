@@ -1,0 +1,24 @@
+---
+layout: none
+---
+{% comment %}
+The reason for naming this page zzz_search is that Jekyll seems to process pages in alphabetical order
+and this page need to be processed last so all markdown has been converted to html.
+{% endcomment %}
+[
+  {%- for page in site.pages -%}
+    {% if page.title != nil and page.title != 'Search' %}
+      {%- capture page_body -%}
+        {% include page-body-as-text.html page=page %}
+      {%- endcapture -%}
+      {
+        "title": "{{ page.title }}",
+        "url": "{{ page.url }}",
+        "date": "{{ page.date }}",
+        "description": "{{ page_body | truncatewords: 30 | default: '-'}}",
+        "content": "{{ page_body }}"
+      },
+    {% endif %}
+  {%- endfor -%}
+  {}
+]

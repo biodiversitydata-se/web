@@ -2,25 +2,34 @@
   path: /
 - title: Search & analyse
   path: /search-analyse/
+  link: false
   items:
     - title: Portals
-      path: /search-analyse/portals/
+      path: /search-analyse/
     - title: Programming and API:s
       path: /search-analyse/apis/
 - title: Submit data
   path: /submit-data/
+  link: false
+  items:
+    - title: Submit data
+      path: /submit-data/
 - title: Support
   path: /support/
+  link: false
   items:
+    - title: Support and documentation
+      path: /support/
     - title: Training
       path: /support/training/
     - title: Webinars
       path: /support/webinars/
 - title: About
   path: /about/
+  link: false
   items:
     - title: Consortium
-      path: /about/consortium/
+      path: /about/
     - title: News
       path: /about/news/
     - title: Events

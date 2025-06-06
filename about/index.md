@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: Consortium
 ---
 # {{ page.title }}
 

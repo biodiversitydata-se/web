@@ -11,10 +11,7 @@
   path: /submit-data/
 - title: Support
   path: /support/
-  link: false
   items:
-    - title: Contact
-      path: /support/
     - title: Training
       path: /support/training/
     - title: Webinars

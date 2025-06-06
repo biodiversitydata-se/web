@@ -1,0 +1,91 @@
+- name: Bioatlas
+  image: Screenshot_2021-05-04-Natural-History-Collections-Swedish-Biodiversity-Data-Infrastructure.png
+  description: >-
+    The SBDI Bioatlas is the Swedish instance of the core components in the Living Atlases platform. 
+    The Bioatlas includes the collectory, where you can browse data providers and datasets, and a search 
+    interface allowing you to search for data based on text, geographic location or based on species lists.
+  link: https://static.biodiversitydata.se
+
+- name: Spatial Portal
+  image: Screenshot_2021-05-04-Spatial-Portal-Swedish-Biodiversity-Data-Infrastructure-768x456.png
+  description: >-
+    The Spatial Portal is a web interface that allows you to map Swedish biodiversity data and analyze it 
+    together with environmental, climate, economic and other data represented in map layers. The Spatial 
+    Portal comes with a suite of tools to manipulate, display, import and download spatially referenced data.
+  link: https://spatial.biodiversitydata.se
+
+- name: BioCollect
+  image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
+  description: >-
+    BioCollect allows researchers to set up projects with specified systematic inventory schemes and 
+    coordinate the work with staff or volunteers collecting data. This could include standardized 
+    instructions to data collectors, data entry, data flow, quality checks and finally data publishing. 
+  link: https://biocollect.biodiversitydata.se
+
+- name: ASV Portal
+  image: SBDI_molecular_logo.png
+  description: >-
+    The Swedish ASV portal gives access to molecular data in SBDI by sequence and taxonomy search. 
+    Registered users can also upload amplicon data through the portal.
+  link: https://asv-portal.biodiversitydata.se
+
+- name: nf-core/ampliseq
+  image: ampliseq2-1024x273-1-768x205.png
+  description: >-
+    nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon sequencing data
+    (currently supported is Illumina paired end or PacBio). The pipeline is built using Nextflow, a workflow
+    tool to run tasks across multiple compute infrastructures in a very portable manner. It comes with
+    docker containers making installation trivial and results highly reproducible.
+  link: https://nf-co.re/ampliseq/
+
+- name: Plankton Toolbox
+  image: planktonToolbox-150x150-1-e1621338981829.jpg
+  description: >-
+    Plankton Toolbox is a free software developed to aid researchers and conservationists working with and 
+    analyzing plankton data. Plankton Toolbox is mainly aimed at working with data from water samples analyzed 
+    microscopically, but the software is applicable also to other data
+  link: https://nordicmicroalgae.org/tools
+
+- name: Nordic Microalgae
+  image: Chaetoceros-anastomosans-var.-externa_3_creditsMats-Kuylenstierna.jpg
+  description: >-
+    Nordic Microalgae is a website containing information about microalgae and related organisms in the 
+    Nordic area, i.e. the Baltic Sea, the North East Atlantic and lakes, rivers and streams in the area. 
+    The website is of use for science, education, environmental monitoring etc.
+  link: https://nordicmicroalgae.org
+
+- name: SHARKweb and SHARKdata
+  image: SharkWEB_logo-768x223.png
+  description: >-
+    SHARK includes a database, web interface and API for accessing marine monitoring data. SHARKweb is a website
+    for downloading data. For download via API, we refer to SHARKdata.
+  link: https://sharkweb.smhi.se
+
+- name: Strategic Environmental Archaeology Database (SEAD)
+  image: SEAD_logo.png
+  description: >-
+    SEAD is a tool for Swedish archaeological science and an international database for environmental archaeology
+    and Quaternary science data. SEAD facilitates the analysis, visualisation and extraction of data on past 
+    climates, environments and human impacts, and forms part of an international network of research infrastructure
+    for archaeology, Quaternary palaeoecology and biodiversity studies.
+  link: https://browser.sead.se
+
+- name: Wireless Remote Animal Monitoring System (WRAM)
+  image: WRAM_logo.png
+  description: >-
+    UC-WRAM is a portal for biotelemetry sensor data from animals. UC-WRAM hosts several million measurements from 
+    sensors deployed on animals, ranging from positions (GPS), acceleration, proximity, heart rate to body 
+    temperature and physiological data from internal sensors for many different species. The database is associated 
+    with tools to query, filter, adn download relevant data.
+  link: https://wram.slu.se
+
+- name: Biologging Portal
+  image: blacktern_example1-1536x1473.jpg
+  description: >-
+    The SBDI Biologging Portal is a portal for exploring data through a meta-data register. It is also for 
+    visualizing samples of data to better understand qualities and possible limitations of the different 
+    datasets. You will find measurements from sensors deployed on animals, ranging from positions/movements, 
+    activity, proximity, heart rate, body temperature and other physiological data from internal sensors for 
+    many different species. The database is connected to tools to query, filter, visualize and in some cases 
+    direct download of data.
+  link: https://biologging.biodiversitydata.se

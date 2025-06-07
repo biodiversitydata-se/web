@@ -19,6 +19,8 @@ COPY Gemfile* /site
 RUN gem update --system && gem cleanup
 RUN bundle install
 
+ENV TZ=Europe/Stockholm
+
 # Main app
 EXPOSE 4000
 # Livereload

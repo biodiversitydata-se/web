@@ -25,6 +25,9 @@ The application is installed in production using the *web* role in [sbdi-install
 ### Building
 Github Actions is used for building the production Docker image (using [Dockerfile](Dockerfile)). The [build workflow](.github/workflows/build.yml) is triggered when a push is made to the `main` branch. It will build the Docker image and push it to the [Github Container registry](https://github.com/orgs/biodiversitydata-se/packages).
 
+### Deploying
+The latest build image will automatically be deployed to production every 30 minutes. This is done by a cronjob in the Docker swarm that pulls the latest image (if there is one) and restarts the application (if there was a new image).
+
 ### Running the production image locally
 This is useful for testing the image.
 ```

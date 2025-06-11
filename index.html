@@ -17,17 +17,11 @@ layout: default
   <li>...</li>
 </ul>
 
-<div class="flex">
-  <div class="w-10 h-10 bg-sbdi-darkblue"></div>
-  <div class="w-10 h-10 bg-sbdi-blue"></div>
-  <div class="w-10 h-10 bg-sbdi-mediumblue"></div>
-  <div class="w-10 h-10 bg-sbdi-lightblue"></div>
-  <div class="w-10 h-10 bg-sbdi-iceblue"></div>
-  <div class="w-10 h-10 bg-sbdi-bluegreen"></div>
-  <div class="w-10 h-10 bg-sbdi-green"></div>
-  <div class="w-10 h-10 bg-sbdi-mediumgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-lightgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-limegreen"></div>
-  <div class="w-10 h-10 bg-sbdi-yellowgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-lightyellowgreen"></div>
+<h1 class="text-2xl">SBDI is made possible by contributions from its partners and financers:</h1>
+<div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+{% for partner in site.data.partners %}
+  <a href="{{ partner.link }}" title="{{ partner.title }}">
+    <img src="/uploads/partners/{{ partner.image }}" alt="{{ partner.title }}">
+  </a>
+{% endfor %}
 </div>

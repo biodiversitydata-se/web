@@ -7,7 +7,7 @@
     - title: Portals
       path: /search-analyse/
     - title: Programming and API:s
-      path: /search-analyse/apis/
+      path: /search-analyse/programming/
 - title: Submit data
   path: /submit-data/
   link: false

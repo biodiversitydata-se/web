@@ -1,13 +1,13 @@
 - title: Home
   path: /
-- title: Search & analyse
-  path: /search-analyse/
+- title: Use data
+  path: /use-data/
   link: false
   items:
     - title: Portals
-      path: /search-analyse/
+      path: /use-data/
     - title: Programming and API:s
-      path: /search-analyse/programming/
+      path: /use-data/programming/
 - title: Submit data
   path: /submit-data/
   link: false

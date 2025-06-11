@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Support and documentation
+title: Contact and documentation
 ---
 # {{ page.title }}
 

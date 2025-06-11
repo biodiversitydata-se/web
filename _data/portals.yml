@@ -1,5 +1,5 @@
 - name: Bioatlas
-  image: Screenshot_2021-05-04-Natural-History-Collections-Swedish-Biodiversity-Data-Infrastructure.png
+  image: bioatlas.png
   description: >-
     The SBDI Bioatlas is the Swedish instance of the core components in the Living Atlases platform. 
     The Bioatlas includes the collectory, where you can browse data providers and datasets, and a search 
@@ -7,7 +7,7 @@
   link: https://static.biodiversitydata.se
 
 - name: Spatial Portal
-  image: Screenshot_2021-05-04-Spatial-Portal-Swedish-Biodiversity-Data-Infrastructure-768x456.png
+  image: spatial.png
   description: >-
     The Spatial Portal is a web interface that allows you to map Swedish biodiversity data and analyze it 
     together with environmental, climate, economic and other data represented in map layers. The Spatial 

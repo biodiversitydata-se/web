@@ -1,19 +1,19 @@
 - title: Home
   path: /
-- title: Use data
-  path: /use-data/
+- title: Search & analyse data
+  path: /search-analyse-data/
   link: false
   items:
     - title: Portals
-      path: /use-data/
+      path: /search-analyse-data/
     - title: Programming and API:s
-      path: /use-data/programming/
-- title: Submit data
-  path: /submit-data/
+      path: /search-analyse-data/programming/
+- title: Share data
+  path: /share-data/
   link: false
   items:
-    - title: Submit data
-      path: /submit-data/
+    - title: Share data
+      path: /share-data/
 - title: Support
   path: /support/
   link: false

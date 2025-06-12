@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Submit data
+title: Share data
 ---
 # {{ page.title }}
 

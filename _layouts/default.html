@@ -27,8 +27,17 @@
                 {% else %}
                   {%- assign is_active = false -%}
                 {%- endif -%}
-                <li class="px-3 py-2 hover:bg-slate-200">
-                  <a class="block text-sbdi-blue no-underline hover:no-underline {% if is_active %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
+                <li>
+                  <a class="block px-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline {% if is_active %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
+                  {% if item.items.size > 0 %}
+                    <ul class="list-none ml-0 bg-slate-100">
+                      {% for menu_item in item.items %}
+                        <li>
+                          <a class="block pl-6 pr-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
                 </li>
               {% endfor %}
               </ul>

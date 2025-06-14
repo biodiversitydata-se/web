@@ -2,3 +2,5 @@ _site
 .jekyll-cache
 .jekyll-metadata
 node_modules
+about/news-*.html
+_data/news-years.yml

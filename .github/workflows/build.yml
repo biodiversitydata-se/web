@@ -36,6 +36,9 @@ jobs:
       - name: Install Ruby dependencies
         run: bundle install 
 
+      - name: Pre render
+        run: make pre-render
+
       - name: Build site
         run: bundle exec jekyll build --future
 

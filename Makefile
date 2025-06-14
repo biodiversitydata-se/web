@@ -15,6 +15,9 @@ build-nginx:
 run-nginx:
 	docker run --name biodiversitydata-se-website --detach --publish 80:80 biodiversitydata-se/website
 
+pre-render:
+	_script/create-news-year-pages.sh
+
 _clean-deps:
 	rm Gemfile.lock package-lock.json
 

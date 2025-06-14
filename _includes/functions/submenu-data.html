@@ -5,7 +5,7 @@
     {%- break -%}
   {%- else -%}
     {%- for item2 in item.items -%}
-      {%- if include.path == item2.path or (item2.title == 'News' and (page.layout == 'news-list' or page.layout == 'news-item')) -%}
+      {%- if include.path == item2.path or item2.layouts contains page.layout -%}
         {%- assign active_menuitem = item -%}
         {%- break -%}
       {%- endif -%}  

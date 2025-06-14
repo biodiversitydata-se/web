@@ -22,7 +22,7 @@
               {% endif %}
               <ul class="list-none m-0 bg-slate-100">
               {% for item in active_menuitem.items %}
-                {%- if item.path == page.url or (item.title == 'News' and (page.layout == 'news-list' or page.layout == 'news-item')) -%}
+                {%- if item.path == page.url or item.layouts contains page.layout -%}
                   {%- assign is_active = true -%}
                 {% else %}
                   {%- assign is_active = false -%}

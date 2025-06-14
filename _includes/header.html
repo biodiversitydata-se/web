@@ -36,10 +36,7 @@
   </div>
   <ul id="topMenu" class="container sm:px-4 list-none hidden sm:block">
     {% for menu_item in site.data.navigation %}
-      {%- if menu_item.path == path_start or 
-          (menu_item.title == 'About' and 
-            (page.layout == 'news-list' or page.layout == 'news-item' or
-             page.layout == 'event-list' or page.layout == 'event-item')) -%}
+      {%- if menu_item.path == path_start or menu_item.layouts contains page.layout -%}
         {%- assign is_active = true -%}
       {% else %}
         {%- assign is_active = false -%}
@@ -51,7 +48,7 @@
         {% if active_menuitem.items.size > 0 %}
             <ul class="sm:hidden mb-0 ml-0 list-none">
             {% for submenu_item in active_menuitem.items %}
-              {%- if submenu_item.path == page.url or (submenu_item.title == 'News' and (page.layout == 'news-list' or page.layout == 'news-item')) -%}
+              {%- if submenu_item.path == page.url or submenu_item.layouts contains page.layout -%}
                 {%- assign is_active = true -%}
               {% else %}
                 {%- assign is_active = false -%}

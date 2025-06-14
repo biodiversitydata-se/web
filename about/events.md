@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Events
-permalink: /:path/:basename/
+permalink: /:basename/
 ---
 # {{ page.title }}
 

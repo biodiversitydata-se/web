@@ -36,16 +36,29 @@
   </div>
   <ul id="topMenu" class="container sm:px-4 list-none hidden sm:block">
     {% for menu_item in site.data.navigation %}
+      {%- if menu_item.path == path_start or 
+          (menu_item.title == 'About' and 
+            (page.layout == 'news-list' or page.layout == 'news-item' or
+             page.layout == 'event-list' or page.layout == 'event-item')) -%}
+        {%- assign is_active = true -%}
+      {% else %}
+        {%- assign is_active = false -%}
+      {%- endif -%}
       <li class="sm:float-left">
         <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-bold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
-          {% if menu_item.path == path_start %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
+          {% if is_active %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
         {%- include functions/submenu-data.html path=menu_item.path -%}
         {% if active_menuitem.items.size > 0 %}
             <ul class="sm:hidden mb-0 ml-0 list-none">
             {% for submenu_item in active_menuitem.items %}
+              {%- if submenu_item.path == page.url or (submenu_item.title == 'News' and (page.layout == 'news-list' or page.layout == 'news-item')) -%}
+                {%- assign is_active = true -%}
+              {% else %}
+                {%- assign is_active = false -%}
+              {%- endif -%}
               <li>
                 <a class="block p-2 pl-8 text-sm text-white font-bold uppercase no-underline 
-                {% if submenu_item.path == page.url %}bg-sbdi-darkblue{% endif %}" href="{{ submenu_item.path }}">{{ submenu_item.title }}</a>
+                {% if is_active %}bg-sbdi-darkblue{% endif %}" href="{{ submenu_item.path }}">{{ submenu_item.title }}</a>
               </li>
             {% endfor %}
             </ul>

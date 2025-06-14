@@ -22,8 +22,13 @@
               {% endif %}
               <ul class="list-none m-0 bg-slate-100">
               {% for item in active_menuitem.items %}
+                {%- if item.path == page.url or (item.title == 'News' and (page.layout == 'news-list' or page.layout == 'news-item')) -%}
+                  {%- assign is_active = true -%}
+                {% else %}
+                  {%- assign is_active = false -%}
+                {%- endif -%}
                 <li class="px-3 py-2 hover:bg-slate-200">
-                  <a class="block text-sbdi-blue no-underline hover:no-underline {% if item.path == page.url %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
+                  <a class="block text-sbdi-blue no-underline hover:no-underline {% if is_active %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
                 </li>
               {% endfor %}
               </ul>

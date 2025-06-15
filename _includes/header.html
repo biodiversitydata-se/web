@@ -1,3 +1,5 @@
+{%- include functions/navigation.html -%}
+
 {%- if page.url == "/" -%}
   {%- assign path_start = "/" -%}
 {%- else -%}
@@ -35,7 +37,7 @@
     </a>
   </div>
   <ul id="topMenu" class="container sm:px-4 list-none hidden sm:block">
-    {% for menu_item in site.data.navigation %}
+    {% for menu_item in main_menu %}
       {%- if menu_item.path == path_start or menu_item.layouts contains page.layout -%}
         {%- assign is_active = true -%}
       {% else %}
@@ -43,7 +45,7 @@
       {%- endif -%}
       <li class="sm:float-left">
         <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-bold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
-          {% if is_active %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
+          {% if menu_item.is_active %}bg-sbdi-darkblue{% endif %}" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
         {%- include functions/submenu-data.html path=menu_item.path -%}
         {% if active_menuitem.items.size > 0 %}
             <ul class="sm:hidden mb-0 ml-0 list-none">

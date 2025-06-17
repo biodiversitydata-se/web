@@ -1,0 +1,27 @@
+{%- comment -%}
+Sets the following variables:
+  menu_0_items, menu_0_active_item
+  menu_1_items, menu_1_active_item
+  menu_2_items, menu_2_active_item
+{%- endcomment -%}
+
+{%- assign menu_0_items = site.data.navigation -%}
+{%- for item_0 in menu_0_items -%}
+  {%- if page.url == item_0.path -%}
+    {%- assign menu_0_active_item = item_0.title -%}
+    {%- assign menu_1_items = item_0.items -%}
+  {%- endif -%}
+  {%- for item_1 in item_0.items -%}
+    {%- if page.url == item_1.path or item_1.layouts contains page.layout -%}
+      {%- assign menu_0_active_item = item_0.title -%}
+      {%- assign menu_1_active_item = item_1.title -%}
+      {%- assign menu_1_items = item_0.items -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- assign menu_2_active_item = nil -%}
+{%- if path_segments[0] == 'news' -%}
+  {%- assign menu_2_items = site.data.news-years -%}
+  {%- assign menu_2_active_item = path_segments[1] -%}
+{%- endif -%}

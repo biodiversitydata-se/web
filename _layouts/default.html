@@ -7,27 +7,23 @@
     {%- include header.html -%}
     <div class="container mt-12 px-4">
       <div class="flex">
-        {%- include functions/submenu-data.html path=page.url -%}
-        {% if active_menuitem and active_menuitem.title != 'Home' %}
+        {% if menu_0_active_item and menu_0_active_item != 'Home' %}
           <div class="mr-8 w-64 hidden sm:block">
             <nav aria-label="Context menu">
               <span class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg">
-                {{ active_menuitem.title }}
+                {{ menu_0_active_item }}
               </span>
               <ul class="list-none m-0 bg-slate-100">
-              {% for item in active_menuitem.items %}
-                {%- if item.path == page.url or item.layouts contains page.layout -%}
-                  {%- assign is_active = true -%}
-                {% else %}
-                  {%- assign is_active = false -%}
-                {%- endif -%}
+              {% for item_1 in menu_1_items %}
                 <li>
-                  <a class="block px-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline {% if is_active %}font-bold{% endif %}" href="{{ item.path }}">{{ item.title }}</a>
-                  {% if item.items.size > 0 %}
+                  <a class="block px-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline 
+                    {% if item_1.title == menu_1_active_item %}font-bold{% endif %}" href="{{ item_1.path }}">{{ item_1.title }}</a>
+                  {% if item_1.title == menu_1_active_item and menu_2_items.size > 0 %}  
                     <ul class="list-none ml-0 bg-slate-100">
-                      {% for menu_item in item.items %}
+                      {% for item_2 in menu_2_items %}
                         <li>
-                          <a class="block pl-6 pr-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline" href="{{ menu_item.path }}">{{ menu_item.title }}</a>
+                          <a class="block pl-6 pr-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline
+                            {% if item_2.title == menu_2_active_item %}font-bold{% endif %}" href="{{ item_2.path }}">{{ item_2.title }}</a>
                         </li>
                       {% endfor %}
                     </ul>

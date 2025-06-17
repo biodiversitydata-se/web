@@ -36,13 +36,13 @@
       layouts:
         - news-list
         - news-item
-      items:
-        - title: "2025"
-          path: /news/2025
-        - title: "2024"
-          path: /news/2024
     - title: Events
       path: /events/
       layouts:
         - event-list
         - event-item
+      items:
+        - title: Upcoming
+          path: /events/
+        - title: Past
+          path: /events/past/

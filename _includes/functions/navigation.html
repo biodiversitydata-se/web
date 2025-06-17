@@ -5,6 +5,8 @@ Sets the following variables:
   menu_2_items, menu_2_active_item
 {%- endcomment -%}
 
+{%- assign menu_2_active_item = nil -%}
+
 {%- assign menu_0_items = site.data.navigation -%}
 {%- for item_0 in menu_0_items -%}
   {%- if page.url == item_0.path -%}
@@ -17,10 +19,18 @@ Sets the following variables:
       {%- assign menu_1_active_item = item_1.title -%}
       {%- assign menu_1_items = item_0.items -%}
     {%- endif -%}
+    {%- for item_2 in item_1.items -%}
+      {%- if page.url == item_2.path or item_2.layouts contains page.layout -%}
+        {%- assign menu_0_active_item = item_0.title -%}
+        {%- assign menu_1_active_item = item_1.title -%}
+        {%- assign menu_2_active_item = item_2.title -%}
+        {%- assign menu_1_items = item_0.items -%}
+        {%- assign menu_2_items = item_1.items -%}
+      {%- endif -%}
+    {%- endfor -%}
   {%- endfor -%}
 {%- endfor -%}
 
-{%- assign menu_2_active_item = nil -%}
 {%- if path_segments[0] == 'news' -%}
   {%- assign menu_2_items = site.data.news-years -%}
   {%- assign menu_2_active_item = path_segments[1] -%}

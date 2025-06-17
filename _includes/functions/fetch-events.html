@@ -1,0 +1,8 @@
+{% assign events = site.events %}
+{% if include.event_type %}
+  {% assign events = events | filter_events: include.event_type %}
+{% endif %}
+{% assign events = events | sort: "start_time" %}
+{% if include.event_type == "past" %}
+  {% assign events = events | reverse %}
+{% endif %}

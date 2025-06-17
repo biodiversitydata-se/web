@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Events
+layout: event-list
+title: Upcoming events
 permalink: /:basename/
+event_type: coming
 ---
-# {{ page.title }}
-
-Calendar and event listing

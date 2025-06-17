@@ -1,0 +1,15 @@
+{%- assign start_time_size = include.event.start_time | size -%}
+{%- if start_time_size > 10 -%}
+  {%- assign start_time_format = "%b %d, %Y %H:%M CET" -%}
+{%- else -%}
+  {%- assign start_time_format = "%b %d, %Y" -%}
+{%- endif -%}
+
+{%- assign end_time_size = include.event.end_time | size -%}
+{%- if end_time_size > 10 -%}
+  {%- assign end_time_format = "%b %d, %Y %H:%M CET" -%}
+{%- else -%}
+  {%- assign end_time_format = "%b %d, %Y" -%}
+{%- endif -%}
+
+{{ include.event.start_time | date: start_time_format }}{% if include.event.end_time %} - {{ include.event.end_time | date: end_time_format }}{% endif %}

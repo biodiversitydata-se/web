@@ -11,15 +11,9 @@
         {% if active_menuitem and active_menuitem.title != 'Home' %}
           <div class="mr-8 w-64 hidden sm:block">
             <nav aria-label="Context menu">
-              {% if active_menuitem.link == false %}
-                <span class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg">
-                  {{ active_menuitem.title }}
-                </span>
-              {% else %}
-                <a class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg no-underline hover:bg-slate-200 hover:no-underline {% if path_start == page.url %}font-bold{% endif %}" href="{{ path_start }}">
-                  {{ active_menuitem.title }}
-                </a>
-              {% endif %}
+              <span class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg">
+                {{ active_menuitem.title }}
+              </span>
               <ul class="list-none m-0 bg-slate-100">
               {% for item in active_menuitem.items %}
                 {%- if item.path == page.url or item.layouts contains page.layout -%}

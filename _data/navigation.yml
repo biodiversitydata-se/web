@@ -2,7 +2,6 @@
   path: /
 - title: Search & analyse data
   path: /search-analyse-data/
-  link: false
   items:
     - title: Portals
       path: /search-analyse-data/
@@ -10,13 +9,11 @@
       path: /search-analyse-data/programming/
 - title: Share data
   path: /share-data/
-  link: false
   items:
     - title: Share data
       path: /share-data/
 - title: Support
   path: /support/
-  link: false
   items:
     - title: Contact and documentation
       path: /support/
@@ -26,7 +23,6 @@
       path: /support/webinars/
 - title: About
   path: /about/
-  link: false
   layouts:
     - news-list
     - news-item

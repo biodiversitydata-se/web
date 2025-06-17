@@ -3,19 +3,41 @@ layout: default
 ---
 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A fugit eligendi praesentium quaerat nemo laborum nesciunt iure esse vero id dolore dolorum, nam et quisquam, velit voluptate. Culpa, ex magnam?</p>
 
-<h1>News</h1>
-<ul>
-  <li>News 1</li>
-  <li>News 2</li>
-  <li>...</li>
-</ul>
+<div class="flex flex-col lg:flex-row mt-8 mb-8">
 
-<h1>Events</h1>
-<ul>
-  <li>Event 1</li>
-  <li>Event 2</li>
-  <li>...</li>
-</ul>
+  <article class="basis-2/3 lg:border-r-4 lg:border-slate-200 lg:pr-4 lg:mr-8">
+    <header>
+      <h2 class="mb-2">News</h2>
+    </header>
+    {% assign latest_news = site.news | reverse %}
+    {% for news in latest_news limit:3 %}
+      <article class="flex flex-col md:flex-row mb-8">
+          <div class="basis-1/4 mb-4 md:mb-0 cursor-pointer" onclick="location.href='{{ news.url }}';">
+            {% if news.image %}
+              <img src="/uploads/news/{{ news.image }}" alt="">
+            {% endif %}
+          </div>
+          <div class="basis-3/4 md:ml-6">
+            <header>
+              <h3 class="mt-0">
+                  <a href="{{ news.url }}">{{ news.title }}</a>
+              </h3>
+              <div class="mt-1 text-slate-500">
+                {{ news.date | date: "%b %d, %Y" }}
+              </div>
+            </header>
+            <p class="mt-2">
+              {% include preamble.html page=news %}
+            </p>
+          </div>
+        </article>
+    {% endfor %}
+    <footer class="mt-6">
+      <a class="text-lg link-icon" href="/news/">See all news</a>
+    </footer>
+  </article>
+
+</div>
 
 <h1 class="text-2xl">SBDI is made possible by contributions from its partners and financers:</h1>
 <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">

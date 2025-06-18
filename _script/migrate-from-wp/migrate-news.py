@@ -72,19 +72,13 @@ image: {image_name}
 {page_body}
 """
 
-        filename = os.path.join(NEWS_DIR, f'{publish_date}-{title.replace("/", "-")}.html')
+        filename = os.path.join(NEWS_DIR, f'{publish_date}-{title.replace('/', '-')}.html')
         with open(filename, 'w', encoding='utf-8') as out_f:
             out_f.write(output)
         news_count += 1
         
-        url_mappings.append(f'{urlparse(url).path};/news/{publish_date[:4]}/{title.replace("/", "-")}\n')
-
-        filename = os.path.join(NEWS_DIR, f'{publish_date}-{title.replace('/', '')}.html')
-        with open(filename, 'w', encoding='utf-8') as out_f:
-            out_f.write(output)
-
         # Add URL mapping
-        url_mappings[-1] = f'{urlparse(url).path};/news/{publish_date[:4]}/{slugify(title)}/\n'
+        url_mappings.append(f'{urlparse(url).path};/news/{publish_date[:4]}/{slugify(title)}/\n')
 
     except Exception as e:
         print(f'Error processing {url}: {e}')

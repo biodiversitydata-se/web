@@ -1,13 +1,5 @@
 - title: Inauguration webinars
   items:
-    - title: Inauguration of SBDI
-      link: https://youtu.be/Ak1howNLL24
-      duration: 1 hr 42 min
-      description: This webinar is a full recording of the official launch of the Swedish Biodiversity Data Infrastructure (SBDI) on Monday October 4, 2021.
-    - title: Access SBDI data and tools with R
-      link: https://youtu.be/BZ66K7HNKBY
-      duration: 1 hr 28 min
-      description: This webinar is a full recording of the first inauguration workshop that introduces the SBDI tools for data mining and analysis. Here we also discuss with the audience which data sources and analysis tools should be developed next.
     - title: Access and publish genetic data with SBDI
       link: https://youtu.be/m0ufnyZ-5gs
       duration: 53 min
@@ -42,10 +34,6 @@
       link: https://youtu.be/QqfVBIOcaZY
       duration: 8 min
       description: Want to connect SBDI to your R-studio? In this webinar our support officer Debora Arlt will introduce you to SBDI’s R-tools for data mining and analysis.
-    - title: Demo of SBDI4R package
-      link: https://youtu.be/QghPNPe3PNA
-      duration: 48 min
-      description: Want to explore SBDI through your R-studio? In this webinar our data expert Alejandro Ruete will give you a demonstration of the SBDI4R package for data mining and analysis.
 
 - title:  Genetic data and services
   items:
@@ -93,6 +81,3 @@
     - title: GBIF community webinars. 
       link: https://www.gbif.org/webinars
       description: Here you can find announcements and recordings of regular online meetings for the GBIF community hosted by the GBIF Secretariat. The goal of these webinars is to maintain communication and interaction between the GBIF Secretariat and the broader biodiveristy research community, particularly the GBIF nodes. The content of the webinars includes news from the Secretariat as well as updates on GBIF’s work programme.
-    - title: NEFOM workshop “Back to the roots”. 
-      link: https://unite.ut.ee/courses.php?id=2#workshop
-      description: At this workshop held on 19-20 April 2021 researchers discussed how forest biodiversity open data and associated digital services should be built and brought together in a FAIR way. An overview of the best practices in data management, analysis, service development and publishing was be given by invited speakers. The presentations are made available as PDF’s at the website. 

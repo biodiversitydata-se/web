@@ -14,7 +14,7 @@ URL_MAPPING_FILE = '_script/migrate-from-wp/url-mapping-news.txt'
 # Helper function
 def slugify(value):
     value = value.lower()
-    value = re.sub(r'[^\w\s-]', '', value)
+    value = re.sub(r'[^\w\s-]', '-', value)
     value = re.sub(r'[\s_-]+', '-', value)
     value = re.sub(r'^-+|-+$', '', value)
     return value

@@ -37,7 +37,7 @@
 /news/plankton-count-module-update/;/news/2023/plankton-count-module-update/
 /news/citizens-help-explore-deep-water-video-recordings/;/news/2023/citizens-help-explore-deep-water-video-recordings/
 /news/applications-for-project-funding-in-2024-biodiversity/;/news/2023/applications-for-project-funding-in-2024-biodiversity/
-/news/valkommen-att-nominera-ny-ledamot-till-styrgruppen-nominate-to-sbdis-steering-group/;/news/2023/välkommen-att-nominera-ny-ledamot-till-styrgruppennominate-to-sbdis-steering-group/
+/news/valkommen-att-nominera-ny-ledamot-till-styrgruppen-nominate-to-sbdis-steering-group/;/news/2023/välkommen-att-nominera-ny-ledamot-till-styrgruppen-nominate-to-sbdi-s-steering-group/
 /news/guide-on-how-to-publish-dna-derived-data-on-marine-life/;/news/2023/guide-on-how-to-publish-dna-derived-data-on-marine-life/
 /news/gbif-report-reveals-returns-on-investments/;/news/2023/gbif-report-reveals-returns-on-investments/
 /news/ny-nationell-portal-for-svenska-forskningsdata/;/news/2023/new-national-portal-for-swedish-research-data/
@@ -47,9 +47,9 @@
 /news/sbdi-days-2024-towards-data-driven-ecology/;/news/2023/sbdi-days-2024-towards-data-driven-ecology/
 /news/new-update-of-plankton-toolbox/;/news/2023/new-update-of-plankton-toolbox/
 /news/ebbe-nielsen-challenge-%e2%88%92-recognizing-innovative-tools/;/news/2024/ebbe-nielsen-challenge-recognizing-innovative-tools/
-/news/postdoc-researcher-position-at-stockholm-university/;/news/2024/postdocresearcher-position-at-stockholm-university/
+/news/postdoc-researcher-position-at-stockholm-university/;/news/2024/postdoc-researcher-position-at-stockholm-university/
 /news/nomination-of-candidates-for-the-sbdi-scientific-committee/;/news/2021/nomination-of-candidates-for-the-sbdi-scientific-committee/
-/news/sbdis-latest-tool-for-image-analysis/;/news/2024/sbdis-latest-tool-for-image-analysis/
+/news/sbdis-latest-tool-for-image-analysis/;/news/2024/sbdi-s-latest-tool-for-image-analysis/
 /news/new-version-of-the-nordic-microalgae/;/news/2024/new-version-of-nordic-microalgae/
 /news/call-for-proposals-for-2024-capacity-enhancement-support-programme/;/news/2024/call-for-proposals-for-2024-capacity-enhancement-support-programme/
 /news/the-integrated-publishing-toolkit/;/news/2024/the-integrated-publishing-toolkit/
@@ -60,5 +60,5 @@
 /news/gbif-sweden-secures-cesp-funding-for-2024-to-enhance-biodiversity-data-collaboration-with-ethiopia-and-finland/;/news/2024/gbif-sweden-secures-cesp-funding-for-2024-to-enhance-biodiversity-data-collaboration-with-ethiopia-and-finland/
 /news/open-call-to-address-critical-marine-biodiversity-data-gaps/;/news/2025/open-call-to-address-critical-marine-biodiversity-data-gaps/
 /news/the-swedish-waterbird-census-now-published/;/news/2025/the-swedish-waterbird-census-now-published/
-/news/researchdata-se-swedens-new-portal-for-research-data/;/news/2025/researchdatase-swedens-new-portal-for-research-data/
+/news/researchdata-se-swedens-new-portal-for-research-data/;/news/2025/researchdata-se-sweden-s-new-portal-for-research-data/
 /news/groundbreaking-study-reveals-insect-diversity-in-sweden-and-madagascar-data-now-available-via-gbif-and-sbdi/;/news/2025/groundbreaking-study-reveals-insect-diversity-in-sweden-and-madagascar-data-now-available-via-gbif-and-sbdi/

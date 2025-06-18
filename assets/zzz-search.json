@@ -21,7 +21,7 @@ and this page need to be processed last so all markdown has been converted to ht
     {% endif %}
   {%- endfor -%}
  
-  {% assign news_and_events = site.news %}
+  {% assign news_and_events = site.news | concat: site.events %}
   {% for page in news_and_events %}
     {%- capture page_body -%}
       {% include page-body-as-text.html page=page %}

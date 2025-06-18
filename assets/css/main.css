@@ -77,3 +77,14 @@
     @apply mb-3;
   }
 }
+
+@utility preamble{
+  @apply text-xl;
+  @apply text-slate-700;
+}
+
+@utility link-icon {
+  @apply bg-[url('/assets/images/link-icon.svg')];
+  @apply bg-no-repeat;
+  @apply pl-7;
+}

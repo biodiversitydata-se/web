@@ -74,3 +74,8 @@ defaults:
       type: events
     values:
       layout: event-item
+
+feed:
+  posts_limit: 50
+  collections:
+    - news

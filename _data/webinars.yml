@@ -1,14 +1,3 @@
-- title: Inauguration webinars
-  items:
-    - title: Access and publish genetic data with SBDI
-      link: https://youtu.be/m0ufnyZ-5gs
-      duration: 53 min
-      description: This webinar is a full recording of the second inauguration workshop that introduces the SBDI services for finding, analysing, and publishing molecular biodiversity data. Here we also discuss with the audience which services should be developed next.
-    - title: SBDI access to systematic monitoring data
-      link: https://youtu.be/nyLOJhQiuho
-      duration: 1 hr 44 min
-      description: This webinar is a full recording of the third inauguration workshop that explains how SBDI makes available data from biodiversity monitoring programs in Sweden.
-
 - title: SBDI in general
   items:
     - title: SBDI in a nutshell
@@ -28,13 +17,6 @@
       duration: 5 min
       description: Take a look under the hood! In this short webinar, SBDI’s system architect Manash Shah explains how the infrastructure is designed and built to connect both national and international providers of biodiversity data.
 
-- title: R-tools
-  items:
-    - title: Accessing biodiversity data with R
-      link: https://youtu.be/QqfVBIOcaZY
-      duration: 8 min
-      description: Want to connect SBDI to your R-studio? In this webinar our support officer Debora Arlt will introduce you to SBDI’s R-tools for data mining and analysis.
-
 - title:  Genetic data and services
   items:
     - title: Introduction to genetic data services in SBDI
@@ -49,10 +31,6 @@
       link: https://youtu.be/9P1qcJqZQtA
       duration: 17 min
       description: In this webinar our molecular genetics expert Maria Pager introduces you to SBDI’s portal for access and publication of genetic data.
-    - title: Metabarcoding analysis pipeline with DADA2
-      link: https://youtu.be/t08I1uaim8k
-      duration: 60 min
-      description: Want to run your metabarcoding analysis offline? This webinar walks you through a complete processing pipeline for metabarcoding data from Artificial Reef Monitoring Structures (ARMS) as currently collected in the ARMS MBON program. The demo starts with Illumina MiSeq data and finishes with taxonomy assigned ASVs.
 
 - title: Data from biological monitoring programs
   items:
@@ -72,12 +50,3 @@
       link: https://youtu.be/0oIC8sBG2sc
       duration: 11 min
       description: Are you planing to set up your own monitoring program? In this webinar our database expert Aleksandra Magdziarek explains how to use the BioCollect tool to create a customized database for your own systematic monitoring project and publish the collected data through SBDI.
-
-- title: Links and relations with international infrastructures
-  items:
-    - title: Darwin Core Hour webinar series. 
-      link: https://vimeo.com/showcase/4407185
-      description: Darwin Core (DwC) has become a broadly-used standard for biodiversity data sharing. Despite, or because of, its popularity, people trying to use the standard continue to have questions about how to use Darwin Core and associated extensions such as Audubon Core, Resource Relationship, and Measurement Or Fact. This webinar series looks at open questions related to Darwin Core and individual chapters in the series will focus on specific topics.
-    - title: GBIF community webinars. 
-      link: https://www.gbif.org/webinars
-      description: Here you can find announcements and recordings of regular online meetings for the GBIF community hosted by the GBIF Secretariat. The goal of these webinars is to maintain communication and interaction between the GBIF Secretariat and the broader biodiveristy research community, particularly the GBIF nodes. The content of the webinars includes news from the Secretariat as well as updates on GBIF’s work programme.

@@ -2,13 +2,22 @@
 layout: default
 ---
 
-<h1>{{ page.title }}</h1>
+<div class="flex items-center">
+  <h1 class="grow">{{ page.title }}</h1>
+  <a class="mb-2 px-2 py-1 text-lg text-slate-700 bg-slate-100 shadow no-underline hover:underline" href="/feed/news.xml">
+    <svg class="h-6 inline" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg> Feed
+  </a>
+</div>
 <div>
-  {% assign last_news = site.news | last %}
-  {% assign archive_start = last_news.date | date: "%Y" | minus: 4 %}
-  {% for news in site.news reversed %}
+  {% assign news_list = site.news | reverse %}  
+  {% if page.year == 0 %}
+    {% assign news_list = news_list | slice: 0,20 %}
+  {% endif %}
+  {% for news in news_list %}
     {% assign news_year = news.date | date: "%Y" | plus: 0 %}
-    {% if page.year == news_year or page.year == 0 or page.year == "archive" and news_year < archive_start %}
+    {% if page.year == news_year or page.year == 0 %}
       <article class="flex flex-col lg:flex-row mt-8 pb-8 border-b-4 border-slate-200 last:border-0">
         <div class="basis-1/4 mb-4 lg:mb-0 cursor-pointer" onclick="location.href='{{ news.url }}';">
           {% if news.image %}
@@ -28,7 +37,7 @@ layout: default
             {% include preamble.html page=news %}
           </p>
           <footer>
-            <a href="{{ news.url }}" title="{{ news.title }}" class="text-lg">Read more</a>
+            <a href="{{ news.url }}" title="{{ news.title }}" class="link-icon text-lg">Read more</a>
           </footer>
         </div>
       </article>

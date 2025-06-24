@@ -5,12 +5,7 @@ set -e
 
 # Find all unique years that have news published
 YEAR_COUNT=`ls _news | cut -c 1-4 | sort -u -r | wc -l` 
-YEARS=`ls _news | cut -c 1-4 | sort -u -r | head -n 5`
-
-# Create archive page if more than five years
-if [ $YEAR_COUNT -gt 5 ]; then
-    YEARS="$YEARS archive"
-fi
+YEARS=`ls _news | cut -c 1-4 | sort -u -r`
 
 echo Creating index pages for the years: $YEARS
 

@@ -20,7 +20,7 @@ layout: default
           <div class="basis-3/4 md:ml-6">
             <header>
               <h3 class="mt-0">
-                  <a href="{{ news.url }}">{{ news.title }}</a>
+                  <a href="{{ news.url }}" class="no-underline hover:underline">{{ news.title }}</a>
               </h3>
               <div class="mt-1 text-slate-500">
                 {{ news.date | date: "%b %d, %Y" }}
@@ -61,7 +61,7 @@ layout: default
         <div class="basis-3/4 md:ml-6">
           <header>
             <h3 class="mt-0">
-                <a href="{{ event.url }}">{{ event.title }}</a>
+                <a href="{{ event.url }}" class="no-underline hover:underline">{{ event.title }}</a>
             </h3>
             <div class="mt-1 text-slate-500">
               {%- include icons/calendar.html class="h-4 inline" -%}

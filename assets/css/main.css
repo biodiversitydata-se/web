@@ -87,4 +87,6 @@
   @apply bg-[url('/assets/images/link-icon.svg')];
   @apply bg-no-repeat;
   @apply pl-7;
+  @apply no-underline;
+  @apply hover:underline;
 }

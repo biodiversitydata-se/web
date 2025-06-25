@@ -44,3 +44,6 @@
 - title: Search
   path: /search/
   mobile_only: true
+- title: My profile
+  path: https://auth.biodiversitydata.se/userdetails/myprofile/
+  mobile_only: true

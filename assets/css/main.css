@@ -90,3 +90,16 @@
   @apply no-underline;
   @apply hover:underline;
 }
+
+@utility button {
+  @apply px-3.5;
+  @apply py-1.5;
+  @apply bg-sbdi-darkblue;
+  @apply hover:bg-sbdi-mediumblue;
+  @apply text-white;
+  @apply no-underline;
+  @apply font-medium;
+  @apply rounded-md;
+  @apply text-nowrap;
+}
+

@@ -41,8 +41,3 @@
       layouts:
         - event-list
         - event-item
-      items:
-        - title: Upcoming
-          path: /events/
-        - title: Past
-          path: /events/past/

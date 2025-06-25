@@ -41,3 +41,6 @@
       layouts:
         - event-list
         - event-item
+- title: Search
+  path: /search/
+  mobile_only: true

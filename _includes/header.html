@@ -15,26 +15,21 @@
 </header>
 
 <nav class="overflow-hidden bg-sbdi-mediumblue" aria-label="Main menu">
-  <div class="flex container sm:hidden block">
-    <button class="grow px-4 py-3 text-white" onclick="toggleMobileMenu()">
-      <svg id="topMenuOpen" class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-      <svg id="topMenuClose" class="w-8 h-8 hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </button>
-    <a href="/search" title="Search" class="px-4 py-3 text-white">
-      <svg class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-  </div>
-  <ul id="topMenu" class="container sm:px-4 list-none hidden sm:block">
+  <button class="sm:hidden block float-right px-4 py-3 text-white" onclick="toggleMobileMenu()">
+    <svg id="topMenuOpen" class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+    <svg id="topMenuClose" class="w-8 h-8 hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+  </button>
+  <ul id="topMenu" class="container clear-both sm:px-4 list-none hidden sm:block">
     {% for item_0 in menu_0_items %}
-      <li class="sm:float-left">
+      <li class="sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
         <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-bold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
-          {% if item_0.title == menu_0_active_item %}sm:bg-sbdi-darkblue{% endif %}" href="{{ item_0.path }}">{{ item_0.title }}</a>
+          {% if item_0.title == menu_0_active_item %}
+            {% if menu_1_active_item or menu_2_active_item %}sm:bg-sbdi-darkblue{% else %}bg-sbdi-darkblue{% endif %}
+          {% endif %}" href="{{ item_0.path }}">{{ item_0.title }}</a>
         {% if item_0.title == menu_0_active_item and menu_1_items.size > 0 %}
             <ul class="sm:hidden mb-0 ml-0 list-none">
             {% for item_1 in menu_1_items %}

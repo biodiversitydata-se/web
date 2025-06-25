@@ -19,6 +19,8 @@
       path: /support/
     - title: Training
       path: /support/training/
+      layouts:
+        - course-item
     - title: Webinars
       path: /support/webinars/
 - title: About

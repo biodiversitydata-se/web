@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<header>
+  <h1>{{ page.title }}</h1>
+</header>
+
+{{ content }}
+
+<dl>
+  {% if page.contact %}
+    <dt>Contact:</dt>
+    <dd>{{ page.contact }}</dd>
+  {% endif %}
+  {% if page.creator %}
+    <dt class="inline">Creator:</dt>
+    <dd>{{ page.creator }}</dd>
+  {% endif %}
+  {% if page.time_effort %}
+    <dt>Time effort:</dt>
+    <dd>{{ page.time_effort }}</dd>
+  {% endif %}
+  {% if page.level %}
+    <dt>Course level:</dt>
+    <dd>{{ page.level }}</dd>
+  {% endif %}
+  {% if page.background %}
+    <dt>Recommended background:</dt>
+    <dd>{{ page.background }}</dd>
+  {% endif %}
+  {% if page.link %}
+    <dt>Link to module:</dt>
+    <dd><a href="{{ page.link }}">{{ page.link }}</a></dd>
+  {% endif %}
+</dl>

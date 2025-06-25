@@ -76,6 +76,15 @@
     @apply italic;
     @apply mb-3;
   }
+  dt {
+    @apply font-semibold;
+    @apply inline;
+  }
+  dd {
+    @apply inline;
+    @apply after:block;
+    @apply after:mb-1.5;
+  }
 }
 
 @utility preamble{

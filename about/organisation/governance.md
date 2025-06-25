@@ -1,0 +1,17 @@
+---
+layout: default
+title: Governance
+permalink: /:path/:basename/
+---
+# {{ page.title }}
+
+> TODO: members
+
+## Steering committee
+SBDI is governed by an independent Steering Committee (SC) composed of seven representatives with wide experience from research and research infrastructure in Sweden and abroad.
+
+## Scientific committee
+The SBDI SC is supported by a Scientific Committee (SciC). The SciC consists of internationally renowned representatives from the biodiversity informatics and user communities.
+
+## Stakeholder assembly
+Additionally, representatives from the heads of all partner organizations in the SBDI consortium congregate for an annual Stakeholder assembly, pointing out directions to the SC and handling common matters related to the overarching administration of the SBDI consortium.

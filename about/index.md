@@ -1,25 +1,14 @@
 ---
 layout: default
-title: Consortium
+title: Vision
 ---
 # {{ page.title }}
 
-<div class="flex">
-  <div class="w-10 h-10 bg-sbdi-darkblue"></div>
-  <div class="w-10 h-10 bg-sbdi-blue"></div>
-  <div class="w-10 h-10 bg-sbdi-mediumblue"></div>
-  <div class="w-10 h-10 bg-sbdi-lightblue"></div>
-  <div class="w-10 h-10 bg-sbdi-iceblue"></div>
-  <div class="w-10 h-10 bg-sbdi-bluegreen"></div>
-  <div class="w-10 h-10 bg-sbdi-green"></div>
-  <div class="w-10 h-10 bg-sbdi-mediumgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-lightgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-limegreen"></div>
-  <div class="w-10 h-10 bg-sbdi-yellowgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-lightyellowgreen"></div>
-</div>
+The overall vision of SBDI is to provide a cost-effective, cutting-edge infrastructure that supports Swedish and international biodiversity and ecosystems research. We want to provide Swedish researchers with unified and open access to biodiversity data, and to a wide range of tools for querying, visualizing and analyzing this data.
+
+SBDI supports open data and [open science](https://en.wikipedia.org/wiki/Open_science), that is, transparent and accessible knowledge that is shared and developed through collaborative networks. Specifically, we adhere to the [FAIR principles](https://www.go-fair.org/) (Findable, Accessible, Interoperable, and Reusable).
+
 
 <br>
-> - Most of the pages in the current footer menu
-> - Remove some information?
-> - Merge into fewer pages?
+> Sources:
+> - [https://biodiversitydata.se/about-us/what-we-do/vision/](https://biodiversitydata.se/about-us/what-we-do/vision/)

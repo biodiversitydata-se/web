@@ -31,8 +31,19 @@
     - event-list
     - event-item
   items:
-    - title: Consortium
+    - title: Vision
       path: /about/
+    - title: Strategic plan
+      path: /about/strategic-plan/
+    - title: Organisation
+      path: /about/organisation/executive-office/
+      items:
+        - title: Executive office
+          path: /about/organisation/executive-office/
+        - title: Consortium partners
+          path: /about/organisation/consortium-partners/
+        - title: Governance
+          path: /about/organisation/governance/
     - title: News
       path: /news/
       layouts:

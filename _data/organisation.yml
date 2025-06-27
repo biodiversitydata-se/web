@@ -1,0 +1,46 @@
+executive_office:
+  - name: Margret Steinthorsdottir
+    title: SBDI Director
+    affiliation: Swedish Museum of Natural History
+  - name: Holger Dettki
+    title: SBDI Deputy Director
+    affiliation: Swedish University of Agricultural Sciences
+  - name: Rasa Bukontaite
+    title: SBDI Project Coordinator
+    affiliation: Swedish Museum of Natural History
+  - name: Matthias Obst
+    title: Chair SBDI Coordination group and Support Office Manager
+    affiliation: University of Gothenburg
+  - name: Anders Torstensson
+    title: Chair SBDI Coordination group
+    affiliation: SMHI
+
+steering_committee:
+  - name: Anne-Sophie Archambeau
+    affiliation: Muséum national d’histoire naturelle (MNHN), Paris, France
+  - name: Michaela Barth
+    affiliation: KTH Royal Institute of Technology (KTH)
+  - name: Anders G. Finstad
+    affiliation: Norwegian University of Science and Technology (NTNU), Trondheim, Norway
+  - name: Joakim Appelquist
+    affiliation: The Knowledge Foundation
+  - name: Anna Wetterbom
+    affiliation: Ragnar Söderberghs stiftelse
+  - name: Johan Wulff
+    affiliation: Swedish Environmental Protection Agency (NV)
+
+scientific_committee:
+  - name: Alexandre Antonelli
+    affiliation: Royal Botanic Gardens, Kew
+  - name: Bente Edvardsen
+    affiliation: University of Oslo
+  - name: Francisco Hernandez
+    affiliation: Flanders Marine Institute
+  - name: Donald Hobern
+    affiliation: International Barcode of Life Consortium
+  - name: Hanna Koivula
+    affiliation: University of Helsinki
+  - name: Cynthia Parr
+    affiliation: US Department of Agriculture
+  - name: Helen Roy
+    affiliation: UK Centre for Ecology & Hydrology

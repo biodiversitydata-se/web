@@ -35,6 +35,8 @@
       path: /about/
     - title: Strategic plan
       path: /about/strategic-plan/
+    - title: Contact
+      path: /about/contact/
     - title: Organisation
       path: /about/organisation/executive-office/
       items:

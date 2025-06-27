@@ -90,6 +90,7 @@
 @utility preamble{
   @apply text-xl;
   @apply text-slate-700;
+  @apply italic
 }
 
 @utility link-icon {

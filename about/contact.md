@@ -7,8 +7,10 @@ permalink: /:path/:basename/
 
 ## SBDI Executive Office
 
-*Margret Steinthorsdottir* ([director@biodiversitydata.se](mailto:director@biodiversitydata.se)), SBDI Director, Naturhistoriska riksmuseet  
-*Holger Dettki* ([director@biodiversitydata.se](mailto:director@biodiversitydata.se)), SBDI Deputy Director, SLU Artdatabanken  
+*Margret Steinthorsdottir* ([director@biodiversitydata.se](mailto:director@biodiversitydata.se)), SBDI Director, Naturhistoriska riksmuseet
+
+*Holger Dettki* ([director@biodiversitydata.se](mailto:director@biodiversitydata.se)), SBDI Deputy Director, SLU Artdatabanken
+
 [*Rasa Bukontaite*](mailto:rasa.bukontaite@nrm.se), SBDI Project Coordinator, Naturhistoriska riksmuseet
 
 ## GBIF-Sweden

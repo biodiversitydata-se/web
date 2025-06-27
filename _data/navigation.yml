@@ -12,6 +12,10 @@
   items:
     - title: Share data
       path: /share-data/
+    - title: SBDI data policy and vision
+      path: /share-data/sbdi-data-policy-and-vision/
+    - title: What data are of interest?
+      path: /share-data/what-data-are-of-interest/
 - title: Support
   path: /support/
   items:

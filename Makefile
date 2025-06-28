@@ -17,6 +17,12 @@ run-nginx:
 
 pre-render:
 	_script/create-news-year-pages.sh
+	curl -sS --max-time 30 --retry 1 "https://collections.biodiversitydata.se/ws/institution/count" --output _data/institution-count.json
+	curl -sS --max-time 30 --retry 1 "https://collections.biodiversitydata.se/ws/collection/count" --output _data/collection-count.json
+	curl -sS --max-time 30 --retry 1 "https://collections.biodiversitydata.se/ws/dataResource/count" --output _data/dataset-count.json
+	curl -sS --max-time 30 --retry 1 "https://images.biodiversitydata.se/ws/search?q=*:*&max=0" --output _data/image-count.json
+	curl -sS --max-time 30 --retry 1 "https://records.biodiversitydata.se/ws/occurrences/search?q=*:*&facet=off&pageSize=0" --output _data/occurrence-count.json
+	curl -sS --max-time 30 --retry 1 "https://records.biodiversitydata.se/ws/occurrences/search.json?pageSize=0&q=*:*&facets=species_group&flimit=200" --output _data/species_groups-count.json
 
 _clean-deps:
 	rm Gemfile.lock package-lock.json

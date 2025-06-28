@@ -4,3 +4,4 @@ _site
 node_modules
 about/news-*.html
 _data/news-years.yml
+_data/*.json

@@ -3,7 +3,7 @@ layout: default
 hide_left_menu: true
 ---
 
-<div class="flex flex-row px-10">
+<div class="flex flex-col lg:flex-row  px-10">
   <div class="basis-2/5 bg-sbdi-bluegreen px-15 py-8 text-white">
     <h2 class="mt-0 uppercase font-normal">SBDI brings biodiversity data together</h2>
     <p class="font-thin">
@@ -26,6 +26,8 @@ hide_left_menu: true
     </p>
     <div class="flex flex-wrap justify-center">
     {% for item in site.data.species_groups-count.facetResults[0].fieldResult %}
+      {% comment %}The last item is the Unknown group, which we don't want to show{% endcomment %}
+      {% if forloop.last %}{% continue %}{% endif %}
       <a class="block m-2 px-2 py-1 bg-sky-950 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-blue" 
         href="https://records.biodiversitydata.se/occurrences/search?fq=species_group:%22{{ item.label }}%22">
         <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>

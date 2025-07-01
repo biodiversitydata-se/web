@@ -91,6 +91,19 @@ async function main() {
         }
     }
 
+    // TODO: This page is only for logged in users
+    result.push({
+        title: 'ASV datasets',
+        url: 'https://asv-portal.biodiversitydata.se/download',
+        count: 20,
+    });
+    // TODO: Fetch count from API
+    result.push({
+        title: 'Biologging datasets',
+        url: 'https://biologging.biodiversitydata.se/datasetOverview',
+        count: 7,
+    });
+
     fs.writeFileSync('_data/data-counts.json', JSON.stringify(result, null, 2));
 }
 

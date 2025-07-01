@@ -119,7 +119,38 @@ hide_left_menu: true
 
 </div>
 
-<h1 class="text-2xl">SBDI is made possible by contributions from its partners and financers:</h1>
+<h1 class="text-2xl">
+  SBDI is developed in collaboration with the Living Atlases community, and includes the Swedish node of the Global Biodiversity Information Facility (GBIF)
+</h1>
+<figure>
+  <a href="https://living-atlases.gbif.org/" title="Living Atlases community">
+    <img src="/assets/images/living-atlas-banner.png" alt="Living Atlases community banner">
+  </a>
+</figure>
+<figure class="mt-4 relative">
+  <img src="/assets/images/gbif-banner-v2.png" alt="Global Biodiversity Information Facility (GBIF) banner">
+  <div class="absolute inset-0 px-8 lg:py-4">
+    <h2 class="my-0 sm:my-3 text-xl md:text-2xl lg:text-4xl text-white text-shadow-2xl font-semibold">GBIF Data from Sweden</h2>
+    <ul class="list-none">
+      <li>
+        <a class="text-md md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
+          href="http://www.gbif.org/analytics/country/SE/published" >
+          Swedish publishing trends
+        </a>
+      </li>
+      <li>
+        <a class="text-md md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
+          href="http://www.gbif.org/occurrence/search?publishingCountry=SE">
+          Search data published by Sweden
+        </a>
+      </li>
+    </ul>
+  </div>  
+</figure>
+
+<h1 class="text-2xl mt-8">
+  SBDI is made possible by contributions from its partners and financers
+</h1>
 <div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
 {% for partner in site.data.partners %}
   <a href="{{ partner.link }}" title="{{ partner.title }}">
@@ -132,6 +163,5 @@ hide_left_menu: true
   TODO:
   <ul>
     <li>banner image?</li>
-    <li>la and gbif banners?</li>
   </ul>
 </blockquote>

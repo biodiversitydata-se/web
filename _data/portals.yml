@@ -91,3 +91,16 @@
     many different species. The database is connected to tools to query, filter, visualize and in some cases 
     direct download of data.
   link: https://biologging.biodiversitydata.se
+
+- name: SUBSIM
+  image: subsim.png
+  description: >-
+    The quickly rising demand to monitor the ocean with autonomous techniques and computer vision methods led to
+    the development of SUBSIM, a platform for efficient management and processing of underwater image and video data.
+    SUBSIM provides essential functions to conduct research and automated monitoring with image and video surveys, 
+    including data management, machine learning, digital collaboration, citizen science, and high-performance computing.
+  link: https://www.subsim.se/
+
+- name: BalticMicrobeDB
+  description: An interface to meta-omic data from the Baltic Sea.
+  link: https://barm.scilifelab.se/

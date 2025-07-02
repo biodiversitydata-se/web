@@ -29,6 +29,9 @@ function fetchJson(url) {
  * @returns {any}
  */
 function getValueByJsonPath(obj, path) {
+    if (path === '') {
+        return obj;
+    }
     return path.split('.').reduce((acc, key) => acc && acc[key], obj);
 }
 
@@ -48,35 +51,47 @@ async function fetchValueFromUrl(url, jsonPath) {
  */
 async function main() {
     const sources = [
-        { 
-            title: 'Occurrence Records', 
-            source: 'https://records.biodiversitydata.se/ws/occurrences/search?q=*:*&facet=off&pageSize=0', 
+        {
+            title: 'Occurrence Records',
+            source: 'https://records.biodiversitydata.se/ws/occurrences/search?q=*:*&facet=off&pageSize=0',
             jsonPath: 'totalRecords',
             linkTo: 'https://records.biodiversitydata.se',
         },
-        { 
-            title: 'Datasets', 
-            source: 'https://collections.biodiversitydata.se/ws/dataResource/count', 
+        {
+            title: 'Datasets',
+            source: 'https://collections.biodiversitydata.se/ws/dataResource/count',
             jsonPath: 'total',
             linkTo: 'https://collections.biodiversitydata.se/datasets',
         },
-        { 
-            title: 'Institutions', 
-            source: 'https://collections.biodiversitydata.se/ws/institution/count', 
+        {
+            title: 'Institutions',
+            source: 'https://collections.biodiversitydata.se/ws/institution/count',
             jsonPath: 'total',
             linkTo: 'https://collections.biodiversitydata.se',
         },
-        { 
-            title: 'Collections', 
-            source: 'https://collections.biodiversitydata.se/ws/collection/count', 
+        {
+            title: 'Collections',
+            source: 'https://collections.biodiversitydata.se/ws/collection/count',
             jsonPath: 'total',
             linkTo: 'https://collections.biodiversitydata.se',
         },
-        { 
-            title: 'Images', 
-            source: 'https://images.biodiversitydata.se/ws/search?q=*:*&max=0', 
+        {
+            title: 'Images',
+            source: 'https://images.biodiversitydata.se/ws/search?q=*:*&max=0',
             jsonPath: 'totalImageCount',
             linkTo: 'https://images.biodiversitydata.se',
+        },
+        {
+            title: 'Spatial layers',
+            source: 'https://spatial.biodiversitydata.se/ws/layers',
+            jsonPath: '',
+            linkTo: 'https://spatial.biodiversitydata.se/ws/layers/index',
+        },
+        {
+            title: 'Biologging datasets',
+            source: 'https://biologging-api.biodiversitydata.se/biologgingAPI/v1/datasets',
+            jsonPath: '',
+            linkTo: 'https://biologging.biodiversitydata.se/datasetOverview',
         },
     ];
 
@@ -85,23 +100,19 @@ async function main() {
         const item = { title: title, url: linkTo, count: 0 };
         result.push(item);
         try {
-            item.count = await fetchValueFromUrl(source, jsonPath);
+            const value = await fetchValueFromUrl(source, jsonPath);
+            item.count = Array.isArray(value) ? value.length : value;
         } catch (err) {
             console.error(`Failed to fetch from ${source}:`, err.message);
         }
     }
 
-    // TODO: This page is only for logged in users
+    // TODO: This page is only for logged in users - can be removed?
+    // TODO: Find a way to get count
     result.push({
         title: 'ASV datasets',
         url: 'https://asv-portal.biodiversitydata.se/download',
         count: 20,
-    });
-    // TODO: Fetch count from API
-    result.push({
-        title: 'Biologging datasets',
-        url: 'https://biologging.biodiversitydata.se/datasetOverview',
-        count: 7,
     });
 
     fs.writeFileSync('_data/data-counts.json', JSON.stringify(result, null, 2));

@@ -5,6 +5,8 @@
     The Bioatlas includes the collectory, where you can browse data providers and datasets, and a search 
     interface allowing you to search for data based on text, geographic location or based on species lists.
   link: https://static.biodiversitydata.se
+  slideshow: true
+  tagline: "Explore Sweden's biodiversity data"
 
 - name: Spatial Portal
   image: spatial.png
@@ -14,6 +16,8 @@
     Portal comes with a suite of tools to manipulate, display, import and download spatially referenced data.
     <br><em>This portal requires an SBDI user account.</em>
   link: https://spatial.biodiversitydata.se
+  slideshow: true
+  tagline: "Visualize and analyze spatial biodiversity data"
 
 - name: BioCollect
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
@@ -80,6 +84,10 @@
     temperature and physiological data from internal sensors for many different species. The database is associated 
     with tools to query, filter, adn download relevant data.
   link: https://wram.slu.se
+  slideshow: true
+  slideimage: wram-slide.png
+  slidetitle: WRAM
+  tagline: "Wireless Remote Animal Monitoring"
 
 - name: Biologging Portal
   image: blacktern_example1-1536x1473.jpg
@@ -91,6 +99,8 @@
     many different species. The database is connected to tools to query, filter, visualize and in some cases 
     direct download of data.
   link: https://biologging.biodiversitydata.se
+  slideshow: true
+  tagline: "Open portal for sharing and exploring animal biologging data in Sweden"
 
 - name: SUBSIM
   image: subsim.png
@@ -100,6 +110,8 @@
     SUBSIM provides essential functions to conduct research and automated monitoring with image and video surveys, 
     including data management, machine learning, digital collaboration, citizen science, and high-performance computing.
   link: https://www.subsim.se/
+  slideshow: true
+  tagline: "The Swedish platform for subsea image analysis"
 
 - name: BalticMicrobeDB
   description: An interface to meta-omic data from the Baltic Sea.

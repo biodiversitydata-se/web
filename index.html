@@ -6,7 +6,7 @@ hide_left_menu: true
 <h1 class="mb-10 text-sbdi-darkblue text-4xl sm:text-5xl">Open access to Sweden's biodiversity data</h1>
 
 <!-- Slideshow -->
-<div class="relative w-full h-80 overflow-hidden rounded-lg shadow-lg">
+<div class="relative w-full h-80 sm:h-100 overflow-hidden rounded-lg shadow-lg">
   <a id="slide-link" href="#" title="" class="block w-full h-full">
     <img id="slide-image" src="" alt="" class="fade w-full h-full object-cover absolute inset-0" />
     <div class="absolute bottom-0 left-0 flex flex-col justify-end w-100 px-6 py-4 bg-black/60 rounded-tr-lg">
@@ -181,37 +181,16 @@ hide_left_menu: true
 </div>
 
 <script>
+  {% assign slides = site.data.portals | where: "slideshow", true %}
   const slides = [
-    {
-      imageUrl: "/uploads/portals/bioatlas.png",
-      linkUrl: "https://static.biodiversitydata.se",
-      title: "Bioatlas",
-      tagline: "Explore Sweden's biodiversity data"
-    },
-    {
-      imageUrl: "/uploads/portals/spatial.png",
-      linkUrl: "https://spatial.biodiversitydata.se",
-      title: "Spatial Portal",
-      tagline: "Visualize and analyze spatial biodiversity data"
-    },
-    {
-      imageUrl: "/uploads/portals/blacktern_example1-1536x1473.jpg",
-      linkUrl: "https://biologging.biodiversitydata.se",
-      title: "Biologging Portal",
-      tagline: "Open portal for sharing and exploring animal biologging data in Sweden"
-    },
-    {
-      imageUrl: "/uploads/portals/subsim.png",
-      linkUrl: "https://subsim.se/",
-      title: "SUBSIM",
-      tagline: "The Swedish platform for subsea image analysis"
-    },
-    {
-      imageUrl: "/uploads/portals/wram.png",
-      linkUrl: "https://wram.slu.se/",
-      title: "WRAM",
-      tagline: "Wireless Remote Animal Monitoring",
-    },
+    {% for slide in slides %}
+      {
+        imageUrl: "/uploads/portals/{{ slide.slideimage | default: slide.image }}",
+        linkUrl: "{{ slide.link }}",
+        title: "{{ slide.slidetitle | default: slide.name }}",
+        tagline: "{{ slide.tagline | default: "" }}"
+      },
+    {% endfor %}
   ];
 
   const shuffledSlides = slides.sort(() => Math.random() - 0.5);

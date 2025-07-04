@@ -20,8 +20,8 @@ hide_left_menu: true
 </div>
 
 <!-- Data grid -->
-<div class="flex flex-col lg:flex-row px-10">
-  <div class="basis-2/5 bg-sbdi-bluegreen px-15 py-8 text-white rounded-l-lg">
+<div class="flex flex-col lg:flex-row xl:px-10">
+  <div class="basis-2/5 bg-sbdi-bluegreen px-5 md:px-10 lg:px-15 py-8 text-white rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg">
     <h2 class="mt-0 uppercase font-normal">SBDI brings biodiversity data together</h2>
     <p class="font-thin">
       SDBI aggregates biodiversity data from multiple sources and makes it available and usable online. It is the largest collection of freely available biodiversity data in Sweden.
@@ -36,7 +36,7 @@ hide_left_menu: true
     {% endfor %}
     </div>
   </div>
-  <div class="basis-3/5 bg-sbdi-blue px-15 py-8 text-white rounded-r-lg">
+  <div class="basis-3/5 bg-sbdi-blue px-5 md:px-10 lg:px-15 py-8 text-white rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg">
     <h2 class="mt-0 uppercase font-normal">Making the most of biodiversity data</h2>
     <p class="font-thin">
       Biodiversity data about plants, animals and fungi and their habitats may be used to educate and inform and in environmental decision-making, state of the environment assessments and restoration and rewilding.
@@ -139,9 +139,9 @@ hide_left_menu: true
 </div>
 
 <!-- LA and GBIF banners -->
-<h1 class="text-2xl">
+<h2 class="text-2xl">
   SBDI is developed in collaboration with the Living Atlases community, and includes the Swedish node of the Global Biodiversity Information Facility (GBIF)
-</h1>
+</h2>
 <figure>
   <a href="https://living-atlases.gbif.org/" title="Living Atlases community">
     <img class="rounded-lg" src="/assets/images/living-atlas-banner.png" alt="Living Atlases community banner">
@@ -149,17 +149,17 @@ hide_left_menu: true
 </figure>
 <figure class="mt-4 relative">
   <img class="rounded-lg" src="/assets/images/gbif-banner-v2.png" alt="Global Biodiversity Information Facility (GBIF) banner">
-  <div class="absolute inset-0 px-8 lg:py-4">
-    <h2 class="my-0 sm:my-3 text-xl md:text-2xl lg:text-4xl text-white text-shadow-2xl font-semibold">GBIF Data from Sweden</h2>
-    <ul class="list-none">
-      <li>
-        <a class="text-md md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
-          href="http://www.gbif.org/analytics/country/SE/published" >
+  <div class="absolute top-0 left-0 px-4 lg:px-8 py-1 lg:py-4 bg-black/40 rounded-tl-lg">
+    <h3 class="my-0 sm:my-3 text-lg md:text-2xl lg:text-4xl text-white text-shadow-2xl font-semibold">GBIF Data from Sweden</h3>
+    <ul class="list-none m-0">
+      <li class="leading-0">
+        <a class="text-sm md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
+          href="http://www.gbif.org/analytics/country/SE/published">
           Swedish publishing trends
         </a>
       </li>
-      <li>
-        <a class="text-md md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
+      <li class="leading-0">
+        <a class="text-sm md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
           href="http://www.gbif.org/occurrence/search?publishingCountry=SE">
           Search data published by Sweden
         </a>
@@ -169,10 +169,10 @@ hide_left_menu: true
 </figure>
 
 <!-- Partner logos -->
-<h1 class="text-2xl mt-8">
+<h2 class="text-2xl mt-8">
   SBDI is made possible by contributions from its partners and financers
-</h1>
-<div class="mt-4 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+</h2>
+<div class="mt-4 grid grid-cols-6 gap-6">
 {% for partner in site.data.partners %}
   <a href="{{ partner.link }}" title="{{ partner.title }}">
     <img src="/uploads/partners/{{ partner.image }}" alt="{{ partner.title }}">

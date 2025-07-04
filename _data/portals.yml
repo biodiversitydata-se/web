@@ -62,6 +62,7 @@
 
 - name: SHARKweb and SHARKdata
   image: SharkWEB_logo-768x223.png
+  image-full-width: true
   description: >-
     SHARK includes a database, web interface and API for accessing marine monitoring data. SHARKweb is a website
     for downloading data. For download via API, we refer to SHARKdata.
@@ -104,6 +105,7 @@
 
 - name: SUBSIM
   image: subsim.png
+  image-full-width: true
   description: >-
     The quickly rising demand to monitor the ocean with autonomous techniques and computer vision methods led to
     the development of SUBSIM, a platform for efficient management and processing of underwater image and video data.

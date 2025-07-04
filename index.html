@@ -3,13 +3,14 @@ layout: default
 hide_left_menu: true
 ---
 
-<div class="relative w-full h-64 overflow-hidden rounded-lg shadow-lg">
-  <a id="slide-link" href="#" target="_blank" class="block w-full h-full">
+<!-- Slideshow -->
+<div class="relative w-full h-80 overflow-hidden rounded-lg shadow-lg">
+  <a id="slide-link" href="#" class="block w-full h-full">
     <img id="slide-image" src="" alt="Slideshow Image" class="fade w-full h-full object-cover absolute inset-0" />
-    <div class="absolute inset-0 flex flex-col justify-start p-6">
-      <h1 class="text-white text-shadow-2xl my-0">Open access to Sweden's biodiversity data</h1>
-      <h2 id="slide-title" class="text-white text-2xl font-bold mb-2 text-shadow-2xl"></h2>
-      <p id="slide-caption" class="text-white text-base text-shadow-2xl"></p>
+    <h1 class="absolute inset-x-0 top-0 bg-black/50 py-2 px-4 m-0 text-2xl text-white text-shadow-2xl">Open access to Sweden's biodiversity data</h1>
+    <div class="absolute bottom-0 left-0 flex flex-col justify-end w-80 px-6 py-3 bg-black/50 rounded-tr-lg">
+      <h2 id="slide-title" class="mt-0 mb-1 text-white text-2xl font-bold text-shadow-2xl"></h2>
+      <p id="slide-caption" class="mb-0 text-white text-shadow-2xl"></p>
     </div>
   </a>
 </div>
@@ -178,33 +179,32 @@ hide_left_menu: true
 {% endfor %}
 </div>
 
-<blockquote>
-  TODO:
-  <ul>
-    <li>banner image?</li>
-  </ul>
-</blockquote>
-
 <script>
   const slides = [
     {
-      imageUrl: "https://biodiversitydata.se/wp-content/uploads/2021/04/Vulpes.vulpes_johan.backman.CC-BY-NC-vand-scaled-e1619681940242.jpg",
-      linkUrl: "https://example.com/nature",
+      imageUrl: "/uploads/portals/bioatlas.png",
+      linkUrl: "https://statics.biodiversitydata.se",
       title: "Bioatlas",
       caption: "Explore the beauty of nature."
     },
     {
-      imageUrl: "https://biodiversitydata.se/wp-content/uploads/2021/04/Motacilla.flava_johan.backman_CC-BY-NC-scaled-e1619023368822.jpg",
-      linkUrl: "https://example.com/city",
+      imageUrl: "/uploads/portals/spatial.png",
+      linkUrl: "https://spatial.biodiversitydata.se",
       title: "Spatial Portal",
       caption: "Discover the city life."
     },
     {
-      imageUrl: "https://biodiversitydata.se/wp-content/uploads/2021/04/Chaetoceros-didymus_Ann-Turi-Skjevik-e1619680422383.jpg",
-      linkUrl: "https://example.com/tech",
+      imageUrl: "/uploads/portals/blacktern_example1-1536x1473.jpg",
+      linkUrl: "https://biologging.biodiversitydata.se",
       title: "Biologging Portal",
       caption: "Stay updated with technology."
-    }
+    },
+    {
+      imageUrl: "/uploads/portals/subsim.png",
+      linkUrl: "https://subsim.se/",
+      title: "SUBSIM",
+      caption: "The Swedish platform for subsea image analysis"
+    },
   ];
 
   // Shuffle slides

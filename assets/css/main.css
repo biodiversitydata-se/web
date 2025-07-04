@@ -87,13 +87,13 @@
   }
 }
 
-@utility preamble{
+.preamble{
   @apply text-xl;
   @apply text-slate-700;
   @apply italic
 }
 
-@utility link-icon {
+.link-icon {
   @apply bg-[url('/assets/images/link-icon.svg')];
   @apply bg-no-repeat;
   @apply pl-7;
@@ -101,7 +101,7 @@
   @apply hover:underline;
 }
 
-@utility button {
+.button {
   @apply px-3.5;
   @apply py-1.5;
   @apply bg-sbdi-darkblue;
@@ -113,3 +113,10 @@
   @apply text-nowrap;
 }
 
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.fade.show {
+  opacity: 1;
+}

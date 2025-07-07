@@ -52,16 +52,22 @@ async function fetchValueFromUrl(url, jsonPath) {
 async function main() {
     const sources = [
         {
+            title: 'Datasets',
+            source: 'https://collections.biodiversitydata.se/ws/dataResource/count',
+            jsonPath: 'total',
+            linkTo: 'https://collections.biodiversitydata.se/datasets',
+        },
+        {
             title: 'Occurrence Records',
             source: 'https://records.biodiversitydata.se/ws/occurrences/search?q=*:*&facet=off&pageSize=0',
             jsonPath: 'totalRecords',
             linkTo: 'https://records.biodiversitydata.se',
         },
         {
-            title: 'Datasets',
-            source: 'https://collections.biodiversitydata.se/ws/dataResource/count',
-            jsonPath: 'total',
-            linkTo: 'https://collections.biodiversitydata.se/datasets',
+            title: 'Species',
+            source: 'https://species.biodiversitydata.se/ws/search?q=*%3A*&fq=rank%3A%22species%22&rows=1',
+            jsonPath: 'searchResults.totalRecords',
+            linkTo: 'https://species.biodiversitydata.se/search?q=*%3A*&fq=rank%3A%22species%22',
         },
         {
             title: 'Institutions',

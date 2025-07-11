@@ -1,0 +1,10 @@
+{%- comment -%}
+Sets the following variables:
+  menu_items
+{%- endcomment -%}
+
+{%- assign menu_items = include.item.items -%}
+
+{%- if include.item.path == '/news/' -%}
+  {%- assign menu_items = site.data.news-years -%}
+{%- endif -%}

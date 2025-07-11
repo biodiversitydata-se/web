@@ -17,5 +17,13 @@
       document.getElementById("topMenuOpen").classList.toggle("hidden");
       document.getElementById("topMenuClose").classList.toggle("hidden");
     }
+    const toggleMobileSubMenu = (id) => {
+      const menu = document.getElementById(id);
+      if (menu) {
+        menu.classList.toggle("hidden");
+        return false;
+      }
+      return true;
+    }
   </script>
 </head>

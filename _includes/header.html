@@ -6,13 +6,28 @@
     <img class="w-30" src="/assets/images/SBDI-rgb.svg" alt="SBDI logotype">
   </a>
   <span class="grow ml-6 self-end text-lg text-gray-600 leading-none">Swedish Biodiversity Data Infrastructure</span>
+    <!--
   <form action="/search" class="hidden sm:inline self-end">
     <input name="query" type="text" class="w-40 md:w-56 py-1 pl-2 pr-8 border border-sbdi-lightblue rounded-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="Search SBDI web site..." aria-label="Search">
     <svg class="inline mb-2 -ml-7 h-5 text-sbdi-lightblue" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
   </form>
-  <a href="https://auth.biodiversitydata.se/userdetails/myprofile/" class="hidden sm:block self-end ml-5 button">My profile</a>
+    -->
+  <!--
+  <svg class="hidden sm:block h-7 self-end text-sbdi-darkblue p-1 hover:border hover:rounded-md" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"></path>
+  </svg>
+  <svg class="hidden sm:block h-7 ml-1 self-end text-sbdi-darkblue p-1 hover:border hover:rounded-md" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.671 60.671" xml:space="preserve">
+    <g>
+      <ellipse cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+      <path d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9 C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+    </g>
+  </svg>
+  -->
+<!--
+  <img src="/assets/images/user-icon-svgrepo-com.svg" class="h-5 hidden sm:block ml-5 self-end text-sbdi-darkblue">
+  -->  
 </header>
 
 <nav class="overflow-hidden bg-sbdi-mediumblue" aria-label="Main menu">
@@ -31,7 +46,7 @@
         {%- include functions/menu-items.html item=item_0 -%}
         <li class="sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
           <!-- Desktop item -->
-          <a class="hidden sm:block p-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
+          <a class="hidden sm:block py-4 px-3 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}">
             {{ item_0.title }}
@@ -75,6 +90,46 @@
           {% endif %}
         </li>
       {% endfor %}
+      <li class="sm:float-left">
+        <a class="hidden sm:block ml-2 py-2.5 px-2 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+          {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
+          href="/search/">
+          <i class="fa-solid fa-search"></i>
+        </a>
+
+        <!--
+        <svg class="hidden sm:block h-7 self-end text-white p-1 hover:border hover:rounded-md" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        -->
+      </li>
+      <li  class="sm:float-left">
+        <!--
+        <svg class="hidden sm:block h-7 ml-1 self-end text-white p-1 hover:border hover:rounded-md" fill="currentColor" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.671 60.671" xml:space="preserve">
+          <g>
+            <ellipse cx="30.336" cy="12.097" rx="11.997" ry="12.097"/>
+            <path d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9 C48.354,35.818,42.661,30.079,35.64,30.079z"/>
+          </g>
+        </svg>
+        -->
+        <a class="hidden sm:block py-2.5 px-2 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+          {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
+          href="https://auth.biodiversitydata.se/userdetails/myprofile">
+          <i class="fa-solid fa-user"></i>
+        </a>
+
+<!--
+        <svg class="hidden sm:block h-7 ml-1 self-end text-white p-1 hover:border hover:rounded-md" fill="currentColor" stroke="currentColor" stroke-width="30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                <path d="M256,0c-65.733,0-119.211,53.479-119.211,119.211S190.267,238.423,256,238.423s119.211-53.479,119.211-119.211
+                    S321.733,0,256,0z M256,218.024c-54.486,0-98.813-44.328-98.813-98.813S201.515,20.398,256,20.398s98.813,44.328,98.813,98.813
+                    S310.485,218.024,256,218.024z"/>
+                <path d="M426.272,331.529c-45.48-45.48-105.952-70.529-170.272-70.529c-64.32,0-124.791,25.047-170.273,70.529
+                    c-45.48,45.48-70.529,105.952-70.529,170.272c0,5.632,4.566,10.199,10.199,10.199h461.204c5.632,0,10.199-4.567,10.199-10.199
+                    C496.801,437.482,471.752,377.01,426.272,331.529z M35.831,491.602C41.179,374.789,137.889,281.398,256,281.398
+                    s214.821,93.391,220.17,210.204H35.831z"/>
+        </svg>
+        -->
+      </li>
     </ul>
   </div>
 </nav>

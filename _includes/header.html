@@ -33,26 +33,31 @@
           <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
             {%- if item_0.title == menu_0_active_item.title -%}
               {%- if menu_1_active_item.title or menu_2_active_title -%}sm:bg-sbdi-darkblue{%- else -%}bg-sbdi-darkblue{%- endif -%}
-            {%- endif -%}" href="{{ item_0.path }}">
+            {%- endif -%}" 
+            href="{{ item_0.path }}"
+            onclick="toggleMobileSubMenu('menu_1_{{ forloop.index0 }}'); return false;">
             {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/dropdown-arrow.html class="h-5 inline mb-1" %}{% endif %}
           </a>
           {% if menu_items.size > 0 %}
               <!-- Level 1 mobile -->
-              <ul class="sm:hidden mb-0 ml-0 list-none {% if item_0.title != menu_0_active_item.title %}hidden{% endif %}">
+              <ul id="menu_1_{{ forloop.index0 }}" class="sm:hidden mb-0 ml-0 list-none {% if item_0.title != menu_0_active_item.title %}hidden{% endif %}">
               {% for item_1 in menu_items %}
                 {%- include functions/menu-items.html item=item_1 -%}
                 <li>
                   <a class="block p-2 pl-8 text-sm text-white font-semibold uppercase no-underline 
-                    {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" href="{{ item_1.path }}">
+                    {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" 
+                    href="{{ item_1.path }}"
+                    onclick="toggleMobileSubMenu('menu_2_{{ forloop.index0 }}'); return false;">
                     {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/dropdown-arrow.html class="h-5 inline mb-1" %}{% endif %}
                   </a>
                   {% if menu_items.size > 0 %}  
                     <!-- Level 2 mobile -->
-                    <ul class="ml-0 list-none {% if item_1.title != menu_1_active_item.title %}hidden{% endif %}">
+                    <ul id="menu_2_{{ forloop.index0 }}" class="ml-0 list-none {% if item_1.title != menu_1_active_item.title %}hidden{% endif %}">
                       {% for item_2 in menu_items %}
                         <li>
                           <a class="block p-2 pl-12 text-sm text-white font-semibold uppercase no-underline
-                            {% if item_2.title == menu_2_active_title %}bg-sbdi-darkblue{% endif %}" href="{{ item_2.path }}">
+                            {% if item_2.title == menu_2_active_title %}bg-sbdi-darkblue{% endif %}" 
+                            href="{{ item_2.path }}">
                             {{ item_2.title }}
                           </a>
                         </li>

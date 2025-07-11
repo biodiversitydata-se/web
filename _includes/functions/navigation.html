@@ -1,37 +1,31 @@
 {%- comment -%}
 Sets the following variables:
-  menu_0_items, menu_0_active_item
-  menu_1_items, menu_1_active_item
-  menu_2_items, menu_2_active_item
+  menu_0_active_item
+  menu_1_active_item
+  menu_2_active_title
 {%- endcomment -%}
 
-{%- assign menu_2_active_item = nil -%}
+{%- assign menu_2_active_title = nil -%}
 
-{%- assign menu_0_items = site.data.navigation -%}
-{%- for item_0 in menu_0_items -%}
+{%- for item_0 in site.data.navigation -%}
   {%- if page.url == item_0.path -%}
-    {%- assign menu_0_active_item = item_0.title -%}
-    {%- assign menu_1_items = item_0.items -%}
+    {%- assign menu_0_active_item = item_0 -%}
   {%- endif -%}
   {%- for item_1 in item_0.items -%}
     {%- if page.url == item_1.path or item_1.layouts contains page.layout -%}
-      {%- assign menu_0_active_item = item_0.title -%}
-      {%- assign menu_1_active_item = item_1.title -%}
-      {%- assign menu_1_items = item_0.items -%}
+      {%- assign menu_0_active_item = item_0 -%}
+      {%- assign menu_1_active_item = item_1 -%}
     {%- endif -%}
     {%- for item_2 in item_1.items -%}
       {%- if page.url == item_2.path or item_2.layouts contains page.layout -%}
-        {%- assign menu_0_active_item = item_0.title -%}
-        {%- assign menu_1_active_item = item_1.title -%}
-        {%- assign menu_2_active_item = item_2.title -%}
-        {%- assign menu_1_items = item_0.items -%}
-        {%- assign menu_2_items = item_1.items -%}
+        {%- assign menu_0_active_item = item_0 -%}
+        {%- assign menu_1_active_item = item_1 -%}
+        {%- assign menu_2_active_title = item_2.title -%}
       {%- endif -%}
     {%- endfor -%}
   {%- endfor -%}
 {%- endfor -%}
 
 {%- if path_segments[0] == 'news' -%}
-  {%- assign menu_2_items = site.data.news-years -%}
-  {%- assign menu_2_active_item = path_segments[1] -%}
+  {%- assign menu_2_active_title = path_segments[1] -%}
 {%- endif -%}

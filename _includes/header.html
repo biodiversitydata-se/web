@@ -30,8 +30,8 @@
       {% for item_0 in site.data.navigation %}
         <li class="sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
           <a class="block p-2 sm:p-4 sm:text-center text-sm sm:text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
-            {% if item_0.title == menu_0_active_item %}
-              {% if menu_1_active_item or menu_2_active_item %}sm:bg-sbdi-darkblue{% else %}bg-sbdi-darkblue{% endif %}
+            {% if item_0.title == menu_0_active_item.title %}
+              {% if menu_1_active_item.title or menu_2_active_title %}sm:bg-sbdi-darkblue{% else %}bg-sbdi-darkblue{% endif %}
             {% endif %}" href="{{ item_0.path }}">{{ item_0.title }}</a>
           {%- include functions/menu-items.html item=item_0 -%}
           {% if menu_items.size > 0 %}
@@ -40,7 +40,7 @@
               {% for item_1 in menu_items %}
                 <li>
                   <a class="block p-2 pl-8 text-sm text-white font-semibold uppercase no-underline 
-                    {% if item_1.title == menu_1_active_item and menu_2_active_item == nil %}bg-sbdi-darkblue{% endif %}" href="{{ item_1.path }}">{{ item_1.title }}</a>
+                    {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" href="{{ item_1.path }}">{{ item_1.title }}</a>
                   {%- include functions/menu-items.html item=item_1 -%}
                   {% if menu_items.size > 0 %}  
                     <!-- Level 2 mobile -->
@@ -48,7 +48,7 @@
                       {% for item_2 in menu_items %}
                         <li>
                           <a class="block p-2 pl-12 text-sm text-white font-semibold uppercase no-underline
-                            {% if item_2.title == menu_2_active_item %}bg-sbdi-darkblue{% endif %}" href="{{ item_2.path }}">{{ item_2.title }}</a>
+                            {% if item_2.title == menu_2_active_title %}bg-sbdi-darkblue{% endif %}" href="{{ item_2.path }}">{{ item_2.title }}</a>
                         </li>
                       {% endfor %}
                     </ul>

@@ -1,0 +1,5 @@
+{%- assign menu_items = include.item.items -%}
+
+{%- if include.item.path == '/news/' -%}
+  {%- assign menu_items = site.data.news-years -%}
+{%- endif -%}

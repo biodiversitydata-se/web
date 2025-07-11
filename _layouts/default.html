@@ -13,12 +13,14 @@
               <span class="block px-3 py-2 bg-sbdi-iceblue text-sbdi-darkblue text-lg">
                 {{ menu_0_active_item }}
               </span>
+              <!-- Level 1 desktop -->
               <ul class="list-none m-0 bg-slate-100">
               {% for item_1 in menu_1_items %}
                 <li>
                   <a class="block px-3 py-2 text-sbdi-blue hover:bg-slate-200 no-underline hover:no-underline 
                     {% if item_1.title == menu_1_active_item %}font-bold{% endif %}" href="{{ item_1.path }}">{{ item_1.title }}</a>
-                  {% if item_1.title == menu_1_active_item and menu_2_items.size > 0 %}  
+                  {% if item_1.title == menu_1_active_item and menu_2_items.size > 0 %}
+                    <!-- Level 2 desktop -->
                     <ul class="list-none ml-0 bg-slate-100">
                       {% for item_2 in menu_2_items %}
                         <li>

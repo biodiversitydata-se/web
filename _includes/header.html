@@ -69,11 +69,14 @@
         </li>
       {% endfor %}
       <li class="sm:float-left">
-        <a class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+        <a id="searchIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
           {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="h-4" %}
         </a>
+        <form id="searchForm" action="/search" class="hidden absolute mt-1 -ml-90">
+          <input name="query" type="text" class="w-100 py-1 px-2 border border-sbdi-lightblue rounded-md shadow-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="Search SBDI web site..." aria-label="Search">
+        </form>
       </li>
       <li  class="sm:float-left">
         <a class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 

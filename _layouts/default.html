@@ -46,6 +46,24 @@
       </div>
     </div>
     {%- include footer.html -%}
+    <script>
+      const searchIcon = document.getElementById('searchIcon');
+      const searchForm = document.getElementById('searchForm');
+
+      searchIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        searchForm.classList.toggle('hidden');
+        searchIcon.classList.toggle('bg-sbdi-blue');
+        searchForm.querySelector("input[name='query']").focus();
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!searchIcon.contains(e.target) && !searchForm.contains(e.target)) {
+          searchForm.classList.add('hidden');
+          searchIcon.classList.remove('bg-sbdi-blue');
+        }
+      });
+    </script>
   </body>
 
 </html>

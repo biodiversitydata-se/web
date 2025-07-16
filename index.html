@@ -118,12 +118,12 @@ hide_left_menu: true
                 <a href="{{ event.url }}" class="no-underline hover:underline">{{ event.title }}</a>
             </h3>
             <div class="mt-1 text-slate-500">
-              {%- include icons/calendar.html class="h-4 inline" -%}
+              {%- include icons/calendar.html -%}
               {%- include event-date.html event=event -%}
             </div>
             {% if event.location %}
               <div class="mt-1 text-slate-500">
-                {%- include icons/map-pin.html class="h-4 inline" -%}
+                {%- include icons/location-dot.html -%}
                 {{ event.location }}
               </div>
             {% endif %}

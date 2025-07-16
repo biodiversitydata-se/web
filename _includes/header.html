@@ -6,13 +6,6 @@
     <img class="w-30" src="/assets/images/SBDI-rgb.svg" alt="SBDI logotype">
   </a>
   <span class="grow ml-6 self-end text-lg text-gray-600 leading-none">Swedish Biodiversity Data Infrastructure</span>
-  <form action="/search" class="hidden sm:inline self-end">
-    <input name="query" type="text" class="w-40 md:w-56 py-1 pl-2 pr-8 border border-sbdi-lightblue rounded-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="Search SBDI web site..." aria-label="Search">
-    <svg class="inline mb-2 -ml-7 h-5 text-sbdi-lightblue" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" stroke-linecap="round" stroke-linejoin="round"></path>
-    </svg>
-  </form>
-  <a href="https://auth.biodiversitydata.se/userdetails/myprofile/" class="hidden sm:block self-end ml-5 button">My profile</a>
 </header>
 
 <nav class="overflow-hidden bg-sbdi-mediumblue" aria-label="Main menu">
@@ -31,7 +24,7 @@
         {%- include functions/menu-items.html item=item_0 -%}
         <li class="sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
           <!-- Desktop item -->
-          <a class="hidden sm:block p-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
+          <a class="hidden sm:block py-4 px-3 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}">
             {{ item_0.title }}
@@ -41,7 +34,7 @@
             {% if item_0.title == menu_0_active_item.title and menu_1_active_item == nil and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}"
             onclick="return toggleMobileSubMenu('menu_1_{{ forloop.index0 }}');">
-            {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/dropdown-arrow.html class="h-5 inline mb-1" %}{% endif %}
+            {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
           </a>
           {% if menu_items.size > 0 %}
               <!-- Level 1 mobile -->
@@ -53,7 +46,7 @@
                     {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" 
                     href="{{ item_1.path }}"
                     onclick="return toggleMobileSubMenu('menu_2_{{ forloop.index0 }}');">
-                    {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/dropdown-arrow.html class="h-5 inline mb-1" %}{% endif %}
+                    {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
                   </a>
                   {% if menu_items.size > 0 %}  
                     <!-- Level 2 mobile -->
@@ -75,6 +68,30 @@
           {% endif %}
         </li>
       {% endfor %}
+      <li class="sm:float-left">
+        <a id="searchIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+          {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
+          href="/search/" title="Search SBDI web site">
+          {% include icons/magnifying-glass.html class="h-4" %}
+        </a>
+        <form id="searchForm" action="/search" class="hidden absolute -ml-90">
+          <input name="query" type="text" class="w-100 py-1 px-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md focus:outline-none" placeholder="Search SBDI web site..." aria-label="Search">
+        </form>
+      </li>
+      <li class="sm:float-left">
+        <a id="userIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+          {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
+          href="https://auth.biodiversitydata.se/userdetails/myprofile" title="My profile">
+          {% include icons/user.html class="h-4" %}
+        </a>
+        <ul id="userMenu" class="hidden absolute -ml-20 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
+          <li class="">
+            <a class="px-4 py-2 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/userdetails/myprofile">
+              {% include icons/up-right-from-square.html class="h-3.5 mr-1 mb-1 inline" %} My profile
+            </a>
+          </li>
+        </ul>
+      </li>
     </ul>
   </div>
 </nav>

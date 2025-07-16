@@ -39,12 +39,12 @@ layout: default
             <a class="no-underline hover:underline" href="{{ event.url }}">{{ event.title }}</a>
           </h2>
           <div class="mt-2 text-slate-500">
-            {%- include icons/calendar.html class="h-4 inline" -%}
+            {%- include icons/calendar.html -%}
             {%- include event-date.html event=event -%}
           </div>
           {% if event.location %}
             <div class="text-slate-500">
-              {%- include icons/map-pin.html class="h-4 inline" -%}
+              {%- include icons/location-dot.html -%}
               {{ event.location }}
             </div>
           {% endif %}

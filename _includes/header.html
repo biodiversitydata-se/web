@@ -34,7 +34,7 @@
             {% if item_0.title == menu_0_active_item.title and menu_1_active_item == nil and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}"
             onclick="return toggleMobileSubMenu('menu_1_{{ forloop.index0 }}');">
-            {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/dropdown-arrow.html class="h-5 inline" %}{% endif %}
+            {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
           </a>
           {% if menu_items.size > 0 %}
               <!-- Level 1 mobile -->
@@ -46,7 +46,7 @@
                     {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" 
                     href="{{ item_1.path }}"
                     onclick="return toggleMobileSubMenu('menu_2_{{ forloop.index0 }}');">
-                    {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/dropdown-arrow.html class="h-5 inline" %}{% endif %}
+                    {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
                   </a>
                   {% if menu_items.size > 0 %}  
                     <!-- Level 2 mobile -->
@@ -72,7 +72,7 @@
         <a class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
           {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
-          {% include icons/search.html class="h-4" %}
+          {% include icons/magnifying-glass.html class="h-4" %}
         </a>
       </li>
       <li  class="sm:float-left">

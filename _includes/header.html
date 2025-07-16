@@ -74,16 +74,23 @@
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="h-4" %}
         </a>
-        <form id="searchForm" action="/search" class="hidden absolute mt-1 -ml-90">
-          <input name="query" type="text" class="w-100 py-1 px-2 border border-sbdi-lightblue rounded-md shadow-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="Search SBDI web site..." aria-label="Search">
+        <form id="searchForm" action="/search" class="hidden absolute -ml-90">
+          <input name="query" type="text" class="w-100 py-1 px-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md focus:outline-none" placeholder="Search SBDI web site..." aria-label="Search">
         </form>
       </li>
-      <li  class="sm:float-left">
-        <a class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+      <li class="sm:float-left">
+        <a id="userIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
           {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="My profile">
           {% include icons/user.html class="h-4" %}
         </a>
+        <ul id="userMenu" class="hidden absolute -ml-20 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
+          <li class="">
+            <a class="px-4 py-2 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/userdetails/myprofile">
+              {% include icons/up-right-from-square.html class="h-3.5 mr-1 mb-1 inline" %} My profile
+            </a>
+          </li>
+        </ul>
       </li>
     </ul>
   </div>

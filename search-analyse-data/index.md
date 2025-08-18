@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Portals
+title: Portals and tools
 ---
 # {{ page.title }}
 

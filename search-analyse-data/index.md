@@ -14,7 +14,7 @@ Here we list and describe all SBDI portals and tools which can be used to explor
     {% endif %}
     <div class="px-4 py-2">
       <h3><a href="{{ portal.link }}" class="no-underline">{{ portal.name }}</a></h3>
-      <p class="mb-1 text-slate-700">{{ portal.description }}</p>
+      <div class="tool-description mb-1 text-slate-700">{{ portal.description }}</div>
     </div>
   </article>
 {% endfor %}

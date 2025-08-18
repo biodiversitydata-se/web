@@ -1,128 +1,190 @@
-- name: Bioatlas
+- name: Bioatlas – find and access biodiversity data
   image: bioatlas.png
   description: >-
-    The SBDI Bioatlas is the Swedish instance of the core components in the Living Atlases platform. 
-    The Bioatlas includes the collectory, where you can browse data providers and datasets, and a search 
-    interface allowing you to search for data based on text, geographic location or based on species lists.
+    The Bioatlas allows you to find and access Swedish biodiversity data, and includes:
+    <ul>
+      <li>The collectory: browse data providers and datasets</li>
+      <li>A search interface: search for data</li>
+    </ul>
+    The SBDI Bioatlas is the Swedish instance of the core components in the Living Atlases platform.
   link: https://static.biodiversitydata.se
   slideshow: true
-  tagline: "Explore Sweden's biodiversity data"
+  slide-title: Bioatlas
+  tagline: "Find and access biodiversity data"
 
-- name: Spatial Portal
+- name: Spatial Portal – visualize and analyze biodiversity data
   image: spatial.png
   description: >-
-    The Spatial Portal is a web interface that allows you to map Swedish biodiversity data and analyze it 
-    together with environmental, climate, economic and other data represented in map layers. The Spatial 
-    Portal comes with a suite of tools to manipulate, display, import and download spatially referenced data.
+    The Spatial Portal is a tool that allows users to visualize and analyze Swedish biodiversity 
+    data in a spatial context – to understand and analyze biodiversity and its relationship with 
+    the environment.
+    <ul>
+      <li>Map and analyze species occurrences alongside environmental and contextual data: map 
+      species distributions, explore relationships between species and environment, and conduct 
+      spatial analyses</li>
+      <li>Key features include: mapping species occurrences, integrating environmental data layers 
+      to analyze species' habitat preferences and distributions, spatial analysis tools, data 
+      import and export, visualisation on maps and in charts</li>
+    </ul>
     <br>
     <svg aria-hidden="true" class="h-4 mb-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/>
     </svg>
-    <em>This portal requires an SBDI user account</em>
+    <em>This portal requires login</em>
   link: https://spatial.biodiversitydata.se
   slideshow: true
-  tagline: "Visualize and analyze spatial biodiversity data"
+  slide-title: Spatial Portal
+  tagline: "Visualize and analyze biodiversity data"
 
-- name: BioCollect
+- name: BioCollect – data collection tool for biodiversity science
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
   description: >-
-    BioCollect allows researchers to set up projects with specified systematic inventory schemes and 
-    coordinate the work with staff or volunteers collecting data. This could include standardized 
-    instructions to data collectors, data entry, data flow, quality checks and finally data publishing. 
+    BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
+    the work with staff or volunteers collecting data. BioCollect is designed for researchers, 
+    <b>citizen scientists</b> and <b>natural resource managers</b> to collect and manage their data. 
+    This can include:
+    <ul>
+      <li>Standardized instructions to data collectors</li>
+      <li>Standardized data entry</li>
+      <li>Standardized data flow</li>
+      <li>Quality checks and finally data publishing</li>
+    </ul>
     <br>
     <svg aria-hidden="true" class="h-4 mb-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/>
     </svg>
-    <em>This portal requires an SBDI user account</em>
+    <em>This portal requires login</em>
   link: https://biocollect.biodiversitydata.se
 
-- name: ASV Portal
+- name: ASV Portal for molecular data
   image: SBDI_molecular_logo.png
   description: >-
-    The Swedish ASV portal gives access to molecular data in SBDI by sequence and taxonomy search. 
-    Registered users can also upload amplicon data through the portal.
+    The Swedish Amplicon Sequence Variants (ASV) portal gives access to molecular data in SBDI:
+    <ul>
+      <li>Search sequence-based observations using based on sequence or taxonomy</li>
+      <li>Upload amplicon data for registered users</li>
+    </ul>
   link: https://asv-portal.biodiversitydata.se
 
-- name: nf-core/ampliseq
+- name: nf-core/ampliseq pipeline for sequencing data
   image: ampliseq2-1024x273-1-768x205.png
   description: >-
-    nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon sequencing data
-    (currently supported is Illumina paired end or PacBio). The pipeline is built using Nextflow, a workflow
-    tool to run tasks across multiple compute infrastructures in a very portable manner. It comes with
-    docker containers making installation trivial and results highly reproducible.
+    nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon
+    sequencing data (currently supported is Illumina paired end or PacBio).
+    <ul>
+      <li>Using the Nextflow workflow tool to run tasks across multiple compute infrastructures</li>
+      <li>Using docker containers for simple installation and highly reproducible results</li>
+    </ul>
   link: https://nf-co.re/ampliseq/
 
 - name: Plankton Toolbox
   image: planktonToolbox-150x150-1-e1621338981829.jpg
   description: >-
-    Plankton Toolbox is a free software developed to aid researchers and conservationists working with and 
-    analyzing plankton data. Plankton Toolbox is mainly aimed at working with data from water samples analyzed 
-    microscopically, but the software is applicable also to other data
+    Plankton Toolbox is a free software developed to aid researchers and conservationists working 
+    with and analyzing plankton data. Features include:
+    <ul>
+      <li>Plankton counter – use as counting tool by the microscope</li>
+      <li>Consistent use of names and taxonomic hierarchy based on World Register of Marine Species</li>
+      <li>Automatically calculate biomass based on cell volumes</li>
+      <li>Data screening - quality control of data</li>
+      <li>Plotting tools</li>
+      <li>Export data in .txt or .xlsx for further analyses or plotting</li>
+    </ul>
   link: https://nordicmicroalgae.org/tools
 
-- name: Nordic Microalgae
+- name: Nordic Microalgae – information and tools
   image: Chaetoceros-anastomosans-var.-externa_3_creditsMats-Kuylenstierna.jpg
   description: >-
-    Nordic Microalgae is a website containing information about microalgae and related organisms in the 
-    Nordic area, i.e. the Baltic Sea, the North East Atlantic and lakes, rivers and streams in the area. 
-    The website is of use for science, education, environmental monitoring etc.
+    Nordic Microalgae is a website containing information about microalgae and related organisms 
+    in the Nordic area, i.e. the Baltic Sea, the North East Atlantic and lakes, rivers and streams 
+    in the area.
+    <ul>
+      <li>Information about species occurrences, taxonomy</li>
+      <li>Images</li>
+      <li>Tools: Biovolume lists, Nordic Microalgae Checklist, Plankton toolbox</li>
+    </ul>
   link: https://nordicmicroalgae.org
 
-- name: SHARKweb and SHARKdata
+- name: SHARK – marine environmental monitoring data
   image: SharkWEB_logo-768x223.png
   image-full-width: true
   description: >-
-    SHARK includes a database, web interface and API for accessing marine monitoring data. SHARKweb is a website
-    for downloading data. For download via API, we refer to SHARKdata.
-  link: https://sharkweb.smhi.se
+    SHARK is Svenskt HavsARKiv’s website for downloading data. SHARK stores biological, physical 
+    and chemical marine environmental monitoring data.   
+  link: https://shark.smhi.se
 
-- name: Strategic Environmental Archaeology Database (SEAD)
+- name: Strategic Environmental Archaeology Database
   image: SEAD_logo.png
   description: >-
-    SEAD is a tool for Swedish archaeological science and an international database for environmental archaeology
-    and Quaternary science data. SEAD facilitates the analysis, visualisation and extraction of data on past 
-    climates, environments and human impacts, and forms part of an international network of research infrastructure
-    for archaeology, Quaternary palaeoecology and biodiversity studies.
+    SEAD is an international database for environmental archaeology and Quaternary science data, 
+    and a tool for Swedish archaeological science providing:
+    <ul>
+      <li>Easy access to data on past climates, environments and human impacts</li>
+      <li>Online tools to aid analysis and visualisation</li>
+    </ul>
+    SEAD is part of an international network of research infrastructure for archaeology, 
+    Quaternary palaeoecology and biodiversity studies.
   link: https://browser.sead.se
 
-- name: Wireless Remote Animal Monitoring System (WRAM)
+- name: Wireless Remote Animal Monitoring System for biologging data
   image: WRAM_logo.png
   description: >-
-    UC-WRAM is a portal for biotelemetry sensor data from animals. UC-WRAM hosts several million measurements from 
-    sensors deployed on animals, ranging from positions (GPS), acceleration, proximity, heart rate to body 
-    temperature and physiological data from internal sensors for many different species. The database is associated 
-    with tools to query, filter, adn download relevant data.
-  link: https://wram.slu.se
+    SLU WRAM is a national knowledge centre and platform for sensor data from animals used to 
+    understand animal behaviour, movement patterns and health.
+    <ul>
+      <li>Sensor data ranging from positions (GPS), acceleration, proximity, heart rate to body 
+      temperature and physiological data from internal sensors for many different species</li>
+      <li>A system to receive, manage, store and visualise data</li>
+      <li>Tools to query, filter, and download data</li>
+    </ul>
+  link: https://www.slu.se/en/research/research-infrastructures/research-infrastructures-at-slu-open-to-external-users/wram/
   slideshow: true
-  slideimage: wram-slide.png
-  slidetitle: WRAM
-  tagline: "Wireless Remote Animal Monitoring"
+  slide-image: wram-slide.png
+  slide-title: "Wireless Remote Animal Monitoring"
 
-- name: Biologging Portal
+- name: Biologging Portal – meta-data register and visualisation tools
   image: blacktern_example1-1536x1473.jpg
   description: >-
-    The SBDI Biologging Portal is a portal for exploring data through a meta-data register. It is also for 
-    visualizing samples of data to better understand qualities and possible limitations of the different 
-    datasets. You will find measurements from sensors deployed on animals, ranging from positions/movements, 
-    activity, proximity, heart rate, body temperature and other physiological data from internal sensors for 
-    many different species. The database is connected to tools to query, filter, visualize and in some cases 
-    direct download of data.
+    The SBDI Biologging Portal is a portal for exploring data through a meta-data register.
+    <ul>
+      <li>Find biologging datasets with ranging from positions/movements, activity, proximity, 
+      heart rate, body temperature and other physiological data from internal sensors for 
+      different species</li>
+      <li>Explore and visualise samples of data to better understand qualities and possible 
+      limitations of the different datasets</li>
+      <li>Download of open data</li>
+    </ul>
   link: https://biologging.biodiversitydata.se
   slideshow: true
-  tagline: "Open portal for sharing and exploring animal biologging data in Sweden"
+  slide-title: Biologging Portal
+  tagline: "Meta-data register and visualisation tools"
 
-- name: SUBSIM
+- name: SUBSIM – platform for subsea image analysis
   image: subsim.png
   image-full-width: true
   description: >-
-    The quickly rising demand to monitor the ocean with autonomous techniques and computer vision methods led to
-    the development of SUBSIM, a platform for efficient management and processing of underwater image and video data.
-    SUBSIM provides essential functions to conduct research and automated monitoring with image and video surveys, 
-    including data management, machine learning, digital collaboration, citizen science, and high-performance computing.
+    SUBSIM is a platform for efficient management and processing of underwater image and video 
+    survey data. SUBSIM provides functions to conduct research and automated monitoring of the 
+    ocean, including:
+    <ul>
+      <li>Data management</li>
+      <li>Machine learning, computer vision and high-performance computing</li>
+      <li>Digital collaboration and citizen science</li>
+    </ul>
   link: https://www.subsim.se/
   slideshow: true
-  tagline: "The Swedish platform for subsea image analysis"
+  slide-title: SUBSIM
+  tagline: "Platform for subsea image analysis"
 
-- name: BalticMicrobeDB
-  description: An interface to meta-omic data from the Baltic Sea.
+- name: BalticMicrobeDB – explore meta-omic data of microbial ecosystems from the Baltic Sea
+  description: >-
+    The Baltic Sea Reference Metagenome (BARM) is constructed using 2.6 billion metagenomic reads 
+    from 81 water samples and containing 6.8 million genes annotated for function and taxonomy. 
+    BARM can be used as reference my mapping new reads against the assembly. BalticMicrobeDB is a 
+    web interface for interactive exploratory analysis of the dataset:
+    <ul>
+      <li>View by functional gene categories</li>
+      <li>View by identified taxa</li>
+      <li>Search genes using BLAST sequence alignment</li>
+    </ul>
   link: https://barm.scilifelab.se/

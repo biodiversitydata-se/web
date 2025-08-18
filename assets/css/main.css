@@ -87,7 +87,7 @@
   }
 }
 
-.preamble{
+.preamble {
   @apply text-xl;
   @apply text-slate-700;
   @apply italic
@@ -111,6 +111,11 @@
   @apply font-medium;
   @apply rounded-md;
   @apply text-nowrap;
+}
+
+.tool-description ul {
+  @apply mt-1;
+  @apply text-base;
 }
 
 .fade {

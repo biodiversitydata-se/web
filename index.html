@@ -11,7 +11,7 @@ hide_left_menu: true
     <img id="slide-image" src="" alt="" class="fade w-full h-full object-cover absolute inset-0" />
     <div class="absolute bottom-0 left-0 flex flex-col justify-end w-full sm:w-100 px-6 py-4 bg-black/60 sm:rounded-tr-lg">
       <h2 id="slide-title" class="mt-0 mb-2 text-white text-3xl font-bold text-shadow-2xl"></h2>
-      <p id="slide-tagline" class="mb-0 text-white text-lg text-shadow-2xl"></p>
+      <p id="slide-tagline" class="mb-0 text-white text-2xl font-bold text-shadow-2xl"></p>
     </div>
   </a>
 </div>
@@ -185,9 +185,9 @@ hide_left_menu: true
   const slides = [
     {% for slide in slides %}
       {
-        imageUrl: "/uploads/portals/{{ slide.slideimage | default: slide.image }}",
+        imageUrl: "/uploads/portals/{{ slide.slide-image | default: slide.image }}",
         linkUrl: "{{ slide.link }}",
-        title: "{{ slide.slidetitle | default: slide.name }}",
+        title: "{{ slide.slide-title | default: slide.name }}",
         tagline: "{{ slide.tagline | default: "" }}"
       },
     {% endfor %}

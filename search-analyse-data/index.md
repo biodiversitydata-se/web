@@ -34,10 +34,10 @@ You can filter the list by selecting one or more tags:
 > - [https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-tools/](https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-tools/)
 > - [https://tools.biodiversitydata.se/](https://tools.biodiversitydata.se/)
 
-<script defer>
+<script>
   document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("[data-filter]");
-    const articles = document.querySelectorAll("[data-tags]");
+    const portals = document.querySelectorAll("[data-tags]");
 
     let activeFilters = new Set();
 
@@ -55,11 +55,11 @@ You can filter the list by selecting one or more tags:
           btn.classList.remove("bg-gray-200", "text-gray-700");
         }
 
-        articles.forEach(article => {
-          const tags = article.dataset.tags.split(",");
+        portals.forEach(portal => {
+          const tags = portal.dataset.tags.split(",");
           // check if all activeFilters are included
           const visible = [...activeFilters].every(f => tags.includes(f));
-          article.style.display = visible || activeFilters.size === 0 ? "" : "none";
+          portal.style.display = visible || activeFilters.size === 0 ? "" : "none";
         });
       });
     });

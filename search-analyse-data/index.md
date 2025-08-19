@@ -44,29 +44,62 @@ You can filter the list by selecting one or more tags:
     const filterButtons = document.querySelectorAll("[data-filter]");
     const portals = document.querySelectorAll("[data-tags]");
 
-    let activeFilters = new Set();
+    function getActiveFiltersFromHash() {
+      const hash = window.location.hash.slice(1); // remove '#'
+      const params = new URLSearchParams(hash);
+      const tags = params.get("tags");
+      return tags ? new Set(tags.split(",")) : new Set();
+    }
 
+    function updateHash() {
+      const params = new URLSearchParams();
+      if (activeFilters.size > 0) {
+        params.set("tags", [...activeFilters].join(","));
+      }
+      window.location.hash = params.toString();
+    }
+
+    function applyFilters() {
+      portals.forEach(portal => {
+        const tags = portal.dataset.tags.split(",");
+        const visible = [...activeFilters].every(f => tags.includes(f));
+        portal.style.display = visible || activeFilters.size === 0 ? "" : "none";
+      });
+
+      filterButtons.forEach(btn => {
+        const tag = btn.dataset.filter;
+        if (activeFilters.has(tag)) {
+          btn.classList.add("bg-blue-600", "text-white");
+          btn.classList.remove("bg-gray-200", "text-gray-700");
+        } else {
+          btn.classList.remove("bg-blue-600", "text-white");
+          btn.classList.add("bg-gray-200", "text-gray-700");
+        }
+      });
+    }
+
+    // Init
+    let activeFilters = getActiveFiltersFromHash();
+    applyFilters();
+
+    // Update filters on button click
     filterButtons.forEach(btn => {
       btn.addEventListener("click", () => {
         const tag = btn.dataset.filter;
-
         if (activeFilters.has(tag)) {
           activeFilters.delete(tag);
-          btn.classList.remove("bg-blue-600", "text-white");
-          btn.classList.add("bg-gray-200", "text-gray-700");
         } else {
           activeFilters.add(tag);
-          btn.classList.add("bg-blue-600", "text-white");
-          btn.classList.remove("bg-gray-200", "text-gray-700");
         }
-
-        portals.forEach(portal => {
-          const tags = portal.dataset.tags.split(",");
-          // check if all activeFilters are included
-          const visible = [...activeFilters].every(f => tags.includes(f));
-          portal.style.display = visible || activeFilters.size === 0 ? "" : "none";
-        });
+        updateHash();
+        applyFilters();
       });
+    });
+
+    // Handle back/forward navigation (hash changes)
+    window.addEventListener("hashchange", () => {
+      activeFilters = getActiveFiltersFromHash();
+      applyFilters();
     });
   });
 </script>

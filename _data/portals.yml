@@ -1,4 +1,5 @@
 - name: Bioatlas – find and access biodiversity data
+  tags: tech,science
   image: bioatlas.png
   description: >-
     The Bioatlas allows you to find and access Swedish biodiversity data, and includes:
@@ -13,6 +14,7 @@
   tagline: "Find and access biodiversity data"
 
 - name: Spatial Portal – visualize and analyze biodiversity data
+  tags: science
   image: spatial.png
   description: >-
     The Spatial Portal is a tool that allows users to visualize and analyze Swedish biodiversity 
@@ -26,7 +28,6 @@
       to analyze species' habitat preferences and distributions, spatial analysis tools, data 
       import and export, visualisation on maps and in charts</li>
     </ul>
-    <br>
     <svg aria-hidden="true" class="h-4 mb-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/>
     </svg>
@@ -37,6 +38,7 @@
   tagline: "Visualize and analyze biodiversity data"
 
 - name: BioCollect – data collection tool for biodiversity science
+  tags: news,design,science
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
@@ -49,7 +51,6 @@
       <li>Standardized data flow</li>
       <li>Quality checks and finally data publishing</li>
     </ul>
-    <br>
     <svg aria-hidden="true" class="h-4 mb-1 inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
       <path fill="currentColor" d="M144 144l0 48 160 0 0-48c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192l0-48C80 64.5 144.5 0 224 0s144 64.5 144 144l0 48 16 0c35.3 0 64 28.7 64 64l0 192c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 256c0-35.3 28.7-64 64-64l16 0z"/>
     </svg>
@@ -57,6 +58,7 @@
   link: https://biocollect.biodiversitydata.se
 
 - name: ASV Portal for molecular data
+  tags: desgin,science
   image: SBDI_molecular_logo.png
   description: >-
     The Swedish Amplicon Sequence Variants (ASV) portal gives access to molecular data in SBDI:
@@ -67,6 +69,7 @@
   link: https://asv-portal.biodiversitydata.se
 
 - name: nf-core/ampliseq pipeline for sequencing data
+  tags: tech,science
   image: ampliseq2-1024x273-1-768x205.png
   description: >-
     nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon
@@ -78,6 +81,7 @@
   link: https://nf-co.re/ampliseq/
 
 - name: Plankton Toolbox
+  tags: tech,news
   image: planktonToolbox-150x150-1-e1621338981829.jpg
   description: >-
     Plankton Toolbox is a free software developed to aid researchers and conservationists working 
@@ -93,6 +97,7 @@
   link: https://nordicmicroalgae.org/tools
 
 - name: Nordic Microalgae – information and tools
+  tags: desgin,tech
   image: Chaetoceros-anastomosans-var.-externa_3_creditsMats-Kuylenstierna.jpg
   description: >-
     Nordic Microalgae is a website containing information about microalgae and related organisms 
@@ -106,6 +111,7 @@
   link: https://nordicmicroalgae.org
 
 - name: SHARK – marine environmental monitoring data
+  tags: tech
   image: SharkWEB_logo-768x223.png
   image-full-width: true
   description: >-
@@ -114,6 +120,7 @@
   link: https://shark.smhi.se
 
 - name: Strategic Environmental Archaeology Database
+  tags: science
   image: SEAD_logo.png
   description: >-
     SEAD is an international database for environmental archaeology and Quaternary science data, 
@@ -127,6 +134,7 @@
   link: https://browser.sead.se
 
 - name: Wireless Remote Animal Monitoring System for biologging data
+  tags: news
   image: WRAM_logo.png
   description: >-
     SLU WRAM is a national knowledge centre and platform for sensor data from animals used to 
@@ -143,6 +151,7 @@
   slide-title: "Wireless Remote Animal Monitoring"
 
 - name: Biologging Portal – meta-data register and visualisation tools
+  tags: design,science
   image: blacktern_example1-1536x1473.jpg
   description: >-
     The SBDI Biologging Portal is a portal for exploring data through a meta-data register.
@@ -160,6 +169,7 @@
   tagline: "Meta-data register and visualisation tools"
 
 - name: SUBSIM – platform for subsea image analysis
+  tags:
   image: subsim.png
   image-full-width: true
   description: >-
@@ -177,6 +187,7 @@
   tagline: "Platform for subsea image analysis"
 
 - name: BalticMicrobeDB – explore meta-omic data of microbial ecosystems from the Baltic Sea
+  tags: tech
   description: >-
     The Baltic Sea Reference Metagenome (BARM) is constructed using 2.6 billion metagenomic reads 
     from 81 water samples and containing 6.8 million genes annotated for function and taxonomy. 

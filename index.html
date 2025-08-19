@@ -175,9 +175,12 @@ hide_left_menu: true
 <div class="mt-4 grid grid-cols-6 gap-6">
 {% for partner in site.data.partners %}
   <a href="{{ partner.link }}" title="{{ partner.title }}">
-    <img src="/uploads/partners/{{ partner.image }}" alt="{{ partner.title }}">
+    <img src="/uploads/partners/{{ partner.image }}" alt="Logotype {{ partner.title }}">
   </a>
 {% endfor %}
+  <a href="https://www.vr.se/english.html" title="The Swedish Research Council">
+    <img src="/uploads/partners/svart_fyrkant_eng_150.png" alt="Logotype The Swedish Research Council">
+  </a>
 </div>
 
 <script>

@@ -44,6 +44,7 @@
 - name: BioCollect – data collection tool for biodiversity science
   tags:
     - Systematic inventories
+    - Project management
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
@@ -148,7 +149,7 @@
 
 - name: Wireless Remote Animal Monitoring System for biologging data
   tags:
-    - Systematic inventories
+    - Biologging data
     - Visualize/explore
   image: WRAM_logo.png
   description: >-
@@ -167,7 +168,7 @@
 
 - name: Biologging Portal – meta-data register and visualisation tools
   tags:
-    - Systematic inventories
+    - Biologging data
     - Visualize/explore
   image: blacktern_example1-1536x1473.jpg
   description: >-

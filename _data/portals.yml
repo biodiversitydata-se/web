@@ -1,5 +1,7 @@
 - name: Bioatlas – find and access biodiversity data
-  tags: tech,science
+  tags: 
+    - Search biodiversity datasets
+    - Visualize/explore
   image: bioatlas.png
   description: >-
     The Bioatlas allows you to find and access Swedish biodiversity data, and includes:
@@ -14,7 +16,9 @@
   tagline: "Find and access biodiversity data"
 
 - name: Spatial Portal – visualize and analyze biodiversity data
-  tags: science
+  tags:
+    - Spatial analysis
+    - Visualize/explore
   image: spatial.png
   description: >-
     The Spatial Portal is a tool that allows users to visualize and analyze Swedish biodiversity 
@@ -38,7 +42,8 @@
   tagline: "Visualize and analyze biodiversity data"
 
 - name: BioCollect – data collection tool for biodiversity science
-  tags: news,design,science
+  tags:
+    - Systematic inventories
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
@@ -58,7 +63,9 @@
   link: https://biocollect.biodiversitydata.se
 
 - name: ASV Portal for molecular data
-  tags: desgin,science
+  tags:
+    - Molecular/genetic data
+    - Search biodiversity datasets
   image: SBDI_molecular_logo.png
   description: >-
     The Swedish Amplicon Sequence Variants (ASV) portal gives access to molecular data in SBDI:
@@ -69,7 +76,9 @@
   link: https://asv-portal.biodiversitydata.se
 
 - name: nf-core/ampliseq pipeline for sequencing data
-  tags: tech,science
+  tags:
+    - Molecular/genetic data
+    - Data flows
   image: ampliseq2-1024x273-1-768x205.png
   description: >-
     nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon
@@ -81,7 +90,8 @@
   link: https://nf-co.re/ampliseq/
 
 - name: Plankton Toolbox
-  tags: tech,news
+  tags:
+    - Marine data
   image: planktonToolbox-150x150-1-e1621338981829.jpg
   description: >-
     Plankton Toolbox is a free software developed to aid researchers and conservationists working 
@@ -97,7 +107,8 @@
   link: https://nordicmicroalgae.org/tools
 
 - name: Nordic Microalgae – information and tools
-  tags: desgin,tech
+  tags:
+    - Marine data
   image: Chaetoceros-anastomosans-var.-externa_3_creditsMats-Kuylenstierna.jpg
   description: >-
     Nordic Microalgae is a website containing information about microalgae and related organisms 
@@ -111,7 +122,8 @@
   link: https://nordicmicroalgae.org
 
 - name: SHARK – marine environmental monitoring data
-  tags: tech
+  tags:
+    - Marine data
   image: SharkWEB_logo-768x223.png
   image-full-width: true
   description: >-
@@ -120,7 +132,8 @@
   link: https://shark.smhi.se
 
 - name: Strategic Environmental Archaeology Database
-  tags: science
+  tags:
+    - Archaeological data
   image: SEAD_logo.png
   description: >-
     SEAD is an international database for environmental archaeology and Quaternary science data, 
@@ -134,7 +147,9 @@
   link: https://browser.sead.se
 
 - name: Wireless Remote Animal Monitoring System for biologging data
-  tags: news
+  tags:
+    - Systematic inventories
+    - Visualize/explore
   image: WRAM_logo.png
   description: >-
     SLU WRAM is a national knowledge centre and platform for sensor data from animals used to 
@@ -151,7 +166,9 @@
   slide-title: "Wireless Remote Animal Monitoring"
 
 - name: Biologging Portal – meta-data register and visualisation tools
-  tags: design,science
+  tags:
+    - Systematic inventories
+    - Visualize/explore
   image: blacktern_example1-1536x1473.jpg
   description: >-
     The SBDI Biologging Portal is a portal for exploring data through a meta-data register.
@@ -170,6 +187,7 @@
 
 - name: SUBSIM – platform for subsea image analysis
   tags:
+    - Marine data
   image: subsim.png
   image-full-width: true
   description: >-
@@ -187,7 +205,9 @@
   tagline: "Platform for subsea image analysis"
 
 - name: BalticMicrobeDB – explore meta-omic data of microbial ecosystems from the Baltic Sea
-  tags: tech
+  tags:
+    - Molecular/genetic data
+    - Marine data
   description: >-
     The Baltic Sea Reference Metagenome (BARM) is constructed using 2.6 billion metagenomic reads 
     from 81 water samples and containing 6.8 million genes annotated for function and taxonomy. 

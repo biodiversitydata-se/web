@@ -7,9 +7,9 @@ title: Portals and tools
 Here we list and describe all SBDI portals and tools which can be used to explore, download, and analyze biodiversity data. Our core tools and data access functionality is based on Living Atlases technology, but we also provide several specialized tools which are also linked to below.
 
 You can filter the list by selecting one or more tags:
-<div class="mb-4 space-x-1">
+<div class="mb-4 space-x-1 space-y-2">
   {% for tag in site.data.portal-tags %}
-    <button data-filter="{{ tag | downcase }}" class="px-3 py-1 mb-2 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
+    <button data-filter="{{ tag | downcase }}" class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
   {% endfor %}
 </div>
 
@@ -24,9 +24,9 @@ You can filter the list by selecting one or more tags:
       <h3><a href="{{ portal.link }}" class="no-underline">{{ portal.name }}</a></h3>
       <div class="tool-description mb-1 text-slate-700">{{ portal.description }}</div>
     </div>
-    <div class="mx-4 mb-4 text-sm">
+    <div class="mx-4 mb-4 sm:space-x-1 space-y-1 text-sm">
       {% for tag in portal.tags %}
-        <div class="inline px-3 py-1 mb-1 rounded-full bg-gray-200 text-gray-700 text-nowrap">{{ tag }}</div>
+        <button class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
       {% endfor %}
     </div>
   </article>

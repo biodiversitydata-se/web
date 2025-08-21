@@ -65,8 +65,8 @@ async function main() {
         },
         {
             title: 'Species',
-            source: 'https://species.biodiversitydata.se/ws/search?q=*%3A*&fq=rank%3A%22species%22&rows=1',
-            jsonPath: 'searchResults.totalRecords',
+            source: 'https://records.biodiversitydata.se/ws/occurrences/facets?q=*:*&facets=species&flimit=0',
+            jsonPath: '0.count',
             linkTo: 'https://species.biodiversitydata.se/search?q=*%3A*&fq=rank%3A%22species%22',
         },
         {

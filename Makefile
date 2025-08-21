@@ -17,8 +17,8 @@ run-nginx:
 
 pre-render:
 	_script/create-news-year-pages.sh
-	node _script/fetch-data-counts.js
-	curl -sS --max-time 60 --retry 1 "https://records.biodiversitydata.se/ws/occurrences/search.json?pageSize=0&q=*:*&facets=species_group&flimit=200" --output _data/species_groups-count.json
+	node _script/fetch-counts.js
+	curl -sS --max-time 60 --retry 1 "https://records.biodiversitydata.se/ws/occurrences/search.json?pageSize=0&q=*:*&facets=species_group&flimit=200" --output _data/species_group-counts.json
 
 _clean-deps:
 	rm Gemfile.lock package-lock.json

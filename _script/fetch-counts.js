@@ -121,7 +121,7 @@ async function main() {
         count: 20,
     });
 
-    fs.writeFileSync('_data/data-counts.json', JSON.stringify(result, null, 2));
+    fs.writeFileSync('_data/counts.json', JSON.stringify(result, null, 2));
 }
 
 if (require.main === module) {

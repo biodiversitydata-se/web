@@ -27,7 +27,7 @@ hide_left_menu: true
       SDBI aggregates biodiversity data from multiple sources and makes it available and usable online. It is the largest collection of freely available biodiversity data in Sweden.
     </p>
     <div class="flex flex-wrap justify-center">
-    {% for item in site.data.data-counts %}
+    {% for item in site.data.counts %}
       <a class="block m-2 px-2 py-1 bg-teal-900 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-bluegreen" 
         href="{{ item.url }}">
         <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>
@@ -42,7 +42,7 @@ hide_left_menu: true
       Biodiversity data about plants, animals and fungi and their habitats may be used to educate and inform and in environmental decision-making, state of the environment assessments and restoration and rewilding.
     </p>
     <div class="flex flex-wrap justify-center">
-    {% for item in site.data.species_groups-count.facetResults[0].fieldResult %}
+    {% for item in site.data.species_group-counts.facetResults[0].fieldResult %}
       {% comment %}The last item is the Unknown group, which we don't want to show{% endcomment %}
       {% if forloop.last %}{% continue %}{% endif %}
       <a class="block m-2 px-2 py-1 bg-sky-950 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-blue" 

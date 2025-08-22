@@ -54,6 +54,7 @@ exclude:
   - package.json
   - package-lock.json
   - postcss.config.js
+  - default.conf
 
 collections:
   news:

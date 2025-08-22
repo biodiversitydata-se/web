@@ -70,7 +70,7 @@
       {% endfor %}
       <li class="sm:float-left">
         <a id="searchIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
-          {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
+          {% if "Search" == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="h-4" %}
         </a>
@@ -80,7 +80,6 @@
       </li>
       <li class="sm:float-left">
         <a id="userIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
-          {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="My profile">
           {% include icons/user.html class="h-4" %}
         </a>

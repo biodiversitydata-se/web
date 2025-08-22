@@ -1,0 +1,12 @@
+---
+layout: none
+---
+{
+{%- for item in site.data.counts %}
+    "{{ item.title | downcase | replace: ' ', '_' }}": {
+        "title": "{{ item.title }}",
+        "count": {{ item.count }},
+        "url": "{{ item.url }}"
+    }{% if forloop.last == false %},{% endif %}
+{%- endfor %}
+}

@@ -58,7 +58,7 @@ async function main() {
             linkTo: 'https://collections.biodiversitydata.se/datasets',
         },
         {
-            title: 'Occurrence Records',
+            title: 'Occurrence records',
             source: 'https://records.biodiversitydata.se/ws/occurrences/search?q=*:*&facet=off&pageSize=0',
             jsonPath: 'totalRecords',
             linkTo: 'https://records.biodiversitydata.se',

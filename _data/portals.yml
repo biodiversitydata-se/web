@@ -46,6 +46,7 @@
     - Systematic inventories
     - Project management
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
+  image-full-width: true  
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
     the work with staff or volunteers collecting data. BioCollect is designed for researchers, 
@@ -81,6 +82,7 @@
     - Molecular/genetic data
     - Data flows
   image: ampliseq2-1024x273-1-768x205.png
+  image-full-width: true  
   description: >-
     nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon
     sequencing data (currently supported is Illumina paired end or PacBio).
@@ -136,6 +138,7 @@
   tags:
     - Archaeological data
   image: SEAD_logo.png
+  image-full-width: true  
   description: >-
     SEAD is an international database for environmental archaeology and Quaternary science data, 
     and a tool for Swedish archaeological science providing:

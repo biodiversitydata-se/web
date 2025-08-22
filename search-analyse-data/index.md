@@ -16,7 +16,7 @@ You can filter the list by selecting one or more tags:
 <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
 {% for portal in site.data.portals %}
   {% assign portal_tags = portal.tags | join: "," | downcase %}
-  <article class="flex flex-col shadow-md cursor-pointer hover:bg-slate-100 rounded-lg" onclick="location.href='{{ portal.link }}';" data-tags="{{ portal_tags }}">
+  <article class="flex flex-col border border-slate-300 cursor-pointer hover:bg-slate-100 rounded-lg" onclick="location.href='{{ portal.link }}';" data-tags="{{ portal_tags }}">
     {% if portal.image %}
       <img src="/uploads/portals/{{ portal.image }}" class="h-48 {% if portal.image-full-width %}w-full rounded-t-lg{% else %}m-auto{% endif %}" alt="">
     {% endif %}

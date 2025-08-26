@@ -1,12 +1,12 @@
 - title: Home
   path: /
-- title: Search & analyse data
-  path: /search-analyse-data/
+- title: Explore data
+  path: /explore-data/
   items:
     - title: Portals and tools
-      path: /search-analyse-data/
+      path: /explore-data/
     - title: Programming and API:s
-      path: /search-analyse-data/programming/
+      path: /explore-data/programming/
 - title: Share data
   path: /share-data/
   items:

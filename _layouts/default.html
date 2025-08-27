@@ -48,6 +48,17 @@
     {%- include footer.html -%}
     <script>
 
+      // Show/hide menu items based on login status
+      document.addEventListener('DOMContentLoaded', () => {
+        let userCookie = getCookie('ALA-Auth-user');
+        if (userCookie) {
+          //let userDetails = userCookie.split('|');
+          document.querySelectorAll('.user-menu-item').forEach((el) => {
+            el.classList.toggle('hidden');
+          });
+        }
+      });
+
       // Search form
       const searchIcon = document.getElementById('searchIcon');
       const searchForm = document.getElementById('searchForm');

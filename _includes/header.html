@@ -22,7 +22,7 @@
     <ul id="topMenu" class="sm:px-4 list-none hidden sm:block m-0 lg:mr-30">
       {% for item_0 in site.data.navigation %}
         {%- include functions/menu-items.html item=item_0 -%}
-        <li class="sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
+        <li class="{{ item_0.class }} sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
           <!-- Desktop item -->
           <a class="hidden sm:block py-4 px-3 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
@@ -79,16 +79,20 @@
         </form>
       </li>
       <li class="sm:float-left">
-        <a id="userIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
-          href="https://auth.biodiversitydata.se/userdetails/myprofile" title="My profile">
+        <a id="userIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline" 
+          href="https://auth.biodiversitydata.se/userdetails/myprofile" title="User menu">
           {% include icons/user.html class="h-4" %}
         </a>
-        <ul id="userMenu" class="hidden absolute -ml-22.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
-          <li class="">
-            <a class="px-4 py-2 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/userdetails/myprofile">
-              {% include icons/up-right-from-square.html class="h-3.5 mr-1 mb-1 inline" %} My profile
-            </a>
-          </li>
+        <ul id="userMenu" class="hidden absolute bg-white w-27 -ml-17.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
+          {% for item in site.data.navigation %}
+            {% if item.class contains "user-menu-item" %}
+              <li class="{{ item.class }}">
+                <a class="block px-4 py-1 text-base no-underline hover:bg-slate-100" href="{{ item.path }}">
+                  {{ item.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
     </ul>

@@ -11,15 +11,15 @@
 <nav class="overflow-hidden bg-sbdi-mediumblue" aria-label="Main menu">
   <div class="container flex flex-col sm:flex-row-reverse">
     <button class="sm:hidden block px-4 py-3 text-white flex flex-row-reverse" onclick="toggleMobileMenu()">
-      <svg id="topMenuOpen" class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg id="top-menu-open" class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
-      <svg id="topMenuClose" class="w-8 h-8 hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg id="top-menu-close" class="w-8 h-8 hidden" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
     </button>
     <!-- Level 0 -->
-    <ul id="topMenu" class="sm:px-4 list-none hidden sm:block m-0 lg:mr-30">
+    <ul id="top-menu" class="sm:px-4 list-none hidden sm:block m-0 lg:mr-30">
       {% for item_0 in site.data.navigation %}
         {%- include functions/menu-items.html item=item_0 -%}
         <li class="{{ item_0.class }} sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
@@ -33,24 +33,24 @@
           <a class="sm:hidden block p-2 text-sm text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title and menu_1_active_item == nil and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}"
-            onclick="return toggleMobileSubMenu('menu_1_{{ forloop.index0 }}');">
+            onclick="return toggleMobileSubMenu('menu-1-{{ forloop.index0 }}');">
             {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
           </a>
           {% if menu_items.size > 0 %}
               <!-- Level 1 mobile -->
-              <ul id="menu_1_{{ forloop.index0 }}" class="sm:hidden mb-0 ml-0 list-none {% if item_0.title != menu_0_active_item.title %}hidden{% endif %}">
+              <ul id="menu-1-{{ forloop.index0 }}" class="sm:hidden mb-0 ml-0 list-none {% if item_0.title != menu_0_active_item.title %}hidden{% endif %}">
               {% for item_1 in menu_items %}
                 {%- include functions/menu-items.html item=item_1 -%}
                 <li>
                   <a class="block p-2 pl-8 text-sm text-white font-semibold uppercase no-underline 
                     {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" 
                     href="{{ item_1.path }}"
-                    onclick="return toggleMobileSubMenu('menu_2_{{ forloop.index0 }}');">
+                    onclick="return toggleMobileSubMenu('menu-2-{{ forloop.index0 }}');">
                     {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
                   </a>
                   {% if menu_items.size > 0 %}  
                     <!-- Level 2 mobile -->
-                    <ul id="menu_2_{{ forloop.index0 }}" class="ml-0 list-none {% if item_1.title != menu_1_active_item.title %}hidden{% endif %}">
+                    <ul id="menu-2-{{ forloop.index0 }}" class="ml-0 list-none {% if item_1.title != menu_1_active_item.title %}hidden{% endif %}">
                       {% for item_2 in menu_items %}
                         <li>
                           <a class="block p-2 pl-12 text-sm text-white font-semibold uppercase no-underline
@@ -69,21 +69,21 @@
         </li>
       {% endfor %}
       <li class="sm:float-left">
-        <a id="searchIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+        <a id="search-icon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
           {% if "Search" == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="h-4" %}
         </a>
-        <form id="searchForm" action="/search" class="hidden absolute -ml-90">
+        <form id="search-form" action="/search" class="hidden absolute -ml-90">
           <input name="query" type="text" class="w-100 py-2 px-2 text-sm border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md focus:outline-none" placeholder="Search SBDI web site..." aria-label="Search">
         </form>
       </li>
       <li class="sm:float-left">
-        <a id="userIcon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline" 
+        <a id="user-icon" class="hidden sm:block py-2.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline" 
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="User menu">
           {% include icons/user.html class="h-4" %}
         </a>
-        <ul id="userMenu" class="hidden absolute bg-white w-27 -ml-17.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
+        <ul id="user-menu" class="hidden absolute bg-white w-27 -ml-17.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
           {% for item in site.data.navigation %}
             {% if item.class contains "user-menu-item" %}
               <li class="{{ item.class }}">

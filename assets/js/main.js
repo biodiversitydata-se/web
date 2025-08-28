@@ -1,8 +1,8 @@
 // Mobile menu toggle
 const toggleMobileMenu = () => {
-  document.getElementById("topMenu").classList.toggle("hidden");
-  document.getElementById("topMenuOpen").classList.toggle("hidden");
-  document.getElementById("topMenuClose").classList.toggle("hidden");
+  document.getElementById("top-menu").classList.toggle("hidden");
+  document.getElementById("top-menu-open").classList.toggle("hidden");
+  document.getElementById("top-menu-close").classList.toggle("hidden");
 }
 const toggleMobileSubMenu = (id) => {
   const menu = document.getElementById(id);
@@ -27,8 +27,8 @@ const getCookie = (name) => {
 document.addEventListener('DOMContentLoaded', () => {
 
   // Set up search popup
-  const searchIcon = document.getElementById('searchIcon');
-  const searchForm = document.getElementById('searchForm');
+  const searchIcon = document.getElementById('search-icon');
+  const searchForm = document.getElementById('search-form');
 
   searchIcon.addEventListener('click', (e) => {
     e.preventDefault();
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Set up user menu
-  const userIcon = document.getElementById('userIcon');
-  const userMenu = document.getElementById('userMenu');
+  const userIcon = document.getElementById('user-icon');
+  const userMenu = document.getElementById('user-menu');
 
   userIcon.addEventListener('click', (e) => {
     e.preventDefault();

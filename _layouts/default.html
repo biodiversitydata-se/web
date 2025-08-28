@@ -52,7 +52,8 @@
       document.addEventListener('DOMContentLoaded', () => {
         let userCookie = getCookie('ALA-Auth-user');
         if (userCookie) {
-          //let userDetails = userCookie.split('|');
+          let userDetails = userCookie.slice(1,-1).split('|');
+          document.getElementById('userIcon').title = `${userDetails[0]} ${userDetails[1]}`;
           document.querySelectorAll('.user-menu-item').forEach((el) => {
             el.classList.toggle('hidden');
           });

@@ -46,53 +46,6 @@
       </div>
     </div>
     {%- include footer.html -%}
-    <script>
-
-      // Show/hide menu items based on login status
-      document.addEventListener('DOMContentLoaded', () => {
-        let userCookie = getCookie('ALA-Auth-user');
-        if (userCookie) {
-          let userDetails = userCookie.slice(1,-1).split('|');
-          document.getElementById('userIcon').title = `${userDetails[0]} ${userDetails[1]}`;
-          document.querySelectorAll('.user-menu-item').forEach((el) => {
-            el.classList.toggle('hidden');
-          });
-        }
-      });
-
-      // Search form
-      const searchIcon = document.getElementById('searchIcon');
-      const searchForm = document.getElementById('searchForm');
-
-      searchIcon.addEventListener('click', (e) => {
-        e.preventDefault();
-        searchForm.classList.toggle('hidden');
-        searchIcon.classList.toggle('bg-sbdi-blue');
-        searchForm.querySelector("input[name='query']").focus();
-      });
-
-      // User menu
-      const userIcon = document.getElementById('userIcon');
-      const userMenu = document.getElementById('userMenu');
-
-      userIcon.addEventListener('click', (e) => {
-        e.preventDefault();
-        userMenu.classList.toggle('hidden');
-        userIcon.classList.toggle('bg-sbdi-blue');
-      });
-
-      // Close search and user menu when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!searchIcon.contains(e.target) && !searchForm.contains(e.target)) {
-          searchForm.classList.add('hidden');
-          searchIcon.classList.remove('bg-sbdi-blue');
-        }
-        if (!userIcon.contains(e.target) && !userMenu.contains(e.target)) {
-          userMenu.classList.add('hidden');
-          userIcon.classList.remove('bg-sbdi-blue');
-        }
-      });
-    </script>
   </body>
 
 </html>

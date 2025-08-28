@@ -196,7 +196,7 @@ hide_left_menu: true
   const slideTitle = document.getElementById("slide-title");
   const slideTagline = document.getElementById("slide-tagline");
 
-  function showSlide(index) {
+  const showSlide = (index) => {
     const slide = shuffledSlides[index];
     slideImage.classList.remove("show");
     setTimeout(() => {

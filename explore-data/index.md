@@ -46,14 +46,14 @@ You can filter the list by selecting one or more tags:
     const filterButtons = document.querySelectorAll("[data-filter]");
     const portals = document.querySelectorAll("[data-tags]");
 
-    function getActiveFiltersFromHash() {
+    const getActiveFiltersFromHash = () => {
       const hash = window.location.hash.slice(1); // remove '#'
       const params = new URLSearchParams(hash);
       const tags = params.get("tags");
       return tags ? new Set(tags.split(",")) : new Set();
     }
 
-    function updateHash() {
+    const updateHash = () => {
       const params = new URLSearchParams();
       if (activeFilters.size > 0) {
         params.set("tags", [...activeFilters].join(","));
@@ -61,7 +61,7 @@ You can filter the list by selecting one or more tags:
       window.location.hash = params.toString();
     }
 
-    function applyFilters() {
+    const applyFilters = () => {
       portals.forEach(portal => {
         const tags = portal.dataset.tags.split(",");
         const visible = [...activeFilters].every(f => tags.includes(f));

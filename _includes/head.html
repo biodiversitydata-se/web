@@ -11,28 +11,5 @@
   {%- if page.load_search == true -%}
     <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
   {%- endif -%}
-  <script>
-    const toggleMobileMenu = () => {
-      document.getElementById("topMenu").classList.toggle("hidden");
-      document.getElementById("topMenuOpen").classList.toggle("hidden");
-      document.getElementById("topMenuClose").classList.toggle("hidden");
-    }
-    const toggleMobileSubMenu = (id) => {
-      const menu = document.getElementById(id);
-      if (menu) {
-        menu.classList.toggle("hidden");
-        return false;
-      }
-      return true;
-    }
-
-    const getCookie = (name) => {
-      let cookie = {};
-      document.cookie.split(';').forEach(function(el) {
-        let split = el.split('=');
-        cookie[split[0].trim()] = split.slice(1).join("=");
-      });
-      return cookie[name];
-    }    
-  </script>
+  <script src="/assets/js/main.js?{{ "now" | date: "%Y%m%d%H%M" }}"></script>
 </head>

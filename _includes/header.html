@@ -84,26 +84,15 @@
           {% include icons/user.html class="h-4" %}
         </a>
         <ul id="userMenu" class="hidden absolute bg-white w-27 -ml-17.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
-          <li class="user-menu-item">
-            <a class="block px-4 py-1 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/login">
-              Login
-            </a>
-          </li>
-          <li class="user-menu-item">
-            <a class="block px-4 py-1 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/userdetails/registration/createAccount">
-              Sign up
-            </a>
-          </li>
-          <li class="user-menu-item hidden">
-            <a class="block px-4 py-1 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/userdetails/myprofile">
-              My profile
-            </a>
-          </li>
-          <li class="user-menu-item hidden">
-            <a class="block px-4 py-1 text-base no-underline hover:bg-slate-100" href="https://auth.biodiversitydata.se/logout">
-              Logout
-            </a>
-          </li>
+          {% for item in site.data.navigation %}
+            {% if item.class contains "user-menu-item" %}
+              <li class="{{ item.class }}">
+                <a class="block px-4 py-1 text-base no-underline hover:bg-slate-100" href="{{ item.path }}">
+                  {{ item.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
         </ul>
       </li>
     </ul>

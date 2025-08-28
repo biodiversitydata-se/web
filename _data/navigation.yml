@@ -75,8 +75,8 @@
 - title: My profile
   path: https://auth.biodiversitydata.se/userdetails/myprofile/
   mobile_only: true
-  class: hidden user-menu-item
+  class: user-menu-item hidden
 - title: Logout
   path: https://auth.biodiversitydata.se/logout/
   mobile_only: true
-  class: hidden user-menu-item
+  class: user-menu-item hidden

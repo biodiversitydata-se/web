@@ -8,7 +8,6 @@ permalink: /:basename/
 <div class="flex">
   <div class="w-10 h-10 bg-sbdi-darkblue"></div>
   <div class="w-10 h-10 bg-sbdi-blue"></div>
-  <div class="w-10 h-10 bg-sbdi-mediumblue"></div>
   <div class="w-10 h-10 bg-sbdi-lightblue"></div>
   <div class="w-10 h-10 bg-sbdi-iceblue"></div>
   <div class="w-10 h-10 bg-sbdi-bluegreen"></div>

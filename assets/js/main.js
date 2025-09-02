@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   searchIcon.addEventListener('click', (e) => {
     e.preventDefault();
     searchForm.classList.toggle('hidden');
-    searchIcon.classList.toggle('bg-sbdi-blue');
+    searchIcon.classList.toggle('bg-sbdi-darkblue');
     searchForm.querySelector("input[name='query']").focus();
   });
 
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
   userIcon.addEventListener('click', (e) => {
     e.preventDefault();
     userMenu.classList.toggle('hidden');
-    userIcon.classList.toggle('bg-sbdi-blue');
+    userIcon.classList.toggle('bg-sbdi-darkblue');
   });
 
   // Show/hide menu items based on login status
@@ -61,11 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('click', (e) => {
     if (!searchIcon.contains(e.target) && !searchForm.contains(e.target)) {
       searchForm.classList.add('hidden');
-      searchIcon.classList.remove('bg-sbdi-blue');
+      searchIcon.classList.remove('bg-sbdi-darkblue');
     }
     if (!userIcon.contains(e.target) && !userMenu.contains(e.target)) {
       userMenu.classList.add('hidden');
-      userIcon.classList.remove('bg-sbdi-blue');
+      userIcon.classList.remove('bg-sbdi-darkblue');
     }
   });
 });

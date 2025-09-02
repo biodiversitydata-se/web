@@ -36,7 +36,7 @@ hide_left_menu: true
     {% endfor %}
     </div>
   </div>
-  <div class="basis-3/5 bg-sbdi-blue px-5 md:px-10 lg:px-15 py-8 text-white rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg">
+  <div class="basis-3/5 bg-sbdi-darkblue px-5 md:px-10 lg:px-15 py-8 text-white rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg">
     <h2 class="mt-0 uppercase font-normal">Making the most of biodiversity data</h2>
     <p class="font-thin">
       Biodiversity data about plants, animals and fungi and their habitats may be used to educate and inform and in environmental decision-making, state of the environment assessments and restoration and rewilding.
@@ -45,7 +45,7 @@ hide_left_menu: true
     {% for item in site.data.species_group-counts.facetResults[0].fieldResult %}
       {% comment %}The last item is the Unknown group, which we don't want to show{% endcomment %}
       {% if forloop.last %}{% continue %}{% endif %}
-      <a class="block m-2 px-2 py-1 bg-sky-950 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-blue" 
+      <a class="block m-2 px-2 py-1 bg-sky-950 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-darkblue" 
         href="https://records.biodiversitydata.se/occurrences/search?fq=species_group:%22{{ item.label }}%22">
         <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>
         <span class="text-sm block">{{ item.label }}</span>

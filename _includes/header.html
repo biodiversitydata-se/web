@@ -8,7 +8,7 @@
   <span class="grow ml-6 self-end text-lg text-gray-600 leading-none">Swedish Biodiversity Data Infrastructure</span>
 </header>
 
-<nav class="overflow-hidden bg-sbdi-mediumblue" aria-label="Main menu">
+<nav class="overflow-hidden bg-sbdi-blue" aria-label="Main menu">
   <div class="container flex flex-col sm:flex-row-reverse">
     <button class="sm:hidden block px-4 py-3 text-white flex flex-row-reverse" onclick="toggleMobileMenu()">
       <svg id="top-menu-open" class="w-8 h-8" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -24,13 +24,13 @@
         {%- include functions/menu-items.html item=item_0 -%}
         <li class="{{ item_0.class }} sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
           <!-- Desktop item -->
-          <a class="hidden sm:block py-5 px-3 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
+          <a class="hidden sm:block py-5 px-3 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-darkblue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}">
             {{ item_0.title }}
           </a>
           <!-- Mobile item -->
-          <a class="sm:hidden block p-2 text-sm text-white font-semibold uppercase no-underline hover:bg-sbdi-blue hover:no-underline 
+          <a class="sm:hidden block p-2 text-sm text-white font-semibold uppercase no-underline hover:bg-sbdi-darkblue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title and menu_1_active_item == nil and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}"
             onclick="return toggleMobileSubMenu('menu-1-{{ forloop.index0 }}');">
@@ -69,7 +69,7 @@
         </li>
       {% endfor %}
       <li class="sm:float-left">
-        <a id="search-icon" class="hidden sm:block py-3.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline 
+        <a id="search-icon" class="hidden sm:block py-3.5 px-3 text-sm/1 text-white hover:bg-sbdi-darkblue hover:no-underline 
           {% if "Search" == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="h-4" %}
@@ -79,7 +79,7 @@
         </form>
       </li>
       <li class="sm:float-left">
-        <a id="user-icon" class="hidden sm:block py-3.5 px-3 text-sm/1 text-white hover:bg-sbdi-blue hover:no-underline" 
+        <a id="user-icon" class="hidden sm:block py-3.5 px-3 text-sm/1 text-white hover:bg-sbdi-darkblue hover:no-underline" 
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="User menu">
           {% include icons/user.html class="h-4" %}
         </a>

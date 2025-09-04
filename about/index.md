@@ -5,7 +5,7 @@ title: Vision and Strategic plan
 # {{ page.title }}
 
 <p class="shadow-md bg-slate-100 p-4 my-6">
-  <a href="/uploads/Strategic-plan-for-SBDI-2021-2025-1.pdf">View the Strategic plan for 2021-2025</a>
+  <a href="/uploads/Strategic-plan-for-SBDI-2025-2030_FINAL.pdf">View the Strategic plan for 2025-2030</a>
 </p>
 
 

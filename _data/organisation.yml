@@ -16,31 +16,35 @@ executive_office:
     affiliation: SMHI
 
 steering_committee:
-  - name: Anne-Sophie Archambeau
-    affiliation: Muséum national d’histoire naturelle (MNHN), Paris, France
+  - name: Anders Hamsten
+    affiliation: Senior advisor to the vice chancellor at LU
   - name: Michaela Barth
-    affiliation: KTH Royal Institute of Technology (KTH)
-  - name: Anders G. Finstad
-    affiliation: Norwegian University of Science and Technology (NTNU), Trondheim, Norway
-  - name: Joakim Appelquist
-    affiliation: The Knowledge Foundation
-  - name: Anna Wetterbom
-    affiliation: Ragnar Söderberghs stiftelse
+    affiliation: Royal Institute of Technology (KTH)
+  - name: Hanna Tornevall
+    affiliation: Gothenburg Botanical Garden 
+  - name: Hugo de Boer
+    affiliation: Natural History Museum, University of Oslo    
   - name: Johan Wulff
-    affiliation: Swedish Environmental Protection Agency (NV)
+    affiliation: Naturvårdsverket/EPA
+  - name: Anne-Sophie Archambeau
+    affiliation: Muséum National d’Histoire naturelle (MNHN), Paris
+  - name: Joakim Appelquist
+    affiliation: The Royal Swedish Academy of Engineering Sciences (IVA)
 
 scientific_committee:
   - name: Alexandre Antonelli
-    affiliation: Royal Botanic Gardens, Kew
-  - name: Bente Edvardsen
-    affiliation: University of Oslo
+    affiliation: Kew Gardens
+  - name: Alexander Ziska
+    affiliation: Philipps-University Marburg
   - name: Francisco Hernandez
-    affiliation: Flanders Marine Institute
+    affiliation: VLIZ – Vlanders Marine Institute
   - name: Donald Hobern
     affiliation: International Barcode of Life Consortium
   - name: Hanna Koivula
-    affiliation: University of Helsinki
+    affiliation: CSC – IT Centre for Science
   - name: Cynthia Parr
-    affiliation: US Department of Agriculture
+    affiliation: Agricultural Research Service, US Department of Agriculture
   - name: Helen Roy
     affiliation: UK Centre for Ecology & Hydrology
+  - name: Pamela Soltis
+    affiliation: University of Florida, Gainesville

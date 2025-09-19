@@ -23,7 +23,3 @@ Below you find an overview of our educational online modules in Biodiversity Inf
   </article>
 {% endfor %}
 </div>
-
-<br>
-> Sources:
-> - [https://docs.biodiversitydata.se/courses-and-training/online-courses/](https://docs.biodiversitydata.se/courses-and-training/online-courses/)

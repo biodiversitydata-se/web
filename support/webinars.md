@@ -25,7 +25,3 @@ Here you find a library of past webinars and workshop recordings. You can also b
   {% endfor %}
 {% endfor %}
 </div>
-
-<br>
-> Sources:
-> - [https://docs.biodiversitydata.se/courses-and-training/webinars/](https://docs.biodiversitydata.se/courses-and-training/webinars/)

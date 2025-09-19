@@ -35,12 +35,6 @@ You can filter the list by selecting one or more tags:
 {% endfor %}
 </div>
 
-<br>
-<br>
-> Sources:
-> - [https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-tools/](https://biodiversitydata.se/explore-analyze/data-and-tools/sbdi-tools/)
-> - [https://tools.biodiversitydata.se/](https://tools.biodiversitydata.se/)
-
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("[data-filter]");

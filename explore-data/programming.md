@@ -17,8 +17,3 @@ To access SBDI data using Python code there is a [Python version of the *galah* 
 
 ## API:s
 SBDI also offers a rich set of [API:s](https://api.biodiversitydata.se) that allow you to access SBDI data and services from any programming language, so that you can develop your own tools for searching, downloading and analyzing SBDI data.
-
-<br>
-> Sources:
-> - [https://biodiversitydata.se/explore-analyze/use-your-own-tools/](https://biodiversitydata.se/explore-analyze/use-your-own-tools/)
-> - [https://docs.biodiversitydata.se/analyse-data/sbdi4r/](https://docs.biodiversitydata.se/analyse-data/sbdi4r/)

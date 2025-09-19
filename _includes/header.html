@@ -33,7 +33,8 @@
           <a class="sm:hidden block p-2 text-sm text-white font-semibold uppercase no-underline hover:bg-sbdi-darkblue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title and menu_1_active_item == nil and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}"
-            onclick="return toggleMobileSubMenu('menu-1-{{ forloop.index0 }}');">
+            {% if menu_items.size > 0 %}onclick="return toggleMobileSubMenu('menu-1-{{ forloop.index0 }}');"{% endif %}
+            >
             {{ item_0.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
           </a>
           {% if menu_items.size > 0 %}
@@ -45,7 +46,8 @@
                   <a class="block p-2 pl-8 text-sm text-white font-semibold uppercase no-underline 
                     {% if item_1.title == menu_1_active_item.title and menu_2_active_title == nil %}bg-sbdi-darkblue{% endif %}" 
                     href="{{ item_1.path }}"
-                    onclick="return toggleMobileSubMenu('menu-2-{{ forloop.index0 }}');">
+                    {% if menu_items.size > 0 %}onclick="return toggleMobileSubMenu('menu-2-{{ forloop.index0 }}');"{% endif %}
+                    >
                     {{ item_1.title }}{% if menu_items.size > 0 %}{% include icons/caret-down.html %}{% endif %}
                   </a>
                   {% if menu_items.size > 0 %}  

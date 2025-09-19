@@ -59,7 +59,7 @@
   path: /search/
   mobile_only: true
 - title: Login
-  path: https://auth.biodiversitydata.se/login/
+  path: https://auth.biodiversitydata.se/cas/login
   mobile_only: true
   class: user-menu-item
 - title: Sign up
@@ -71,6 +71,6 @@
   mobile_only: true
   class: user-menu-item hidden
 - title: Logout
-  path: https://auth.biodiversitydata.se/logout/
+  path: https://auth.biodiversitydata.se/cas/logout
   mobile_only: true
   class: user-menu-item hidden

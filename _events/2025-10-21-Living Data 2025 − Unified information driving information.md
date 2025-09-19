@@ -1,5 +1,6 @@
 ---
 title: "Living Data 2025 − Unified information driving information"
+organize: false
 start_time: 2025-10-21
 end_time: 2025-10-24
 location: Bogotá, Colombia

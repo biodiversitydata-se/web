@@ -1,5 +1,6 @@
 ---
 title: "SBDI Days 2026 − Artificial Intelligence in Ecology and Biodiversity Research"
+organize: true
 start_time: 2026-02-10
 end_time: 2026-02-11
 location: Swedish Museum of Natural History, Stockholm

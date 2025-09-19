@@ -1,0 +1,33 @@
+{% assign event = include.event %}
+<article class="flex flex-col lg:flex-row mt-8 pb-8 border-b-4 border-slate-200">
+  <div class="basis-1/4 mb-4 lg:mb-0 cursor-pointer" onclick="location.href='{{ event.url }}';">
+    <div class="hidden lg:block relative text-center text-slate-700" aria-hidden="true">
+      {% if event.image %}
+        <img src="/uploads/events/{{ event.image }}" alt="">
+      {% endif %}
+    </div>
+  </div>
+  <div class="basis-3/4 lg:ml-8">
+    <header>
+      <h3 class="mt-0">
+        <a class="no-underline hover:underline" href="{{ event.url }}">{{ event.title }}</a>
+      </h3>
+      <div class="mt-2 text-slate-500">
+        {%- include icons/calendar.html -%}
+        {%- include event-date.html event=event -%}
+      </div>
+      {% if event.location %}
+        <div class="text-slate-500">
+          {%- include icons/location-dot.html -%}
+          {{ event.location }}
+        </div>
+      {% endif %}
+    </header>
+    <p class="mt-4">
+      {% include preamble.html page=event %}
+    </p>
+    <footer>
+      <a href="{{ event.url }}" title="{{ event.title }}" class="link-icon text-lg">Read more</a>
+    </footer>
+  </div>
+</article>

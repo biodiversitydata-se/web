@@ -14,11 +14,13 @@
       path: /share-data/
     - title: SBDI data policy and vision
       path: /share-data/sbdi-data-policy-and-vision/
-- title: SBDI Events
+- title: Events
   path: /sbdi-events/
   items:
-    - title: SBDI Events
+    - title: Event organization
       path: /sbdi-events/
+    - title: Event participation
+      path: /sbdi-events/participation/
 - title: Support
   path: /support/
   items:

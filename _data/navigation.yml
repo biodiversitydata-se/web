@@ -40,10 +40,8 @@
   items:
     - title: About
       path: /about/
-    - title: Contact
-      path: /about/contact/
     - title: Organization
-      path: /about/organization/executive-office/
+      path: /about/organization/consortium-partners/
       items:
         - title: Consortium partners
           path: /about/organization/consortium-partners/
@@ -51,6 +49,8 @@
           path: /about/organization/executive-office/
         - title: Governance
           path: /about/organization/governance/
+    - title: General inquiries
+      path: /about/general-inquiries/
     - title: News
       path: /news/
       layouts:

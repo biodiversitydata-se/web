@@ -38,19 +38,19 @@
     - event-list
     - event-item
   items:
-    - title: Vision and Strategic plan
+    - title: About
       path: /about/
     - title: Contact
       path: /about/contact/
-    - title: Organisation
-      path: /about/organisation/executive-office/
+    - title: Organization
+      path: /about/organization/executive-office/
       items:
-        - title: Executive office
-          path: /about/organisation/executive-office/
         - title: Consortium partners
-          path: /about/organisation/consortium-partners/
+          path: /about/organization/consortium-partners/
+        - title: Executive office
+          path: /about/organization/executive-office/
         - title: Governance
-          path: /about/organisation/governance/
+          path: /about/organization/governance/
     - title: News
       path: /news/
       layouts:

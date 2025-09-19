@@ -15,12 +15,14 @@
     - title: SBDI data policy and vision
       path: /share-data/sbdi-data-policy-and-vision/
 - title: Events
-  path: /sbdi-events/
+  path: /events/
+  layouts:
+    - event-item
   items:
     - title: Event organization
-      path: /sbdi-events/
+      path: /events/
     - title: Event participation
-      path: /sbdi-events/participation/
+      path: /events/participation/
 - title: Support
   path: /support/
   items:
@@ -34,11 +36,6 @@
       path: /support/webinars/
 - title: About
   path: /about/
-  layouts:
-    - news-list
-    - news-item
-    - event-list
-    - event-item
   items:
     - title: About
       path: /about/
@@ -58,11 +55,6 @@
       layouts:
         - news-list
         - news-item
-    - title: Events
-      path: /events/
-      layouts:
-        - event-list
-        - event-item
 - title: Search
   path: /search/
   mobile_only: true

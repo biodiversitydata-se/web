@@ -9,7 +9,7 @@ Sets the following variables:
 {%- assign menu_2_active_title = nil -%}
 
 {%- for item_0 in site.data.navigation -%}
-  {%- if page.url == item_0.path -%}
+  {%- if page.url == item_0.path or item_0.layouts contains page.layout -%}
     {%- assign menu_0_active_item = item_0 -%}
   {%- endif -%}
   {%- for item_1 in item_0.items -%}

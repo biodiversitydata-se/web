@@ -24,7 +24,7 @@
         {%- include functions/menu-items.html item=item_0 -%}
         <li class="{{ item_0.class }} sm:float-left{% if item_0.mobile_only %} sm:hidden{% endif %}">
           <!-- Desktop item -->
-          <a class="hidden sm:block py-5 px-3 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-darkblue hover:no-underline 
+          <a class="hidden sm:block py-5 px-2 md:px-4 text-center text-sm/1 text-white font-semibold uppercase no-underline hover:bg-sbdi-darkblue hover:no-underline 
             {% if item_0.title == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
             href="{{ item_0.path }}">
             {{ item_0.title }}
@@ -69,7 +69,7 @@
         </li>
       {% endfor %}
       <li class="sm:float-left">
-        <a id="search-icon" class="hidden sm:block py-3.5 px-3 text-sm/1 text-white hover:bg-sbdi-darkblue no-underline hover:no-underline 
+        <a id="search-icon" class="hidden sm:block py-3.5 px-2 md:px-3 text-sm/1 text-white hover:bg-sbdi-darkblue no-underline hover:no-underline 
           {% if "Search" == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="inline h-4" %}{% include icons/caret-down.html class="ml-1 h-3 inline" %}
@@ -79,7 +79,7 @@
         </form>
       </li>
       <li class="sm:float-left">
-        <a id="user-icon" class="hidden sm:block py-3.5 px-3 text-sm/1 text-white hover:bg-sbdi-darkblue no-underline hover:no-underline" 
+        <a id="user-icon" class="hidden sm:block py-3.5 px-2 md:px-3 text-sm/1 text-white hover:bg-sbdi-darkblue no-underline hover:no-underline" 
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="User menu">
           {% include icons/user.html class="inline h-4" %}{% include icons/caret-down.html class="ml-1 h-3 inline" %}
         </a>

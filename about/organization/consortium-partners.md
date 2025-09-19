@@ -16,7 +16,3 @@ The SBDI Consortium consists of eleven partner organizations. Below we list the 
     <p>{{ partner.description }}</p>
   </article>
 {% endfor %}
-
-<br>
-> Sources:
-> - [https://biodiversitydata.se/about-us/who-we-are/sbdi-consortium-partners/](https://biodiversitydata.se/about-us/who-we-are/sbdi-consortium-partners/)

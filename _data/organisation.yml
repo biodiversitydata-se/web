@@ -2,18 +2,30 @@ executive_office:
   - name: Margret Steinthorsdottir
     title: SBDI Director
     affiliation: Swedish Museum of Natural History
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: director@biodiversitydata.se
+    image: margret.jpg
   - name: Holger Dettki
     title: SBDI Deputy Director
     affiliation: Swedish University of Agricultural Sciences
+    affiliation_image: slu_logo_webb1-e1627376342839.png
+    email: director@biodiversitydata.se
+    phone: +46 18 67 2574
+    image: holger.jpg
   - name: Rasa Bukontaite
     title: SBDI Project Coordinator
     affiliation: Swedish Museum of Natural History
-  - name: Matthias Obst
-    title: Chair SBDI Coordination group and Support Office Manager
-    affiliation: University of Gothenburg
-  - name: Anders Torstensson
-    title: Chair SBDI Coordination group
-    affiliation: SMHI
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: rasa.bukontaite@nrm.se
+    phone: +46 72 396 4372
+    image: person.jpg
+  - name: Veronika A. Johansson
+    title: <a href="https://www.gbif.se">GBIF Sweden</a> Node Manager
+    affiliation: Swedish Museum of Natural History
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: veronika.johansson@nrm.se
+    phone: +46 8 519 540 36
+    image: veronika.jpg
 
 steering_committee:
   - name: Anders Hamsten

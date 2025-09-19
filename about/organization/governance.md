@@ -21,7 +21,3 @@ The SBDI SC is supported by a Scientific Committee (SciC). The SciC consists of 
 
 ## Stakeholder assembly
 Additionally, representatives from the heads of all partner organizations in the SBDI consortium congregate for an annual Stakeholder assembly, pointing out directions to the SC and handling common matters related to the overarching administration of the SBDI consortium.
-
-<br>
-> Sources:
-> - [https://biodiversitydata.se/about-us/who-we-are/sbdi-governance/](https://biodiversitydata.se/about-us/who-we-are/sbdi-governance/)

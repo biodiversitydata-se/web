@@ -14,6 +14,9 @@ Serving as the **Swedish node of the Global Biodiversity Information Facility (G
     <img src="/uploads/partners/{{ partner.image }}" alt="Logotype {{ partner.title }}">
   </a>
 {% endfor %}
+  <a href="https://www.gbif.se" title="GBIF Sweden">
+    <img src="/uploads/partners/gbif.svg" alt="Logotype GBIF Sweden">
+  </a>
 </div>
 
 ## More information

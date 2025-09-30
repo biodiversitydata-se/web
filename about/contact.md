@@ -1,6 +1,6 @@
 ---
 layout: default
-title: General inquiries
+title: Contact
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

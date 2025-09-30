@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Executive office
+title: Executive Office
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

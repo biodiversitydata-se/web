@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - 'main'
+  schedule:
+    - cron: '22 0 * * *'
 
 env:
   JEKYLL_ENV: production

@@ -5,20 +5,6 @@ permalink: /:basename/
 ---
 # {{ page.title }}
 
-<div class="flex">
-  <div class="w-10 h-10 bg-sbdi-darkblue"></div>
-  <div class="w-10 h-10 bg-sbdi-blue"></div>
-  <div class="w-10 h-10 bg-sbdi-lightblue"></div>
-  <div class="w-10 h-10 bg-sbdi-iceblue"></div>
-  <div class="w-10 h-10 bg-sbdi-bluegreen"></div>
-  <div class="w-10 h-10 bg-sbdi-green"></div>
-  <div class="w-10 h-10 bg-sbdi-mediumgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-lightgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-limegreen"></div>
-  <div class="w-10 h-10 bg-sbdi-yellowgreen"></div>
-  <div class="w-10 h-10 bg-sbdi-lightyellowgreen"></div>
-</div>
-
 The SBDI website is provided by [NRM (Naturhistoriska riksmuseet)](https://www.nrm.se).
 
 We want as many people as possible to be able to use SBDI’s websites, regardless of platform or any adaptation aids. However, we are aware that the sites have some accessibility problems.

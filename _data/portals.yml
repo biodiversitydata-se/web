@@ -76,6 +76,10 @@
       <li>Upload amplicon data for registered users</li>
     </ul>
   link: https://asv-portal.biodiversitydata.se
+  slideshow: true
+  slide-title: ASV Portal
+  slide-image: asv-portal.png
+  tagline: "Explore metabarcoding (eDNA) data"
 
 - name: nf-core/ampliseq pipeline for sequencing data
   tags:
@@ -84,8 +88,8 @@
   image: ampliseq2-1024x273-1-768x205.png
   image-full-width: true  
   description: >-
-    nfcore/ampliseq is a bioinformatics analysis pipeline used for 16S rRNA or ITS amplicon
-    sequencing data (currently supported is Illumina paired end or PacBio).
+    nfcore/ampliseq is a pipeline for postprocessing of amplicon sequencing (metabarcoding) data
+    from markers such as 16S, 18S, ITS, and CO1, supporting Illumina, PacBio and IonTorrent data.
     <ul>
       <li>Using the Nextflow workflow tool to run tasks across multiple compute infrastructures</li>
       <li>Using docker containers for simple installation and highly reproducible results</li>
@@ -208,18 +212,15 @@
   slide-title: SUBSIM
   tagline: "Platform for subsea image analysis"
 
-- name: BalticMicrobeDB – explore meta-omic data of microbial ecosystems from the Baltic Sea
+- name: BAGS – BAltic sea Gene Set
   tags:
     - Molecular/genetic data
     - Marine data
   description: >-
-    The Baltic Sea Reference Metagenome (BARM) is constructed using 2.6 billion metagenomic reads 
-    from 81 water samples and containing 6.8 million genes annotated for function and taxonomy. 
-    BARM can be used as reference my mapping new reads against the assembly. BalticMicrobeDB is a 
-    web interface for interactive exploratory analysis of the dataset:
-    <ul>
-      <li>View by functional gene categories</li>
-      <li>View by identified taxa</li>
-      <li>Search genes using BLAST sequence alignment</li>
-    </ul>
-  link: https://barm.scilifelab.se/
+    The BAltic sea Gene Set (BAGS) encompasses 66 million microbial genes annotated for function
+    and taxonomy. It is based on metagenomic data from 124 water samples that span the salinity
+    and oxygen gradients of the Baltic Sea and capture seasonal dynamics at two stations.
+    BAGS-Shiny is a web interface for interactive exploratory analysis of the gene set: Search
+    using filters on functional annotation and/or taxonomy, or by sequence searches using BLAST.
+    Or download the whole dataset.  
+  link: https://bags.serve.scilifelab.se/app/bags

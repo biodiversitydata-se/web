@@ -10,8 +10,3 @@ We love all kinds of biodiversity data! Please <a href="https://docs.biodiversit
 
 ## Documentation
 For details on data standards, requirements and publishing options see our [help pages for data publishing and sharing](https://docs.biodiversitydata.se/publish-and-share-data/).
-
-<br>
-
-> TODO:  
-> [https://biodiversitydata.se/share/why-share-data/](https://biodiversitydata.se/share/why-share-data/) and some of [https://biodiversitydata.se/share/our-data/](https://biodiversitydata.se/share/our-data/) have been skipped. OK?

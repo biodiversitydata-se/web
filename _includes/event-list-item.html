@@ -12,14 +12,20 @@
       <h3 class="mt-0">
         <a class="no-underline hover:underline" href="{{ event.url }}">{{ event.title }}</a>
       </h3>
-      <div class="mt-2 text-slate-500">
+      <div class="mt-2 text-slate-600">
         {%- include icons/calendar.html -%}
         {%- include event-date.html event=event -%}
       </div>
       {% if event.location %}
-        <div class="text-slate-500">
+        <div class="text-slate-600">
           {%- include icons/location-dot.html -%}
           {{ event.location }}
+        </div>
+      {% endif %}
+      {% if event.contribution %}
+        <div class="text-slate-600">
+          {%- include icons/lightbulb.html -%}
+          {{ event.contribution }}
         </div>
       {% endif %}
     </header>

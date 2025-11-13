@@ -6,6 +6,7 @@ end_time: 2025-10-24
 location: Bogotá, Colombia
 image: 2025-10-21_Living-data-2025.jpg
 description: This joint conference in Bogotá will bring together members of our biodiversity networks, alongside hundreds of scientists, researchers, practitioners and other experts from around the world.
+contribution: SBDI presented the <a href="/uploads/events/2025-10-21_SBDI_Living-data.pdf">Swedish ASV Portal for Molecular Biodiversity Data</a>
 ---
 
 Come share your knowledge and experience, help us transform our understanding of the state and trends of biodiversity, and learn how together our work contributes towards conserving the living world.

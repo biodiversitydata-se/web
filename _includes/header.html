@@ -76,7 +76,7 @@
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="inline h-4" %}{% include icons/caret-down.html class="ml-1 h-3 inline" %}
         </a>
-        <form id="search-form" action="/search" class="hidden absolute -ml-86">
+        <form id="search-form" action="/search" class="hidden absolute z-100 -ml-86">
           <input name="query" type="text" class="w-100 py-2 px-2 text-sm border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md focus:outline-none" placeholder="Search SBDI web site..." aria-label="Search">
         </form>
       </li>
@@ -85,7 +85,7 @@
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="User menu">
           {% include icons/user.html class="inline h-4" %}{% include icons/caret-down.html class="ml-1 h-3 inline" %}
         </a>
-        <ul id="user-menu" class="hidden absolute bg-white w-27 -ml-13.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
+        <ul id="user-menu" class="hidden absolute z-100 bg-white w-27 -ml-13.5 list-none py-2 border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md">
           {% for item in site.data.navigation %}
             {% if item.class contains "user-menu-item" %}
               <li class="{{ item.class }}">

@@ -7,13 +7,13 @@
       path: /explore-data/
     - title: Programming and API:s
       path: /explore-data/programming/
-- title: Share data
-  path: /share-data/
+- title: Publish data
+  path: /publish-data/
   items:
-    - title: Share data
-      path: /share-data/
+    - title: Data publishing
+      path: /publish-data/
     - title: SBDI data policy and vision
-      path: /share-data/sbdi-data-policy-and-vision/
+      path: /publish-data/sbdi-data-policy-and-vision/
 - title: Events
   path: /events/
   layouts:
@@ -26,7 +26,7 @@
 - title: Support
   path: /support/
   items:
-    - title: Support
+    - title: Overview
       path: /support/
     - title: Training
       path: /support/training/
@@ -37,7 +37,7 @@
 - title: About
   path: /about/
   items:
-    - title: About
+    - title: Overview
       path: /about/
     - title: Organization
       path: /about/organization/consortium-partners/

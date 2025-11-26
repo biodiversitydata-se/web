@@ -11,9 +11,6 @@
     </ul>
     The SBDI Bioatlas is the Swedish instance of the core components in the Living Atlases platform.
   link: https://bioatlas.biodiversitydata.se
-  slideshow: true
-  slide-title: Bioatlas
-  tagline: "Find and access biodiversity data"
 
 - name: Spatial Portal – visualize and analyze biodiversity data
   tags:
@@ -37,9 +34,6 @@
     </svg>
     <em>This portal requires login</em>
   link: https://spatial.biodiversitydata.se
-  slideshow: true
-  slide-title: Spatial Portal
-  tagline: "Visualize and analyze biodiversity data"
 
 - name: BioCollect – data collection tool for biodiversity science
   tags:
@@ -76,10 +70,6 @@
       <li>Upload amplicon data for registered users</li>
     </ul>
   link: https://asv-portal.biodiversitydata.se
-  slideshow: true
-  slide-title: ASV Portal
-  slide-image: asv-portal.png
-  tagline: "Explore metabarcoding (eDNA) data"
 
 - name: nf-core/ampliseq pipeline for sequencing data
   tags:
@@ -169,9 +159,6 @@
       <li>Tools to query, filter, and download data</li>
     </ul>
   link: https://www.slu.se/en/research/research-infrastructures/research-infrastructures-at-slu-open-to-external-users/wram/
-  slideshow: true
-  slide-image: wram-slide.png
-  slide-title: "Wireless Remote Animal Monitoring"
 
 - name: Biologging Portal – meta-data register and visualisation tools
   tags:
@@ -189,9 +176,6 @@
       <li>Download of open data</li>
     </ul>
   link: https://biologging.biodiversitydata.se
-  slideshow: true
-  slide-title: Biologging Portal
-  tagline: "Meta-data register and visualisation tools"
 
 - name: SUBSIM – platform for subsea image analysis
   tags:
@@ -208,9 +192,6 @@
       <li>Digital collaboration and citizen science</li>
     </ul>
   link: https://www.subsim.se/
-  slideshow: true
-  slide-title: SUBSIM
-  tagline: "Platform for subsea image analysis"
 
 - name: BAGS – BAltic sea Gene Set
   tags:

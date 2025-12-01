@@ -70,17 +70,17 @@
           {% endif %}
         </li>
       {% endfor %}
-      <li class="sm:float-left">
+      <li class="sm:float-left" aria-label="Search">
         <a id="search-icon" class="hidden sm:block py-3.5 px-2 md:px-3 text-sm/1 text-white hover:bg-sbdi-darkblue no-underline hover:no-underline 
           {% if "Search" == menu_0_active_item.title %}bg-sbdi-darkblue{% endif %}"
           href="/search/" title="Search SBDI web site">
           {% include icons/magnifying-glass.html class="inline h-4" %}{% include icons/caret-down.html class="ml-1 h-3 inline" %}
         </a>
-        <form id="search-form" action="/search" class="hidden absolute z-100 -ml-86">
+        <form id="search-form" action="/search" class="hidden absolute z-100 -ml-86" role="search">
           <input name="query" type="text" class="w-100 py-2 px-2 text-sm border border-t-0 border-sbdi-lightblue rounded-b-md shadow-md focus:outline-none" placeholder="Search SBDI web site..." aria-label="Search">
         </form>
       </li>
-      <li class="sm:float-left">
+      <li class="sm:float-left" aria-label="User menu">
         <a id="user-icon" class="hidden sm:block py-3.5 px-2 md:px-3 text-sm/1 text-white hover:bg-sbdi-darkblue no-underline hover:no-underline" 
           href="https://auth.biodiversitydata.se/userdetails/myprofile" title="User menu">
           {% include icons/user.html class="inline h-4" %}{% include icons/caret-down.html class="ml-1 h-3 inline" %}

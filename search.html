@@ -8,12 +8,12 @@ hide_left_menu: true
 
 <h1>Search results</h1>
 
-<div class="text-md">
+<section class="text-md" role="search">
   <input id="search-input" type="text" class="mr-2 py-1 px-2 w-40 sm:w-96 border border-sbdi-lightblue rounded-md focus:outline-none focus:ring focus:ring-sbdi-darkblue" placeholder="Search SBDI web site...">
   <button class="button" onclick="search()">
     Search
   </button>
-</div>
+</section>
 
 <ul id="results-container" class="mt-4 list-none list-inside ml-0"></ul>
 
@@ -29,7 +29,7 @@ hide_left_menu: true
       resultsContainer: document.getElementById('results-container'),
       json: '/assets/zzz-search.json',
       searchResultTemplate: 
-        '<li class="p-1 mt-2 rounded hover:bg-slate-100 cursor-pointer" onclick="location.href=\'{url}\';">' + 
+        '<li class="p-1 mt-2 rounded hover:bg-slate-100 cursor-pointer" onclick="location.href=\'{url}\';" aria-label="{title}">' + 
           '<a href="{url}" class="text-xl">{title}</a>' + 
           '<br>{description}' + 
         '</li>',

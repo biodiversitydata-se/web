@@ -8,16 +8,16 @@ title: Overview
 
 Serving as the **Swedish node of the Global Biodiversity Information Facility (GBIF)**, SBDI enables scientists, policymakers, and other stakeholders to address the biodiversity crisis with reliable data and innovative digital solutions.
 
-<div class="mt-4 mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<section class="mt-4 mb-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6" aria-label="Partners">
 {% for partner in site.data.partners %}
   <a href="{{ partner.link }}" title="{{ partner.title }}">
-    <img src="/uploads/partners/{{ partner.image }}" alt="Logotype {{ partner.title }}">
+    <img src="/uploads/partners/{{ partner.image }}" alt="" aria-hidden="true">
   </a>
 {% endfor %}
   <a href="https://www.gbif.se" title="GBIF Sweden">
-    <img src="/uploads/partners/gbif.svg" alt="Logotype GBIF Sweden">
+    <img src="/uploads/partners/gbif.svg" alt="" aria-hidden="true">
   </a>
-</div>
+</section>
 
 ## More information
 - [Strategic plan for 2025-2030](/uploads/Strategic-plan-for-SBDI-2025-2030_FINAL.pdf)

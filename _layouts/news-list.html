@@ -19,7 +19,7 @@ layout: default
     {% assign news_year = news.date | date: "%Y" | plus: 0 %}
     {% if page.year == news_year or page.year == 0 %}
       <article class="flex flex-col lg:flex-row mt-8 pb-8 border-b-4 border-slate-200 last:border-0">
-        <div class="basis-1/4 mb-4 lg:mb-0 cursor-pointer" onclick="location.href='{{ news.url }}';">
+        <div class="basis-1/4 mb-4 lg:mb-0 cursor-pointer" onclick="location.href='{{ news.url }}';" aria-hidden="true">
           {% if news.image %}
             <img src="/uploads/news/{{ news.image }}" alt="">
           {% endif %}

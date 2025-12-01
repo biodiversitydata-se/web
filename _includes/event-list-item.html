@@ -1,7 +1,7 @@
 {% assign event = include.event %}
 <article class="flex flex-col lg:flex-row mt-8 pb-8 border-b-4 border-slate-200">
-  <div class="basis-1/4 mb-4 lg:mb-0 cursor-pointer" onclick="location.href='{{ event.url }}';">
-    <div class="hidden lg:block relative text-center text-slate-700" aria-hidden="true">
+  <div class="basis-1/4 mb-4 lg:mb-0 cursor-pointer" onclick="location.href='{{ event.url }}';" aria-hidden="true">
+    <div class="hidden lg:block relative text-center text-slate-700">
       {% if event.image %}
         <img src="/uploads/events/{{ event.image }}" alt="">
       {% endif %}

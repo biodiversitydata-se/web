@@ -11,9 +11,7 @@ Below you find an overview of our educational online modules in Biodiversity Inf
 <div>
 {% for course in site.courses %}
   <article class="mt-6 pb-4 border-b-4 border-slate-200 last:border-0">
-    <header>
-      <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
-    </header>
+    <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
     <p class="mt-2">
       {% include preamble.html page=course %}
     </p>

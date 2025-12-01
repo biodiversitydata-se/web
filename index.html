@@ -4,86 +4,88 @@ hide_left_menu: true
 ---
 
 <!-- Slideshow -->
-<div class="relative w-full h-80 sm:h-100 border border-slate-200 overflow-hidden rounded-lg shadow-md">
-  <a id="slide-link" href="#" title="" class="block w-full h-full">
-    <img id="slide-image" src="" alt="" class="fade w-full h-full object-cover absolute inset-0" />
-    <h1 class="absolute top-0 left-0 mt-0 px-3 py-2 md:px-4 md:py-3 w-full md:w-auto text-white text-2xl md:text-3xl bg-black/50 lg:rounded-br-lg">
-      Open access to Sweden's biodiversity data and analysis tools
-    </h1>
-    <div class="absolute bottom-0 right-0 px-2 py-1 text-white text-xs bg-black/50 rounded-tl-lg">
-       <em id="slide-title"></em> by <strong id="slide-by"></strong> (<span id="slide-license"></span>)
-    </div>
-  </a>
-</div>
-<div class="mt-5 mb-10">
-  <a class="link-icon text-xl" href="/explore-data/">See all biodiversity data portals and tools</a>
-</div>
+<article>
+  <div class="relative w-full h-80 sm:h-100 border border-slate-200 overflow-hidden rounded-lg shadow-md">
+    <a href="/explore-data/" class="block w-full h-full" title="See all biodiversity data and analysis tools" aria-label="See all biodiversity data and analysis tools">
+      <img id="slide-image" src="" alt="" class="fade w-full h-full object-cover absolute inset-0" aria-hidden="true" />
+      <h1 class="absolute top-0 left-0 mt-0 px-3 py-2 md:px-4 md:py-3 w-full md:w-auto text-white text-2xl md:text-3xl bg-black/50 lg:rounded-br-lg">
+        Open access to Sweden's biodiversity data and analysis tools
+      </h1>
+      <div class="absolute bottom-0 right-0 px-2 py-1 text-white text-xs bg-black/50 rounded-tl-lg">
+        <em id="slide-title"></em> by <strong id="slide-by"></strong> (<span id="slide-license"></span>)
+      </div>
+    </a>
+  </div>
+  <div class="mt-5 mb-10">
+    <a class="link-icon text-xl" href="/explore-data/">See all biodiversity data and analysis tools</a>
+  </div>
+</article>
 
 <!-- Data grid -->
-<div class="flex flex-col lg:flex-row">
-  <div class="basis-2/5 bg-sbdi-bluegreen px-5 md:px-10 lg:px-15 py-8 text-white rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg">
-    <h2 class="mt-0 uppercase font-normal">SBDI brings biodiversity data together</h2>
-    <p class="font-thin">
-      SDBI aggregates biodiversity data from multiple sources and makes it available and usable online. It is the largest collection of freely available biodiversity data in Sweden.
-    </p>
-    <div class="flex flex-wrap justify-center">
-    {% for item in site.data.counts %}
-      <a class="block m-2 px-2 py-1 bg-teal-900 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-bluegreen" 
-        href="{{ item.url }}">
-        <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>
-        <span class="text-sm block">{{ item.title }}</span>
-      </a>
-    {% endfor %}
+<article>
+  <div class="flex flex-col lg:flex-row">
+    <div class="basis-2/5 bg-sbdi-bluegreen px-5 md:px-10 lg:px-15 py-8 text-white rounded-t-lg lg:rounded-tr-none lg:rounded-l-lg">
+      <h2 class="mt-0 uppercase font-normal">SBDI brings biodiversity data together</h2>
+      <p class="font-light">
+        SDBI aggregates biodiversity data from multiple sources and makes it available and usable online. It is the largest collection of freely available biodiversity data in Sweden.
+      </p>
+      <div class="flex flex-wrap justify-center">
+      {% for item in site.data.counts %}
+        <a class="block m-2 px-2 py-1 bg-teal-900 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-bluegreen" 
+          href="{{ item.url }}">
+          <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>
+          <span class="text-sm block">{{ item.title }}</span>
+        </a>
+      {% endfor %}
+      </div>
+    </div>
+    <div class="basis-3/5 bg-sbdi-darkblue px-5 md:px-10 lg:px-15 py-8 text-white rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg">
+      <h2 class="mt-0 uppercase font-normal">Making the most of biodiversity data</h2>
+      <p class="font-light">
+        Biodiversity data about plants, animals and fungi and their habitats may be used to educate and inform and in environmental decision-making, state of the environment assessments and restoration and rewilding.
+      </p>
+      <div class="flex flex-wrap justify-center">
+      {% for item in site.data.species_group-counts.facetResults[0].fieldResult %}
+        {% comment %}The last item is the Unknown group, which we don't want to show{% endcomment %}
+        {% if forloop.last %}{% continue %}{% endif %}
+        <a class="block m-2 px-2 py-1 bg-sky-950 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-darkblue" 
+          href="https://records.biodiversitydata.se/occurrences/search?fq=species_group:%22{{ item.label }}%22">
+          <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>
+          <span class="text-sm block">{{ item.label }}</span>
+        </a>
+      {% endfor %}
+      </div>
     </div>
   </div>
-  <div class="basis-3/5 bg-sbdi-darkblue px-5 md:px-10 lg:px-15 py-8 text-white rounded-b-lg lg:rounded-bl-none lg:rounded-r-lg">
-    <h2 class="mt-0 uppercase font-normal">Making the most of biodiversity data</h2>
-    <p class="font-thin">
-      Biodiversity data about plants, animals and fungi and their habitats may be used to educate and inform and in environmental decision-making, state of the environment assessments and restoration and rewilding.
-    </p>
-    <div class="flex flex-wrap justify-center">
-    {% for item in site.data.species_group-counts.facetResults[0].fieldResult %}
-      {% comment %}The last item is the Unknown group, which we don't want to show{% endcomment %}
-      {% if forloop.last %}{% continue %}{% endif %}
-      <a class="block m-2 px-2 py-1 bg-sky-950 text-white no-underline rounded-md hover:bg-white hover:text-sbdi-darkblue" 
-        href="https://records.biodiversitydata.se/occurrences/search?fq=species_group:%22{{ item.label }}%22">
-        <span class="text-lg block">{% include number-format.html number=item.count decimals=0 ts="," %}</span>
-        <span class="text-sm block">{{ item.label }}</span>
-      </a>
-    {% endfor %}
-    </div>
-  </div>
-</div>
+</article>
 
 <div class="flex flex-col lg:flex-row mt-8 mb-12">
 
   <!-- News -->
   <article class="basis-6/10 lg:border-r-4 lg:border-slate-200 lg:pr-4 lg:mr-8">
-    <header>
-      <h2 class="mb-2">News</h2>
-    </header>
+    <h2 class="mb-2">News</h2>
     {% assign latest_news = site.news | reverse %}
     {% for news in latest_news limit:3 %}
       <article class="flex flex-col md:flex-row mb-8">
-          <div class="basis-1/4 mb-4 md:mb-0 cursor-pointer" onclick="location.href='{{ news.url }}';">
-            {% if news.image %}
-              <img src="/uploads/news/{{ news.image }}" alt="">
-            {% endif %}
-          </div>
-          <div class="basis-3/4 md:ml-6">
-            <header>
-              <h3 class="mt-0">
-                  <a href="{{ news.url }}" class="no-underline hover:underline">{{ news.title }}</a>
-              </h3>
-              <div class="mt-1 text-slate-500">
-                {{ news.date | date: "%b %d, %Y" }}
-              </div>
-            </header>
-            <p class="mt-2">
-              {% include preamble.html page=news %}
-            </p>
-          </div>
-        </article>
+        <div class="basis-1/4 mb-4 md:mb-0 cursor-pointer" onclick="location.href='{{ news.url }}';" aria-hidden="true">
+          {% if news.image %}
+            <img src="/uploads/news/{{ news.image }}" alt="">
+          {% endif %}
+        </div>
+        <div class="basis-3/4 md:ml-6">
+          <header>
+            <h3 class="mt-0">
+                <a href="{{ news.url }}" class="no-underline hover:underline">{{ news.title }}</a>
+            </h3>
+            <div class="mt-1 text-slate-500">
+              {{ news.date | date: "%b %d, %Y" }}
+            </div>
+          </header>
+          <p class="mt-2">
+            {% include preamble.html page=news %}
+          </p>
+        </div>
+      </article>
     {% endfor %}
     <footer class="mt-6">
       <a class="text-lg link-icon" href="/news/">See all news</a>
@@ -92,13 +94,11 @@ hide_left_menu: true
 
   <!-- Events -->
   <article class="basis-4/10 mt-8 lg:mt-0">
-    <header>
-      <h2 class="mb-2">Events</h2>
-    </header>
+    <h2 class="mb-2">Events</h2>
     {% include functions/fetch-events.html event_type="upcoming" %}
     {% for event in events limit:3 %}
       <article class="flex flex-col md:flex-row mb-8">
-        <div class="basis-1/4 mb-4 md:mb-0 cursor-pointer" onclick="location.href='{{ event.url }}';">
+        <div class="basis-1/4 mb-4 md:mb-0 cursor-pointer" onclick="location.href='{{ event.url }}';" aria-hidden="true">
             {% if event.image %}
               <img src="/uploads/events/{{ event.image }}" alt="">
             {% endif %}
@@ -130,49 +130,53 @@ hide_left_menu: true
 </div>
 
 <!-- LA and GBIF banners -->
-<h2 class="text-lg sm:text-2xl">
-  SBDI is developed in collaboration with the Living Atlases community, and includes the Swedish node of the Global Biodiversity Information Facility (GBIF)
-</h2>
-<a href="https://living-atlases.gbif.org/" title="Living Atlases community">
-  <img class="rounded-lg" src="/assets/images/living-atlas-banner.png" alt="Living Atlases community banner">
-</a>
-<div class="mt-4 relative">
-  <a href="https://www.gbif.org/" title="Global Biodiversity Information Facility">
-    <img class="rounded-lg" src="/assets/images/gbif-banner-v2.png" alt="Global Biodiversity Information Facility (GBIF) banner">
+<article>
+  <h2 class="text-lg sm:text-2xl">
+    SBDI is developed in collaboration with the Living Atlases community, and includes the Swedish node of the Global Biodiversity Information Facility (GBIF)
+  </h2>
+  <a href="https://living-atlases.gbif.org/" title="Living Atlases community">
+    <img class="rounded-lg" src="/assets/images/living-atlas-banner.png" alt="" aria-hidden="true">
   </a>
-  <div class="absolute inset-0 sm:inset-auto sm:top-0 sm:left-0 px-4 lg:px-8 py-1 lg:py-4 bg-black/40 rounded-lg">
-    <h3 class="my-0 sm:my-3 text-lg/6 md:text-2xl lg:text-4xl text-white text-shadow-2xl font-semibold">GBIF Data from Sweden</h3>
-    <ul class="list-none m-0">
-      <li class="leading-0">
-        <a class="text-sm/4 md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
-          href="http://www.gbif.org/analytics/country/SE/published">
-          Swedish publishing trends
-        </a>
-      </li>
-      <li class="leading-0">
-        <a class="text-sm/4 md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
-          href="http://www.gbif.org/occurrence/search?publishingCountry=SE">
-          Search data published by Sweden
-        </a>
-      </li>
-    </ul>
-  </div>  
-</div>
+  <div class="mt-4 relative">
+    <a href="https://www.gbif.org/" title="Global Biodiversity Information Facility">
+      <img class="rounded-lg" src="/assets/images/gbif-banner-v2.png" alt="" aria-hidden="true">
+    </a>
+    <div class="absolute inset-0 sm:inset-auto sm:top-0 sm:left-0 px-4 lg:px-8 py-1 lg:py-4 bg-black/40 rounded-lg">
+      <h3 class="my-0 sm:my-3 text-lg/6 md:text-2xl lg:text-4xl text-white text-shadow-2xl font-semibold">GBIF Data from Sweden</h3>
+      <ul class="list-none m-0">
+        <li class="leading-0">
+          <a class="text-sm/4 md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
+            href="http://www.gbif.org/analytics/country/SE/published">
+            Swedish publishing trends
+          </a>
+        </li>
+        <li class="leading-0">
+          <a class="text-sm/4 md:text-xl lg:text-2xl text-shadow-2xl text-white font-semibold no-underline hover:underline"
+            href="http://www.gbif.org/occurrence/search?publishingCountry=SE">
+            Search data published by Sweden
+          </a>
+        </li>
+      </ul>
+    </div>  
+  </div>
+</article>
 
 <!-- Partner logos -->
-<h2 class="text-lg sm:text-2xl mt-8">
-  SBDI is made possible by contributions from its partners and financers
-</h2>
-<div class="mt-4 grid grid-cols-6 gap-6">
-{% for partner in site.data.partners %}
-  <a href="{{ partner.link }}" title="{{ partner.title }}">
-    <img src="/uploads/partners/{{ partner.image }}" alt="Logotype {{ partner.title }}">
-  </a>
-{% endfor %}
-  <a href="https://www.vr.se/english.html" title="The Swedish Research Council">
-    <img src="/uploads/partners/svart_fyrkant_eng_150.png" alt="Logotype The Swedish Research Council">
-  </a>
-</div>
+<article>
+  <h2 class="text-lg sm:text-2xl mt-8">
+    SBDI is made possible by contributions from its partners and financers
+  </h2>
+  <div class="mt-4 grid grid-cols-6 gap-6">
+  {% for partner in site.data.partners %}
+    <a href="{{ partner.link }}" title="{{ partner.title }}">
+      <img src="/uploads/partners/{{ partner.image }}" alt="" aria-hidden="true">
+    </a>
+  {% endfor %}
+    <a href="https://www.vr.se/english.html" title="The Swedish Research Council">
+      <img src="/uploads/partners/svart_fyrkant_eng_150.png" alt="" aria-hidden="true">
+    </a>
+  </div>
+</article>
 
 <script>
   {% assign slides = site.data.slides %}
@@ -191,7 +195,6 @@ hide_left_menu: true
 
   let currentIndex = 0;
 
-  const slideLink = document.getElementById("slide-link");
   const slideImage = document.getElementById("slide-image");
   const slideTitle = document.getElementById("slide-title");
   const slideBy = document.getElementById("slide-by");
@@ -202,9 +205,6 @@ hide_left_menu: true
     slideImage.classList.remove("show");
     setTimeout(() => {
       slideImage.src = slide.imageUrl;
-      slideImage.alt = slide.title;
-      slideLink.href = "/explore-data/";
-      slideLink.title = "See all portals and tools";
       slideTitle.textContent = slide.title;
       slideBy.textContent = slide.by;
       slideLicense.textContent = slide.license;

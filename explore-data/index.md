@@ -6,31 +6,31 @@ title: Tools and data
 
 Here we list and describe all SBDI tools and portals that can be used to explore, download, and analyze biodiversity data. Our core tools and data access functionality is based on Living Atlases technology, but we also provide several specialized tools which are also linked to below.
 
-You can filter the list by selecting one or more tags:
-<div class="mb-4 space-x-1 space-y-2">
-  {% for tag in site.data.portal-tags %}
-    <button data-filter="{{ tag | downcase }}" class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
-  {% endfor %}
-</div>
+<section aria-label="Tag filter">
+  <p>You can filter the list by selecting one or more tags:</p>
+  <div class="mb-4 space-x-1 space-y-2" aria-label="Tags">
+    {% for tag in site.data.portal-tags %}
+      <button data-filter="{{ tag | downcase }}" class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
+    {% endfor %}
+  </div>
+</section>
 
 <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
 {% for portal in site.data.portals %}
   {% assign portal_tags = portal.tags | join: "," | downcase %}
   <article class="flex flex-col border border-slate-300 cursor-pointer hover:bg-slate-100 rounded-lg" onclick="location.href='{{ portal.link }}';" data-tags="{{ portal_tags }}">
     {% if portal.image %}
-      <img src="/uploads/portals/{{ portal.image }}" class="h-48 {% if portal.image-full-width %}w-full rounded-t-lg{% else %}m-auto{% endif %}" alt="">
+      <img src="/uploads/portals/{{ portal.image }}" class="h-48 {% if portal.image-full-width %}w-full rounded-t-lg{% else %}m-auto{% endif %}" alt="" aria-hidden="true">
     {% endif %}
     <div class="flex-grow mx-4 my-2">
-      <header>
-        <h3><a href="{{ portal.link }}" class="no-underline">{{ portal.name }}</a></h3>
-      </header>
+      <h3><a href="{{ portal.link }}" class="no-underline">{{ portal.name }}</a></h3>
       <div class="tool-description mb-1 text-slate-700">{{ portal.description }}</div>
     </div>
-    <div class="mx-4 mb-4 sm:space-x-1 space-y-1 text-sm">
+    <footer class="mx-4 mb-4 sm:space-x-1 space-y-1 text-sm" aria-label="Tags">
       {% for tag in portal.tags %}
-        <button class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
+        <span class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</span>
       {% endfor %}
-    </div>
+    </footer>
   </article>
 {% endfor %}
 </div>

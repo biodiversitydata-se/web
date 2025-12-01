@@ -12,12 +12,10 @@ Here you find a library of past webinars and workshop recordings. You can also b
   <h2>{{ section.title }}</h2>
   {% for webinar in section.items %}
     <article class="mb-2">
-      <header>
-        <h3>
-          <a href="{{ webinar.link }}">{{ webinar.title }}</a>
-          {% if webinar.duration %}<span>[{{ webinar.duration }}]</span>{% endif %}
-        </h3>
-      </header>
+      <h3>
+        <a href="{{ webinar.link }}">{{ webinar.title }}</a>
+        {% if webinar.duration %}<span>[{{ webinar.duration }}]</span>{% endif %}
+      </h3>
       <p>
         {{ webinar.description }}
       </p>

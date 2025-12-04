@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Event participation
+title: Other important events
 permalink: /:path/:basename/
 ---
 # {{ page.title }}

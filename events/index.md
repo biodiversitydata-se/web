@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Event organization
+title: Our events
 ---
 # {{ page.title }}
 

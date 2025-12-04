@@ -19,10 +19,10 @@
   layouts:
     - event-item
   items:
-    - title: Event organization
+    - title: Our events
       path: /events/
-    - title: Event participation
-      path: /events/participation/
+    - title: Other important events
+      path: /events/other/
 - title: Support
   path: /support/
   items:

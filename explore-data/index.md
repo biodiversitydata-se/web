@@ -9,25 +9,25 @@ Here we list and describe all SBDI tools and portals that can be used to explore
 <section aria-label="Tag filter">
   <p>You can filter the list by selecting one or more tags:</p>
   <div class="mb-4 space-x-1 space-y-2" aria-label="Tags">
-    {% for tag in site.data.portal-tags %}
+    {% for tag in site.data.tool-tags %}
       <button data-filter="{{ tag | downcase }}" class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
     {% endfor %}
   </div>
 </section>
 
 <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6">
-{% for portal in site.data.portals %}
-  {% assign portal_tags = portal.tags | join: "," | downcase %}
-  <article class="flex flex-col border border-slate-300 cursor-pointer hover:bg-slate-100 rounded-lg" onclick="location.href='{{ portal.link }}';" data-tags="{{ portal_tags }}">
-    {% if portal.image %}
-      <img src="/uploads/portals/{{ portal.image }}" class="h-48 w-full rounded-t-lg {{ portal.image-sizing | default: "object-contain" }}" alt="" aria-hidden="true">
+{% for tool in site.data.tools %}
+  {% assign tool_tags = tool.tags | join: "," | downcase %}
+  <article class="flex flex-col border border-slate-300 cursor-pointer hover:bg-slate-100 rounded-lg" onclick="location.href='{{ tool.link }}';" data-tags="{{ tool_tags }}">
+    {% if tool.image %}
+      <img src="/uploads/tools/{{ tool.image }}" class="h-48 w-full rounded-t-lg {{ tool.image-sizing | default: "object-contain" }}" alt="" aria-hidden="true">
     {% endif %}
     <div class="flex-grow mx-4 my-2">
-      <h3><a href="{{ portal.link }}" class="no-underline">{{ portal.name }}</a></h3>
-      <div class="tool-description mb-1 text-slate-700">{{ portal.description }}</div>
+      <h3><a href="{{ tool.link }}" class="no-underline">{{ tool.name }}</a></h3>
+      <div class="tool-description mb-1 text-slate-700">{{ tool.description }}</div>
     </div>
     <footer class="mx-4 mb-4 sm:space-x-1 space-y-1 text-sm" aria-label="Tags">
-      {% for tag in portal.tags %}
+      {% for tag in tool.tags %}
         <span class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</span>
       {% endfor %}
     </footer>
@@ -38,7 +38,7 @@ Here we list and describe all SBDI tools and portals that can be used to explore
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("[data-filter]");
-    const portals = document.querySelectorAll("[data-tags]");
+    const tools = document.querySelectorAll("[data-tags]");
 
     const getActiveFiltersFromHash = () => {
       const hash = window.location.hash.slice(1); // remove '#'
@@ -56,10 +56,10 @@ Here we list and describe all SBDI tools and portals that can be used to explore
     }
 
     const applyFilters = () => {
-      portals.forEach(portal => {
-        const tags = portal.dataset.tags.split(",");
+      tools.forEach(tool => {
+        const tags = tool.dataset.tags.split(",");
         const visible = [...activeFilters].every(f => tags.includes(f));
-        portal.style.display = visible || activeFilters.size === 0 ? "" : "none";
+        tool.style.display = visible || activeFilters.size === 0 ? "" : "none";
       });
 
       filterButtons.forEach(btn => {

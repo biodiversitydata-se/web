@@ -3,7 +3,7 @@
     - Search biodiversity datasets
     - Visualize/explore
   image: bioatlas.png
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     The Bioatlas allows you to find and access Swedish biodiversity data, and includes:
     <ul>
@@ -18,7 +18,7 @@
     - Spatial analysis
     - Visualize/explore
   image: spatial.png
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     The Spatial Portal is a tool that allows users to visualize and analyze Swedish biodiversity 
     data in a spatial context – to understand and analyze biodiversity and its relationship with 
@@ -42,7 +42,7 @@
     - Systematic inventories
     - Project management
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
     the work with staff or volunteers collecting data. BioCollect is designed for researchers, 
@@ -91,7 +91,7 @@
   tags:
     - Marine data
   image: bolmen-2025-09-11-1_Per.Wilhelmsson.webp
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     Plankton Toolbox is a free software developed to aid researchers and conservationists working 
     with and analyzing plankton data. Features include:
@@ -109,7 +109,7 @@
   tags:
     - Marine data
   image: bolmen-2025-09-09-1_Per.Wilhelmsson.webp
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     Nordic Microalgae is a website containing information about microalgae and related organisms 
     in the Nordic area, i.e. the Baltic Sea, the North East Atlantic and lakes, rivers and streams 
@@ -150,7 +150,7 @@
     - Biologging data
     - Visualize/explore
   image: wram.png
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     SLU WRAM is a national knowledge centre and platform for sensor data from animals used to 
     understand animal behaviour, movement patterns and health.
@@ -167,7 +167,7 @@
     - Biologging data
     - Visualize/explore
   image: blacktern_example1-1536x1473.jpg
-  image-sizing: object-cover
+  image-class: object-cover
   description: >-
     The SBDI Biologging Portal is a portal for exploring data through a meta-data register.
     <ul>
@@ -183,8 +183,8 @@
 - name: SUBSIM – platform for subsea image analysis
   tags:
     - Marine data
-  image: subsim.png
-  image-sizing: object-cover
+  image: subsim_logo_blue.png
+  image-class: object-contain px-3
   description: >-
     SUBSIM is a platform for efficient management and processing of underwater image and video 
     survey data. SUBSIM provides functions to conduct research and automated monitoring of the 

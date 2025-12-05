@@ -7,7 +7,7 @@ title: Tools and data
 Here we list and describe all SBDI tools and portals that can be used to explore, download, and analyze biodiversity data. Our core tools and data access functionality is based on Living Atlases technology, but we also provide several specialized tools which are also linked to below.
 
 <section aria-label="Tag filter">
-  <p>You can filter the list by selecting one or more tags:</p>
+  <p>You can filter the list by selecting one of the tags:</p>
   <div class="mb-4 space-x-1 space-y-2" aria-label="Tags">
     {% for tag in site.data.tool-tags %}
       <button data-filter="{{ tag | downcase }}" class="px-3 py-1 rounded-full bg-gray-200 text-gray-700 text-nowrap cursor-pointer">{{ tag }}</button>
@@ -82,9 +82,9 @@ Here we list and describe all SBDI tools and portals that can be used to explore
     filterButtons.forEach(btn => {
       btn.addEventListener("click", () => {
         const tag = btn.dataset.filter;
-        if (activeFilters.has(tag)) {
-          activeFilters.delete(tag);
-        } else {
+        const isActive = activeFilters.has(tag);
+        activeFilters.clear();
+        if (!isActive) {
           activeFilters.add(tag);
         }
         updateHash();

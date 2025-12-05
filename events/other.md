@@ -19,7 +19,7 @@ SBDI takes part in national and international events to exchange knowledge, spar
 </article>
 
 <article>
-  <h2>Past events</h2>
+  <h2>Past events (from the last two years)</h2>
   {% include functions/fetch-events.html event_type="past" %}
   {% assign events_0 = events | where: "organize", false %}
   {% for event in events_0 %}

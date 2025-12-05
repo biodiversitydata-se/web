@@ -18,7 +18,7 @@ SBDI organizes conferences and events that foster knowledge sharing, collaborati
 </article>
 
 <article>
-  <h2>Past events</h2>
+  <h2>Past events (from the last two years)</h2>
   {% include functions/fetch-events.html event_type="past" %}
   {% assign events_0 = events | where: "organize", true %}
   {% for event in events_0 %}

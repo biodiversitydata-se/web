@@ -3,6 +3,7 @@
     - Search biodiversity datasets
     - Visualize/explore
   image: bioatlas.png
+  image-sizing: object-cover
   description: >-
     The Bioatlas allows you to find and access Swedish biodiversity data, and includes:
     <ul>
@@ -17,6 +18,7 @@
     - Spatial analysis
     - Visualize/explore
   image: spatial.png
+  image-sizing: object-cover
   description: >-
     The Spatial Portal is a tool that allows users to visualize and analyze Swedish biodiversity 
     data in a spatial context – to understand and analyze biodiversity and its relationship with 
@@ -40,7 +42,7 @@
     - Systematic inventories
     - Project management
   image: Cygnus.cygnus_johan.backman_CC-BY-NC-1536x895.jpg
-  image-full-width: true  
+  image-sizing: object-cover
   description: >-
     BioCollect allows to set up projects with specified systematic inventory schemes and coordinate 
     the work with staff or volunteers collecting data. BioCollect is designed for researchers, 
@@ -75,8 +77,7 @@
   tags:
     - Molecular/genetic data
     - Data flows
-  image: ampliseq2-1024x273-1-768x205.png
-  image-full-width: true  
+  image: ampliseq.png
   description: >-
     nfcore/ampliseq is a pipeline for postprocessing of amplicon sequencing (metabarcoding) data
     from markers such as 16S, 18S, ITS, and CO1, supporting Illumina, PacBio and IonTorrent data.
@@ -89,7 +90,8 @@
 - name: Plankton Toolbox
   tags:
     - Marine data
-  image: planktonToolbox-150x150-1-e1621338981829.jpg
+  image: bolmen-2025-09-11-1_Per.Wilhelmsson.webp
+  image-sizing: object-cover
   description: >-
     Plankton Toolbox is a free software developed to aid researchers and conservationists working 
     with and analyzing plankton data. Features include:
@@ -101,12 +103,13 @@
       <li>Plotting tools</li>
       <li>Export data in .txt or .xlsx for further analyses or plotting</li>
     </ul>
-  link: https://nordicmicroalgae.org/tools
+  link: https://nordicmicroalgae.org/plankton-toolbox/
 
 - name: Nordic Microalgae – information and tools
   tags:
     - Marine data
-  image: Chaetoceros-anastomosans-var.-externa_3_creditsMats-Kuylenstierna.jpg
+  image: bolmen-2025-09-09-1_Per.Wilhelmsson.webp
+  image-sizing: object-cover
   description: >-
     Nordic Microalgae is a website containing information about microalgae and related organisms 
     in the Nordic area, i.e. the Baltic Sea, the North East Atlantic and lakes, rivers and streams 
@@ -121,8 +124,7 @@
 - name: SHARK – marine environmental monitoring data
   tags:
     - Marine data
-  image: SharkWEB_logo-768x223.png
-  image-full-width: true
+  image: shark.png
   description: >-
     SHARK is Svenskt HavsARKiv’s website for downloading data. SHARK stores biological, physical 
     and chemical marine environmental monitoring data.   
@@ -132,7 +134,6 @@
   tags:
     - Archaeological data
   image: SEAD_logo.png
-  image-full-width: true  
   description: >-
     SEAD is an international database for environmental archaeology and Quaternary science data, 
     and a tool for Swedish archaeological science providing:
@@ -148,7 +149,8 @@
   tags:
     - Biologging data
     - Visualize/explore
-  image: WRAM_logo.png
+  image: wram.png
+  image-sizing: object-cover
   description: >-
     SLU WRAM is a national knowledge centre and platform for sensor data from animals used to 
     understand animal behaviour, movement patterns and health.
@@ -165,6 +167,7 @@
     - Biologging data
     - Visualize/explore
   image: blacktern_example1-1536x1473.jpg
+  image-sizing: object-cover
   description: >-
     The SBDI Biologging Portal is a portal for exploring data through a meta-data register.
     <ul>
@@ -181,7 +184,7 @@
   tags:
     - Marine data
   image: subsim.png
-  image-full-width: true
+  image-sizing: object-cover
   description: >-
     SUBSIM is a platform for efficient management and processing of underwater image and video 
     survey data. SUBSIM provides functions to conduct research and automated monitoring of the 

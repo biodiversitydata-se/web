@@ -20,7 +20,7 @@ Here we list and describe all SBDI tools and portals that can be used to explore
   {% assign portal_tags = portal.tags | join: "," | downcase %}
   <article class="flex flex-col border border-slate-300 cursor-pointer hover:bg-slate-100 rounded-lg" onclick="location.href='{{ portal.link }}';" data-tags="{{ portal_tags }}">
     {% if portal.image %}
-      <img src="/uploads/portals/{{ portal.image }}" class="h-48 {% if portal.image-full-width %}w-full rounded-t-lg{% else %}m-auto{% endif %}" alt="" aria-hidden="true">
+      <img src="/uploads/portals/{{ portal.image }}" class="h-48 w-full rounded-t-lg {{ portal.image-sizing | default: "object-contain" }}" alt="" aria-hidden="true">
     {% endif %}
     <div class="flex-grow mx-4 my-2">
       <h3><a href="{{ portal.link }}" class="no-underline">{{ portal.name }}</a></h3>

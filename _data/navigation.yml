@@ -7,6 +7,8 @@
       path: /explore-data/
     - title: Programming and API:s
       path: /explore-data/programming/
+    - title: Acknowledging SBDI
+      path: /explore-data/acknowledging-sbdi/
 - title: Publish data
   path: /publish-data/
   items:

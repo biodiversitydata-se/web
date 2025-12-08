@@ -19,7 +19,7 @@ The SBDI Executive Office (ExO) manages the daily business of SBDI and coordinat
     {% endif %}
     <div class="mt-4 flex">
       {{ item.affiliation }}
-      <img src="/uploads/partners/{{ item.affiliation_image }}" class="h-20" alt="Logotype of {{ item.affiliation }}" aria-hidden="true">
+      <img src="/uploads/partners/{{ item.affiliation_image }}" class="{{ item.affiliation_image_class | default: "h-20"}}" alt="Logotype of {{ item.affiliation }}" aria-hidden="true">
     </div>
   </article>
 {% endfor %}

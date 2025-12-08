@@ -5,12 +5,14 @@ executive_office:
     affiliation: Swedish Museum of Natural History
     affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
     email: director@biodiversitydata.se
+    phone: +46 8 519 540 04
     image: margret.jpg
 
   - name: Holger Dettki
     title: SBDI Deputy Director
     affiliation: Swedish University of Agricultural Sciences
     affiliation_image: slu_logo_webb1-e1627376342839.png
+    affiliation_image_class: h-19
     email: director@biodiversitydata.se
     phone: +46 18 67 25 74
     image: holger.jpg

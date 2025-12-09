@@ -9,7 +9,8 @@ permalink: /:path/:basename/
 
 Access to SBDI data is free for all—but not free of obligations. Under the [SBDI Terms of Use](https://docs.biodiversitydata.se/sbdi-data/sbdi-atlas-terms-of-use/), users agree to acknowledge SBDI and SBDI data providers in any published material resulting from use of SBDI data and tools.
 
-Specifically, when SBDI is used in a research project, any resulting paper should acknowledge our main funder, [the Swedish Research Council](https://vr.se/), using a specific phrase in the Acknowledgements section. See our [citation guide](https://docs.biodiversitydata.se/sbdi-data/citation-guide/) for details.
+Specifically, when SBDI is used in a research project, please add the following sentence to the acknowledgement section in your reports, manuscripts, and data submissions: **This project was supported by the Swedish Biodiversity Data Infrastructure and Swedish Research Council (grant no.  2019-­00242).**
+See our [citation guide](https://docs.biodiversitydata.se/sbdi-data/citation-guide/) for more details.
 
 All datasets downloaded from SBDI or from GBIF are associated with a CSV file that specifies how to cite the original data providers. If there are too many data citations for the main citation list, put the data citations in an appendix or in supplementary material.
 

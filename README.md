@@ -1,7 +1,7 @@
 ![build workflow](https://github.com/biodiversitydata-se/web/actions/workflows/build.yml/badge.svg)
 
 # biodiversitydata.se website
-The new [biodiversitydata.se](https://new.biodiversitydata.se) website built with [Jekyll](https://jekyllrb.com/) and [tailwindcss](https://tailwindcss.com/).
+The [biodiversitydata.se](https://biodiversitydata.se) website built with [Jekyll](https://jekyllrb.com/) and [tailwindcss](https://tailwindcss.com/).
 
 ## Development
 The local dev environment runs in Docker using [dev.Dockerfile](dev.Dockerfile) and [docker-compose.yml](docker-compose.yml).

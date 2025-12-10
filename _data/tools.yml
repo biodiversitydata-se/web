@@ -90,8 +90,7 @@
 - name: Plankton Toolbox
   tags:
     - Marine data
-  image: bolmen-2025-09-11-1_Per.Wilhelmsson.webp
-  image-class: object-cover
+  image: plankton_toolbox_icon.png
   description: >-
     Plankton Toolbox is a free software developed to aid researchers and conservationists working 
     with and analyzing plankton data. Features include:
@@ -108,8 +107,7 @@
 - name: Nordic Microalgae – information and tools
   tags:
     - Marine data
-  image: bolmen-2025-09-09-1_Per.Wilhelmsson.webp
-  image-class: object-cover
+  image: nordic-microalgae-logo-with-bg.png
   description: >-
     Nordic Microalgae is a website containing information about microalgae and related organisms 
     in the Nordic area, i.e. the Baltic Sea, the North East Atlantic and lakes, rivers and streams 
@@ -128,7 +126,7 @@
   description: >-
     SHARK is Svenskt HavsARKiv’s website for downloading data. SHARK stores biological, physical 
     and chemical marine environmental monitoring data.   
-  link: https://shark.smhi.se
+  link: https://shark.smhi.se/en
 
 - name: Strategic Environmental Archaeology Database
   tags:

@@ -16,6 +16,7 @@ Equally important, SBDI Days 2026 will address the **ethics of generative AI**: 
 If we are to unlock the full potential of AI in ecology and conservation, we must do so with care, collaboration, and a shared commitment to integrity in science. The Swedish Biodiversity Data Infrastructure (SBDI) invites you to be part of this essential conversation.
 Join us at **SBDI Days 2026** to connect, challenge assumptions, and help shape the ethical, technical, and ecological future of artificial intelligence in ecology and biodiversity research!
 
-[**Register here**](https://biodiversitydata.se/sbdi-days-2026)  
+[**SBDI Days web site**](https://biodiversitydata.se/sbdi-days-2026)  
+[**SBDI Days program**](https://drive.google.com/file/d/1QgrruH-wrVo5-HRB1eroGRZvnahHwfCp/view)  
 
 *A conference hosted by SBDI in partnership with SciLifeLab’s Planetary Biology Strategic Area.*

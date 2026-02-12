@@ -121,9 +121,11 @@ hide_left_menu: true
           </header>
         </div>
       </article>
+    {% else %}
+      <span>- No upcoming events -</span>
     {% endfor %}
     <footer class="mt-6">
-      <a class="text-lg link-icon" href="/events/">See all events</a>
+      <a class="text-lg link-icon" href="/events/">See {% if events != empty %}all{% else %}past{% endif %} events</a>
     </footer>
   </article>
 

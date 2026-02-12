@@ -2,7 +2,7 @@ name: Prune package versions
 
 on:
   schedule:
-    - cron: '20 0 * * 0'
+    - cron: '20 0 * * 4'
   workflow_dispatch:
 
 permissions:
@@ -21,7 +21,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
-          KEEP: 15
+          KEEP: 10
         run: |
           versions=$(gh api \
             /orgs/$OWNER/packages/container/$REPO/versions \

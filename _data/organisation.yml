@@ -1,13 +1,5 @@
 executive_office:
 
-  - name: Margret Steinthorsdottir
-    title: SBDI Director
-    affiliation: Swedish Museum of Natural History
-    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
-    email: director@biodiversitydata.se
-    phone: +46 8 519 540 04
-    image: margret.jpg
-
   - name: Holger Dettki
     title: SBDI Deputy Director
     affiliation: Swedish University of Agricultural Sciences

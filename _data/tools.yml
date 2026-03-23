@@ -206,3 +206,12 @@
     using filters on functional annotation and/or taxonomy, or by sequence searches using BLAST.
     Or download the whole dataset.  
   link: https://bags.serve.scilifelab.se/app/bags
+
+- name: sbdi4r2 – Access SBDI with R Studio
+  tags:
+    - Programming
+  description: >-
+    SBDI provides sbdi4r2, an R package to search and download data from the SBDI data portal.
+    sbdi4r2 provides the functions to find, access, combine and visualise data on Swedish plants
+    and animals through queries in any of the datasets provided by SBDI. 
+  link: https://github.com/biodiversitydata-se/sbdi4r2/

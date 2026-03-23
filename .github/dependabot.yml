@@ -8,6 +8,9 @@ updates:
       default:
         patterns:
           - "*"
+    ignore:
+    - dependency-name: "*"
+      update-types: ["version-update:semver-patch"]
 
   - package-ecosystem: "bundler"
     directory: "/"

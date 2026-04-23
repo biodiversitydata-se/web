@@ -13,4 +13,4 @@ Main topics of the meeting include coordination of ECA nodes to support GBIF par
 
 Attendance is by invitation only. For any further information, please contact Dag Endresen, regional node representative for Europe and Central Asia.
 
-[https://www.gbif.org/event/57QSP3Zkj1ldnDrW6VkOfs/europe-and-central-asia-nodes-meeting-2026](https://www.gbif.org/event/57QSP3Zkj1ldnDrW6VkOfs/europe-and-central-asia-nodes-meeting-2026)
+**[Event home page](https://www.gbif.org/event/57QSP3Zkj1ldnDrW6VkOfs/europe-and-central-asia-nodes-meeting-2026)**

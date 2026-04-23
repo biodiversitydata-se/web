@@ -14,4 +14,4 @@ This inaugural edition marks a launch guided by a vision to deliver an impactful
 
 By building a welcoming space for the biodiversity monitoring community, it will foster a common culture and understanding of biodiversity monitoring in Europe, and advance transnational and cross-sector cooperation.
 
-[https://2026.biomonweek.eu/page/home/](https://2026.biomonweek.eu/page/home/)
+**[Event home page](https://2026.biomonweek.eu/page/home/)**

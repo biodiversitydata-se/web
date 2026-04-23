@@ -16,4 +16,4 @@ Historical sites where Linneaus worked and lived will be visited and there is an
 
 There will also be an early career meeting on Sunday the 16th for students and early career researchers to get to know each other.
 
-[https://www.trippus.net/BioSyst2026](https://www.trippus.net/BioSyst2026)
+**[Event home page](https://www.trippus.net/BioSyst2026)**

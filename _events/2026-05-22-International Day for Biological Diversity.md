@@ -8,5 +8,5 @@ image: 2026-05-22_International-Day-for-Biological-Diversity.jpg
 description: "This day aims to raise awareness about the importance of biodiversity and encourage actions to protect it."
 ---
 
-[https://sharingsweden.se/event/international-day-for-biological-diversity](https://sharingsweden.se/event/international-day-for-biological-diversity)
+**[Event home page](https://sharingsweden.se/event/international-day-for-biological-diversity)**
 

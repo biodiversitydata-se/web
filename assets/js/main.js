@@ -48,10 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Show/hide menu items based on login status
-  let userCookie = getCookie('ALA-Auth-user');
+  let userCookie = getCookie('ALA-Auth');
   if (userCookie) {
-    let userDetails = userCookie.slice(1,-1).split('|');
-    userIcon.title = `${userDetails[0]} ${userDetails[1]}`;
     document.querySelectorAll('.user-menu-item').forEach((el) => {
       el.classList.toggle('hidden');
     });

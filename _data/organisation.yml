@@ -1,4 +1,11 @@
 executive_office:
+  - name: Emma Granqvist
+    title: SBDI Director
+    affiliation: Swedish Museum of Natural History
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: director@biodiversitydata.se
+    phone: +46 8 519 541 26
+    image: emma.jpg
 
   - name: Holger Dettki
     title: SBDI Deputy Director

@@ -118,7 +118,7 @@ async function main() {
     result.push({
         title: 'ASV datasets',
         url: 'https://asv-portal.biodiversitydata.se/download',
-        count: 21,
+        count: 23,
     });
 
     fs.writeFileSync('_data/counts.json', JSON.stringify(result, null, 2));

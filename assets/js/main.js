@@ -13,16 +13,6 @@ const toggleMobileSubMenu = (id) => {
   return true;
 }
 
-// Get cookie by name
-const getCookie = (name) => {
-  let cookie = {};
-  document.cookie.split(';').forEach(function(el) {
-    let split = el.split('=');
-    cookie[split[0].trim()] = split.slice(1).join("=");
-  });
-  return cookie[name];
-}
-
 // DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -37,33 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
     searchForm.querySelector("input[name='query']").focus();
   });
 
-  // Set up user menu
-  const userIcon = document.getElementById('user-icon');
-  const userMenu = document.getElementById('user-menu');
-
-  userIcon.addEventListener('click', (e) => {
-    e.preventDefault();
-    userMenu.classList.toggle('hidden');
-    userIcon.classList.toggle('bg-sbdi-darkblue');
-  });
-
-  // Show/hide menu items based on login status
-  let userCookie = getCookie('ALA-Auth');
-  if (userCookie) {
-    document.querySelectorAll('.user-menu-item').forEach((el) => {
-      el.classList.toggle('hidden');
-    });
-  }
-
-  // Close search popup and user menu when clicking outside
+  // Close search popup when clicking outside
   document.addEventListener('click', (e) => {
     if (!searchIcon.contains(e.target) && !searchForm.contains(e.target)) {
       searchForm.classList.add('hidden');
       searchIcon.classList.remove('bg-sbdi-darkblue');
-    }
-    if (!userIcon.contains(e.target) && !userMenu.contains(e.target)) {
-      userMenu.classList.add('hidden');
-      userIcon.classList.remove('bg-sbdi-darkblue');
     }
   });
 });

@@ -60,19 +60,3 @@
 - title: Search
   path: /search/
   mobile_only: true
-- title: Login
-  path: https://auth.biodiversitydata.se/cas/login
-  mobile_only: true
-  class: user-menu-item
-- title: Sign up
-  path: https://auth.biodiversitydata.se/userdetails/registration/createAccount
-  mobile_only: true
-  class: user-menu-item
-- title: My profile
-  path: https://auth.biodiversitydata.se/userdetails/myprofile/
-  mobile_only: true
-  class: user-menu-item hidden
-- title: Logout
-  path: https://auth.biodiversitydata.se/cas/logout
-  mobile_only: true
-  class: user-menu-item hidden

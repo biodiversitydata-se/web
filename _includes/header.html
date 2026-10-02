@@ -1,11 +1,18 @@
 {%- assign path_segments = page.url | remove_first: "/" | split: "/" -%}
 {%- include functions/active-menus.html -%}
 
-<header class="container flex mt-2 mb-3 px-4" aria-label="Site header">
-  <a href="/" title="To home page">
-    <img class="w-30" src="/assets/images/SBDI-rgb.svg" alt="SBDI logotype">
-  </a>
-  <span class="grow ml-6 self-end text-lg text-gray-600 leading-none">Swedish Biodiversity Data Infrastructure</span>
+<header class="" aria-label="Site header">
+  <div class="bg-amber-400 p-3 text-center">
+    <div class="container">
+      <a href="https://beta.biodiversitydata.se">Try out the upcoming version of the SBDI web site</a>
+    </div>
+  </div>
+  <div class="container flex mt-2 mb-3 px-4">
+    <a href="/" title="To home page">
+      <img class="w-30" src="/assets/images/SBDI-rgb.svg" alt="SBDI logotype">
+    </a>  
+    <span class="grow ml-6 self-end text-lg text-gray-600 leading-none">Swedish Biodiversity Data Infrastructure</span>
+  </div>
 </header>
 
 <nav class="overflow-hidden bg-sbdi-blue" aria-label="Main menu">

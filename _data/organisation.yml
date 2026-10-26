@@ -34,7 +34,7 @@ executive_office:
 
 steering_committee:
   - name: Anders Hamsten
-    affiliation: Senior advisor to the vice chancellor at LU
+    affiliation: Chair of the SBDI Steering Committee
   - name: Michaela Barth
     affiliation: Royal Institute of Technology (KTH)
   - name: Hanna Tornevall
@@ -53,10 +53,6 @@ scientific_committee:
     affiliation: Kew Gardens
   - name: Alexander Ziska
     affiliation: Philipps-University Marburg
-  - name: Francisco Hernandez
-    affiliation: VLIZ – Vlanders Marine Institute
-  - name: Donald Hobern
-    affiliation: International Barcode of Life Consortium
   - name: Hanna Koivula
     affiliation: CSC – IT Centre for Science
   - name: Cynthia Parr
@@ -65,3 +61,7 @@ scientific_committee:
     affiliation: UK Centre for Ecology & Hydrology
   - name: Pamela Soltis
     affiliation: University of Florida, Gainesville
+  - name: Quentin Groom
+    affiliation: Meise Botanic Garden
+  - name: Koos Biesmeijer
+    affiliation: Naturalis Biodiversity Center
